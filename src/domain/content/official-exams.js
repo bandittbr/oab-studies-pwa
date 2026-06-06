@@ -77,7 +77,18 @@ export const officialExams = [
       { number: 66, questionId: "q-oab46-066" },
       { number: 67, questionId: "q-oab46-067" },
       { number: 68, questionId: "q-oab46-068" },
-      { number: 69, questionId: "q-oab46-069" }
+      { number: 69, questionId: "q-oab46-069" },
+      { number: 70, questionId: "q-oab46-070" },
+      { number: 71, questionId: "q-oab46-071" },
+      { number: 72, questionId: "q-oab46-072" },
+      { number: 73, questionId: "q-oab46-073" },
+      { number: 74, questionId: "q-oab46-074" },
+      { number: 75, questionId: "q-oab46-075" },
+      { number: 76, questionId: "q-oab46-076" },
+      { number: 77, questionId: "q-oab46-077" },
+      { number: 78, questionId: "q-oab46-078" },
+      { number: 79, questionId: "q-oab46-079" },
+      { number: 80, questionId: "q-oab46-080" }
     ]
   },
   {

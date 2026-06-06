@@ -1455,4 +1455,247 @@ export const questionSeedOab46 = [
       { id: "d", text: "Antônio não possui idade mínima, na forma fixada pela Constituição da República de 1988." }
     ]
   })
+,
+
+  // Q70 - Previdenciário/Trabalhista (Manuela Dias, acidente trabalho)
+  defineQuestion({
+    id: "q-oab46-070",
+    subjectId: "trabalhista",
+    themeId: "contrato-trabalho",
+    examId: "oab-46",
+    year: 2026,
+    questionNumber: 70,
+    difficulty: "medium",
+    statement: "Manuela Dias, empregada doméstica, procurou você, como advogado(a), para receber orientação jurídica para uma demanda relacionada a acidente de trabalho, que ocorreu durante os seus afazeres diários na residência da empregadora doméstica, que gerou incapacidade temporária. Assinale a opção que indica a orientação correta.",
+    explanation: "",
+    support: "",
+    relatedArticleIds: [],
+    tags: [],
+    alternatives: [
+      { id: "a", text: "Manuela poderá usufruir de benefício previdenciário por incapacidade temporária, ainda que possua menos de 12 contribuições mensais.", correct: true },
+      { id: "b", text: "O acidente de trabalho somente será reconhecido como tal caso haja incapacidade mínima de seis meses para o trabalho, avaliada por perícia médica." },
+      { id: "c", text: "A conexão da incapacidade com o trabalho poderá ser aferida pelo INSS, mas nunca com a aplicação do Nexo Técnico Epidemiológico Previdenciário – NTEP." },
+      { id: "d", text: "A incapacidade de Manuela, na situação narrada, nunca poderia ser decorrente de doenças, pois o acidente de trabalho é sempre súbito, imediato e instantâneo." }
+    ]
+  }),
+
+  // Q71 - Trabalhista (Paulo, João, Luciana, equiparação salarial)
+  defineQuestion({
+    id: "q-oab46-071",
+    subjectId: "trabalhista",
+    themeId: "contrato-trabalho",
+    examId: "oab-46",
+    year: 2026,
+    questionNumber: 71,
+    difficulty: "hard",
+    statement: "Paulo foi contratado pela sociedade empresária Novos Horizontes para exercer a função de técnico em informática. João trabalha no mesmo setor e, por força de readaptação, exerce a mesma função de Paulo há seis meses. Luciana foi contratada um ano depois de Paulo, e ambos exercem a mesma função, não havendo diferença no trabalho realizado pelos três empregados. A sociedade empresária não tinha pessoal organizado em quadro de carreira, e o trabalho era distribuído entre os três indistintamente. Contudo, João recebia R$ 600,00 (seiscentos reais) a mais que Paulo, que, por sua vez recebia R$ 500,00 (quinhentos reais) a mais de salário que Luciana. Diante disso, você, como advogado(a), foi consultado(a) por Luciana acerca da diferença salarial. Assinale a opção que apresenta a resposta correta dada ao questionamento.",
+    explanation: "",
+    support: "",
+    relatedArticleIds: [],
+    tags: [],
+    alternatives: [
+      { id: "a", text: "A diferença salarial não se justifica em nenhuma das hipóteses, cabendo a equiparação ao salário de maior valor." },
+      { id: "b", text: "Paulo pode ganhar mais que Luciana pelo fato de ser homem, mas, em relação a João, a diferença salarial é injustificável." },
+      { id: "c", text: "Paulo pode ganhar mais que Luciana em razão do tempo na função, que é a razão de Luciana não fazer jus ao mesmo salário que João." },
+      { id: "d", text: "A diferença salarial de Luciana em relação a Paulo não se justifica, pelo que os dois deveriam receber o mesmo salário, mas no caso de João, por ser readaptado, a diferença salarial é cabível.", correct: true }
+    ]
+  }),
+
+  // Q72 - Trabalhista (ONG, trabalho do menor)
+  defineQuestion({
+    id: "q-oab46-072",
+    subjectId: "trabalhista",
+    themeId: "contrato-trabalho",
+    examId: "oab-46",
+    year: 2026,
+    questionNumber: 72,
+    difficulty: "medium",
+    statement: "Uma Organização não Governamental está realizando uma série de parcerias com entidades privadas visando à inserção e ao aprendizado de menores no mercado de trabalho, a fim de estimular o primeiro emprego, bem como evitar os riscos de envolvimento com a criminalidade. Diante disso, consultou você, na qualidade de advogado(a), a respeito do trabalho do menor como empregado. Assinale a opção que apresenta, corretamente, a sua orientação sobre o caso.",
+    explanation: "",
+    support: "",
+    relatedArticleIds: [],
+    tags: [],
+    alternatives: [
+      { id: "a", text: "É permitido ao menor de 18 e maior de 16 anos, o trabalho em bilheterias em cinemas e teatros, das 22 às 24 horas, a fim de não gerar prejuízo à frequência escolar." },
+      { id: "b", text: "É permitido ao maior de 16 anos e menor de 18 anos, o trabalho como frentista em postos de gasolina." },
+      { id: "c", text: "É permitido ao menor o trabalho em quiosques da orla das praias destinados à venda de comidas de todo o gênero e bebidas alcoólicas e não alcoólicas." },
+      { id: "d", text: "É permitido ao menor, a partir de 14 anos, trabalhar na condição de aprendiz.", correct: true }
+    ]
+  }),
+
+  // Q73 - Trabalhista (Pedro, norma coletiva, intervalo intrajornada)
+  defineQuestion({
+    id: "q-oab46-073",
+    subjectId: "trabalhista",
+    themeId: "jornada-trabalho",
+    examId: "oab-46",
+    year: 2026,
+    questionNumber: 73,
+    difficulty: "hard",
+    statement: "Pedro trabalha numa sociedade empresária desde 2022. Na norma coletiva da categoria de Pedro há uma cláusula que fixa o intervalo intrajornada de 20 minutos para a jornada superior a seis horas diárias e, outra cláusula, prevendo que a remuneração do trabalho noturno será igual à do diurno. Considerando o que foi estipulado na norma coletiva, de acordo com a CLT, assinale a afirmativa correta.",
+    explanation: "",
+    support: "",
+    relatedArticleIds: [],
+    tags: [],
+    alternatives: [
+      { id: "a", text: "Ambas as cláusulas da norma coletiva são inválidas.", correct: true },
+      { id: "b", text: "Somente a cláusula relativa ao trabalho noturno é válida." },
+      { id: "c", text: "Somente a cláusula relativa ao intervalo intrajornada é válida." },
+      { id: "d", text: "Ambas as cláusulas são válidas, porque relativas a direitos passíveis de negociação." }
+    ]
+  }),
+
+  // Q74 - Trabalhista (Distribuidora Bebidas, benefícios, integração remuneração)
+  defineQuestion({
+    id: "q-oab46-074",
+    subjectId: "trabalhista",
+    themeId: "contrato-trabalho",
+    examId: "oab-46",
+    year: 2026,
+    questionNumber: 74,
+    difficulty: "medium",
+    statement: "A sociedade empresária Distribuidora de Bebidas Bom Paladar Ltda. pretende instituir uma política de incentivo aos seus empregados. Para tanto, deseja dar benefícios compreendidos em melhorias da condição de trabalho, com o fornecimento de uniformes novos, mais leves e confortáveis, computadores portáteis, transporte coletivo de ida e volta para o trabalho em ônibus da sociedade empresária, além de incentivo à educação, com pagamento de mensalidades e bolsa-livros para todos os empregados. Você foi procurado(a), como advogado(a), para responder à consulta da sociedade empresária acerca da integração dos valores à remuneração dos empregados. Diante disso, observado o texto da CLT, assinale a afirmativa que, corretamente, apresenta a sua resposta.",
+    explanation: "",
+    support: "",
+    relatedArticleIds: [],
+    tags: [],
+    alternatives: [
+      { id: "a", text: "Todos os benefícios concedidos não integrarão a remuneração dos empregados.", correct: true },
+      { id: "b", text: "Apenas a concessão de uniformes novos não integrará a remuneração dos empregados." },
+      { id: "c", text: "Apenas o benefício de incentivo à educação não integrará a remuneração dos empregados." },
+      { id: "d", text: "Apenas o fornecimento de transporte não integrará a remuneração dos empregados, por ser tempo à disposição do empregador." }
+    ]
+  }),
+
+  // Q75 - Trabalhista (Jonas, discriminação orientação sexual, dispensa)
+  defineQuestion({
+    id: "q-oab46-075",
+    subjectId: "trabalhista",
+    themeId: "rescisao-contrato",
+    examId: "oab-46",
+    year: 2026,
+    questionNumber: 75,
+    difficulty: "medium",
+    statement: "Jonas trabalhava em uma sociedade empresária desde 2021. Com a nova chefia, que assumiu em janeiro de 2025, Jonas passou a ser explícita e sistematicamente discriminado pelo chefe em razão de sua orientação sexual, já que mantinha uma relação homoafetiva que era de conhecimento geral. Jonas foi dispensado, sem justa causa, em março de 2025. Em razão disso, Jonas o(a) procurou, na condição de advogado(a), para conhecer dos seus direitos. Assinale a opção que, considerando os fatos narrados e a norma de regência, apresenta, corretamente, sua orientação jurídica para o caso.",
+    explanation: "",
+    support: "",
+    relatedArticleIds: [],
+    tags: [],
+    alternatives: [
+      { id: "a", text: "Nada há a fazer, porque é direito do empregador efetuar a dispensa sem justa causa." },
+      { id: "b", text: "O direito que assiste a Jonas é ser reintegrado, com ressarcimento integral de todo o período de afastamento." },
+      { id: "c", text: "Jonas poderá optar entre a reintegração ou a percepção, em dobro, da remuneração do período de afastamento.", correct: true },
+      { id: "d", text: "Caberá apenas o pagamento, de forma simples, do período compreendido entre a dispensa e o ajuizamento da ação." }
+    ]
+  }),
+
+  // Q76 - Processo do Trabalho (Jorge Lucas, aviso prévio, compensação)
+  defineQuestion({
+    id: "q-oab46-076",
+    subjectId: "trabalhista",
+    themeId: "processo-trabalho",
+    examId: "oab-46",
+    year: 2026,
+    questionNumber: 76,
+    difficulty: "hard",
+    statement: "Jorge Lucas trabalhou por um ano na sociedade empresária Alfa Beta Gama Ltda. Insatisfeito por trabalhar várias horas extras diárias sem recebê-las, apesar de consignar corretamente a sobrejornada nos controles de ponto, Jorge Lucas pediu demissão. Na rescisão do contrato de trabalho, por um equívoco do Departamento de Pessoal, foi pago um valor equivalente ao aviso prévio. Dias depois, Jorge Lucas ajuizou reclamação trabalhista pleiteando horas extras. A sociedade empresária contratou você, como advogado(a), para defendê-la. Acerca do que poderá ser alegado sobre o equívoco do pagamento a mais de aviso prévio, à luz do entendimento consolidado na jurisprudência do Tribunal Superior do Trabalho (TST), assinale a afirmativa correta.",
+    explanation: "",
+    support: "",
+    relatedArticleIds: [],
+    tags: [],
+    alternatives: [
+      { id: "a", text: "Tendo sido pago o valor do aviso prévio espontaneamente pela sociedade empresária, está preclusa qualquer argumentação a esse respeito." },
+      { id: "b", text: "Deverá ser alegada a dedução dos valores pagos a título de aviso prévio da condenação ao pagamento dos valores relativos às horas extras." },
+      { id: "c", text: "Deverá ser alegada a compensação do valor pago a título do aviso prévio com eventual condenação em horas extras, o que deverá ser feito em sede de contestação.", correct: true },
+      { id: "d", text: "Deverá ser alegada a quitação do valor pago a título do aviso prévio com eventual condenação em horas extras, o que poderá ser feito em qualquer momento processual na instância ordinária." }
+    ]
+  }),
+
+  // Q77 - Processo do Trabalho (vale-transporte, FGTS, ônus da prova)
+  defineQuestion({
+    id: "q-oab46-077",
+    subjectId: "trabalhista",
+    themeId: "processo-trabalho",
+    examId: "oab-46",
+    year: 2026,
+    questionNumber: 77,
+    difficulty: "medium",
+    statement: "Em determinada reclamação trabalhista que tramita perante a 60ª Vara do Trabalho de Maringá, PR, o autor requereu o pagamento do vale-transporte, que jamais fora pago, e as diferenças do FGTS, afirmando que, em parte do contrato, ele não foi depositado pelo ex-empregador na conta vinculada. Em defesa, a sociedade empresária sustentou que o empregado não necessitava de vale-transporte, porque ele residia próximo à sede da sociedade empresária em que exercia as suas atividades, deslocando-se a pé para ir ao serviço e voltar, e que recolheu de forma escorreita o FGTS. Sobre o ônus da prova, considerando os fatos narrados e o entendimento consolidado do Tribunal Superior do Trabalho (TST), assinale a afirmativa correta.",
+    explanation: "",
+    support: "",
+    relatedArticleIds: [],
+    tags: [],
+    alternatives: [
+      { id: "a", text: "Tanto em relação ao vale-transporte quanto ao FGTS, o ônus da prova caberá ao empregado." },
+      { id: "b", text: "Em relação ao vale-transporte caberá à sociedade empresária; quanto ao FGTS, ao trabalhador." },
+      { id: "c", text: "Em relação ao vale-transporte, caberá ao trabalhador; quanto ao FGTS, à sociedade empresária." },
+      { id: "d", text: "Tanto em relação ao vale-transporte quanto ao FGTS, o ônus da prova caberá à sociedade empresária.", correct: true }
+    ]
+  }),
+
+  // Q78 - Processo do Trabalho (recurso ordinário intempestivo, recurso adesivo)
+  defineQuestion({
+    id: "q-oab46-078",
+    subjectId: "trabalhista",
+    themeId: "processo-trabalho",
+    examId: "oab-46",
+    year: 2026,
+    questionNumber: 78,
+    difficulty: "hard",
+    statement: "Em determinada reclamação trabalhista que tramita perante a 58ª Vara do Trabalho de Cuiabá, MT, o pedido formulado foi julgado procedente em parte. A sociedade empresária reclamada recorreu ordinariamente e o reclamante, de forma adesiva. Distribuídos os apelos pelo Tribunal Regional, o Relator verificou que o recurso ordinário da reclamada se encontrava intempestivo, já que interposto no 16º dia contado da publicação da sentença. Considerando esses fatos e a norma de regência, assinale a afirmativa correta.",
+    explanation: "",
+    support: "",
+    relatedArticleIds: [],
+    tags: [],
+    alternatives: [
+      { id: "a", text: "Os dois recursos não serão conhecidos.", correct: true },
+      { id: "b", text: "O recurso ordinário não será conhecido, e o recurso adesivo será apreciado." },
+      { id: "c", text: "O recurso adesivo não será conhecido, salvo se o reclamante recorrente tiver feito o preparo na forma da lei." },
+      { id: "d", text: "Equivocado o Relator, pois, havendo recurso adesivo, o prazo é contado em dobro, pelo que o recurso ordinário é tempestivo e será conhecido." }
+    ]
+  }),
+
+  // Q79 - Processo do Trabalho (Daniele, sindicato, custas acordo)
+  defineQuestion({
+    id: "q-oab46-079",
+    subjectId: "trabalhista",
+    themeId: "processo-trabalho",
+    examId: "oab-46",
+    year: 2026,
+    questionNumber: 79,
+    difficulty: "medium",
+    statement: "Daniele, assistida pelo seu sindicato de classe, ajuizou reclamação trabalhista contra o seu ex-empregador. Na audiência, as partes chegaram a um acordo de R$ 200.000,00 (duzentos mil reais), mas o Juiz indeferiu a concessão de gratuidade de justiça à autora, porque a situação financeira dela era, comprovadamente, muito confortável. O Juiz fixou as custas em R$ 4.000,00 (quatro mil reais). Considerando esses fatos e o previsto na CLT, uma vez que nada foi convencionado no acordo, assinale a opção que indica quem pagará as custas.",
+    explanation: "",
+    support: "",
+    relatedArticleIds: [],
+    tags: [],
+    alternatives: [
+      { id: "a", text: "O reclamado, pois as custas sempre serão pagas pelo réu." },
+      { id: "b", text: "O sindicato de classe deverá pagar as custas, integralmente." },
+      { id: "c", text: "Daniele, pois além da sua situação financeira, fez um acordo de vultoso valor." },
+      { id: "d", text: "Se de outra forma não for convencionado, o pagamento das custas caberá em partes iguais aos litigantes.", correct: true }
+    ]
+  }),
+
+  // Q80 - Processo do Trabalho (Jonas executado, Oficial Justiça 5h30)
+  defineQuestion({
+    id: "q-oab46-080",
+    subjectId: "trabalhista",
+    themeId: "processo-trabalho",
+    examId: "oab-46",
+    year: 2026,
+    questionNumber: 80,
+    difficulty: "easy",
+    statement: "Jonas, executado na Justiça do Trabalho, reclamou com você, na condição de advogado(a), porque um Oficial de Justiça chegou à residência dele, em uma quinta-feira, dia útil, às 5h30, com ordem judicial para penhorar o seu imóvel, sendo certo que o mandado de penhora não continha nenhuma previsão de excepcionalidade. A revolta do executado reside no horário de chegada do Oficial de Justiça à sua residência, o que o obrigou a acordar muito cedo, o mesmo valendo para sua esposa. Sobre os fatos apresentados, considerando o previsto na CLT, assinale a afirmativa correta.",
+    explanation: "",
+    support: "",
+    relatedArticleIds: [],
+    tags: [],
+    alternatives: [
+      { id: "a", text: "O procedimento é regular porque a lei não prevê horário para a prática dos atos processuais." },
+      { id: "b", text: "O Oficial de Justiça está equivocado, porque somente poderia realizar o ato processual a partir das 6 horas.", correct: true },
+      { id: "c", text: "O procedimento é irregular, porque a lei prevê que os atos processuais podem ser feitos a partir das 7 horas." },
+      { id: "d", text: "Se os atos podem ser realizados até mesmo no domingo, mesmo sem a autorização do Juiz, com igual razão pode ser feito durante a semana, às 5h30." }
+    ]
+  })
 ];
