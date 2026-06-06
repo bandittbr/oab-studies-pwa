@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react";
 import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import { useKeyboardShortcuts } from "../hooks/use-keyboard-shortcuts";
 import { useStudy } from "../state/study-context";
@@ -28,6 +29,110 @@ const navItems = [
   }
   // Studio: acesso via /studio (requer senha de admin)
 ];
+
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   BUSCA GLOBAL — SIDEBAR
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+function SidebarSearch({ query, setQuery, results, navigate }) {
+  const [open, setOpen] = useState(false);
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    function handler(e) {
+      if (!containerRef.current?.contains(e.target)) setOpen(false);
+    }
+    document.addEventListener("mousedown", handler);
+    return () => document.removeEventListener("mousedown", handler);
+  }, []);
+
+  function handleKeyDown(e) {
+    if (e.key === "Enter" && query.trim()) {
+      navigate(`/questoes?search=${encodeURIComponent(query.trim())}`);
+      setOpen(false);
+    } else if (e.key === "Escape") {
+      setQuery("");
+      setOpen(false);
+    }
+  }
+
+  const topQuestions = results.filter((r) => r.type === "question").slice(0, 4);
+  const topArticles  = results.filter((r) => r.type === "article").slice(0, 2);
+  const allResults   = [...topQuestions, ...topArticles];
+
+  return (
+    <div ref={containerRef} className="relative px-3 pb-3">
+      <div className="relative">
+        <svg className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 h-3.5 w-3.5 text-[var(--muted)]" viewBox="0 0 20 20" fill="currentColor">
+          <path fillRule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clipRule="evenodd"/>
+        </svg>
+        <input
+          value={query}
+          onChange={(e) => { setQuery(e.target.value); setOpen(true); }}
+          onFocus={() => { if (query) setOpen(true); }}
+          onKeyDown={handleKeyDown}
+          placeholder="Buscar questões e leis…"
+          className="w-full rounded-[var(--r-md)] border border-[var(--panel-border)] bg-white/4 pl-9 pr-7 py-2 text-xs text-[var(--text)] placeholder:text-[var(--muted)] outline-none focus:border-[var(--border-focus)]"
+        />
+        {query && (
+          <button
+            type="button"
+            onClick={() => { setQuery(""); setOpen(false); }}
+            className="absolute right-2 top-1/2 -translate-y-1/2 text-[var(--muted)] hover:text-[var(--text)] text-sm leading-none"
+          >
+            ✕
+          </button>
+        )}
+      </div>
+
+      {open && query && allResults.length > 0 && (
+        <div className="absolute top-full left-3 right-3 z-50 mt-1 glass-panel rounded-[var(--r-md)] overflow-hidden shadow-xl border border-[var(--panel-border)]">
+          {allResults.map((result) => (
+            <button
+              key={result.id}
+              type="button"
+              onClick={() => {
+                if (result.type === "question") {
+                  navigate(`/questoes?search=${encodeURIComponent(query)}`);
+                } else {
+                  navigate(`/leis?artigo=${result.id}`);
+                }
+                setQuery("");
+                setOpen(false);
+              }}
+              className="flex w-full items-start gap-2.5 px-3 py-2.5 text-left hover:bg-white/5 border-b border-[var(--panel-border)] last:border-0 transition"
+            >
+              <span className={`mt-0.5 shrink-0 text-[0.6rem] font-bold px-1.5 py-0.5 rounded ${
+                result.type === "question"
+                  ? "bg-sky-500/20 text-sky-300"
+                  : "bg-emerald-500/20 text-emerald-300"
+              }`}>
+                {result.type === "question" ? "Q" : "§"}
+              </span>
+              <div className="min-w-0">
+                <div className="truncate text-xs text-[var(--text)]">
+                  {result.type === "question"
+                    ? (result.item.statement?.slice(0, 72) ?? "")
+                    : (result.item.articleNumber + " — " + (result.item.title ?? ""))}
+                </div>
+                <div className="truncate text-[0.65rem] text-[var(--muted)] mt-0.5">
+                  {result.subtitle}
+                </div>
+              </div>
+            </button>
+          ))}
+          <button
+            type="button"
+            onClick={() => { navigate(`/questoes?search=${encodeURIComponent(query)}`); setQuery(""); setOpen(false); }}
+            className="flex w-full items-center justify-center gap-1.5 px-3 py-2 text-xs text-[var(--muted)] hover:text-[var(--text)] hover:bg-white/5 transition"
+          >
+            Ver todas as questões com "{query}" →
+          </button>
+        </div>
+      )}
+    </div>
+  );
+}
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
    THEME TOGGLE
@@ -128,7 +233,7 @@ function SidebarStat({ label, value, accent = false }) {
    APP SHELL
    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 export function AppShell({ children }) {
-  const { dashboardMetrics, globalSearchQuery, isBooting, setGlobalSearchQuery } = useStudy();
+  const { dashboardMetrics, globalSearchQuery, globalSearchResults, isBooting, setGlobalSearchQuery } = useStudy();
   const navigate  = useNavigate();
   const location  = useLocation();
   const due       = dashboardMetrics?.dueReviewCount ?? 0;
@@ -139,14 +244,11 @@ export function AppShell({ children }) {
     location.pathname.startsWith("/pratica/");
 
   useKeyboardShortcuts({
-    "mod+k": () => navigate("/studio"),
-    "/":     () => navigate("/studio"),
     "mod+1": () => navigate("/"),
     "mod+2": () => navigate("/questoes"),
     "mod+3": () => navigate("/provas"),
     "mod+4": () => navigate("/revisao"),
     "mod+5": () => navigate("/leis"),
-    "mod+6": () => navigate("/studio"),
   });
 
   return (
@@ -169,20 +271,12 @@ export function AppShell({ children }) {
         </Link>
 
         {/* Busca */}
-        <div className="px-3 pb-3">
-          <div className="relative">
-            <svg className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 h-3.5 w-3.5 text-[var(--muted)]" viewBox="0 0 20 20" fill="currentColor">
-              <path fillRule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clipRule="evenodd"/>
-            </svg>
-            <input
-              value={globalSearchQuery}
-              onChange={(e) => setGlobalSearchQuery(e.target.value)}
-              onFocus={() => navigate("/studio")}
-              placeholder="Buscar… ⌘K"
-              className="w-full rounded-[var(--r-md)] border border-[var(--panel-border)] bg-white/4 pl-9 pr-3 py-2 text-xs text-[var(--text)] placeholder:text-[var(--muted)]"
-            />
-          </div>
-        </div>
+        <SidebarSearch
+          query={globalSearchQuery}
+          setQuery={setGlobalSearchQuery}
+          results={globalSearchResults ?? []}
+          navigate={navigate}
+        />
 
         {/* Nav */}
         <nav className="flex-1 px-2 space-y-0.5 pb-2">
@@ -223,13 +317,13 @@ export function AppShell({ children }) {
             {/* Busca rápida → studio */}
             <button
               type="button"
-              onClick={() => navigate("/studio")}
+              onClick={() => navigate("/questoes")}
               className="flex items-center gap-2 rounded-[var(--r-md)] border border-[var(--panel-border)] bg-white/4 px-3 py-2 text-xs text-[var(--muted)] min-h-[40px]"
             >
               <svg viewBox="0 0 20 20" fill="currentColor" className="h-3.5 w-3.5 shrink-0">
                 <path fillRule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clipRule="evenodd"/>
               </svg>
-              Buscar
+              Questões
             </button>
 
             <ThemeButton iconOnly />
