@@ -34,12 +34,23 @@ export function DashboardPage() {
               Plataforma de estudo
             </div>
             <h1 className="display-face mt-3 max-w-xl text-4xl leading-tight text-[var(--text)] sm:text-5xl">
-              Estude para a OAB de qualquer dispositivo, em qualquer lugar.
+              Estude para a OAB
             </h1>
-            <p className="mt-4 max-w-lg text-sm leading-7 text-[var(--muted)]">
-              Provas reais da OAB, banco de questões com filtros, revisão espaçada e
-              dashboard de desempenho — tudo online e sempre atualizado.
-            </p>
+
+            {/* Doação */}
+            <div className="mt-4 soft-panel rounded-[var(--radius-md)] p-4 flex items-center gap-4">
+              <img
+                src="/pix-qr.png"
+                alt="QR Code PIX doação"
+                className="w-20 h-20 shrink-0 rounded-lg bg-white object-contain"
+              />
+              <p className="text-sm leading-6 text-[var(--muted)]">
+                Caso queira incentivar o trabalho do Gabriel e contribuir para novas
+                atualizações, faça uma doação através do{" "}
+                <span className="font-semibold text-[var(--text)]">Pix</span> ao lado. 💙
+              </p>
+            </div>
+
             <div className="mt-5 flex flex-wrap gap-3">
               <Link
                 to="/questoes"
