@@ -113,11 +113,11 @@ export function QuestionCard({
 
         {/* ── Meta tags ── */}
         <div className="flex flex-wrap gap-1.5 text-[0.65rem] uppercase tracking-[0.15em] text-[var(--muted)]">
-          <span>{question.theme.label}</span>
+          <span>{question.theme?.label ?? ""}</span>
           <span className="opacity-30">·</span>
-          <span>{question.exam.shortLabel}</span>
+          <span>{question.exam?.shortLabel ?? ""}</span>
           <span className="opacity-30">·</span>
-          <span>{question.difficultyMeta.label}</span>
+          <span>{question.difficultyMeta?.label ?? ""}</span>
         </div>
 
         {/* ── Enunciado ── */}

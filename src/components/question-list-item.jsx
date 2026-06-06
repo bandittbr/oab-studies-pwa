@@ -11,9 +11,9 @@ export const QuestionListItem = memo(function QuestionListItem({
       {/* Cabeçalho: badges + favorito */}
       <div className="flex items-start justify-between gap-3">
         <div className="flex flex-wrap gap-1.5">
-          <Badge>{question.subject.label}</Badge>
-          <Badge>{question.exam.shortLabel}</Badge>
-          <Badge>{question.difficultyMeta.label}</Badge>
+          <Badge>{question.subject?.label ?? ""}</Badge>
+          <Badge>{question.exam?.shortLabel ?? ""}</Badge>
+          <Badge>{question.difficultyMeta?.label ?? ""}</Badge>
           {question.dueReview && (
             <span className="rounded-full border border-amber-400/30 bg-amber-400/10 px-2 py-0.5 text-[0.6rem] font-semibold uppercase tracking-[0.15em] text-amber-300">
               Revisão pendente

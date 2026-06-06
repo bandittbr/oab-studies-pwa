@@ -231,7 +231,7 @@ export function PracticePage() {
       <div className="xl:hidden glass-panel rounded-[var(--radius-lg)] px-4 py-3 flex items-center gap-3">
         <div className="flex-1 min-w-0">
           <span className="text-sm font-medium text-[var(--text)]">
-            {derivedFilters.subjectId === "all" ? "Mix" : currentQuestion.subject.label}
+            {derivedFilters.subjectId === "all" ? "Mix" : (currentQuestion.subject?.label ?? "")}
           </span>
           <span className="ml-2 text-xs text-[var(--muted)]">
             {currentIndex + 1}/{questions.length}
