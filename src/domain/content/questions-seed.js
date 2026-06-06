@@ -1,6 +1,10 @@
 import { defineQuestion } from "../factories";
+import { questionSeedOab46 } from "./questions-seed-oab46";
 
 export const questionSeed = [
+  // ==================== OAB 46 - QUESTÕES REAIS (68/80) ====================
+  ...questionSeedOab46,
+
 
   // ==================== CONSTITUCIONAL (20) ====================
   defineQuestion({
