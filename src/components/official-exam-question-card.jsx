@@ -46,7 +46,7 @@ export const OfficialExamQuestionCard = memo(function OfficialExamQuestionCard({
             </span>
             <span className="h-3.5 w-px bg-[var(--panel-border)]" />
             <span className="text-[0.7rem] text-[var(--muted)]">
-              {question.subject.label}
+              {question.subject?.label ?? ""}
             </span>
           </div>
 
