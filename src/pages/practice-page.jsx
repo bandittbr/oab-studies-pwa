@@ -168,7 +168,7 @@ export function PracticePage() {
     setConfirmedAlternativeId(selectedAlternativeId);
     // Gera comentário IA automaticamente se ainda não existe
     if (!getQuestionAiPack(currentQuestion.id)) {
-      generateQuestionAiPack(currentQuestion.id);
+      generateQuestionAiPack(currentQuestion.id, selectedAlternativeId);
     }
   }
 

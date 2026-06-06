@@ -310,10 +310,10 @@ export function StudyProvider({ children }) {
     return createStudySession({ mode, questions: qs, sessionSize: size });
   }, [liveRepository, state]);
 
-  const generateQuestionAiPackFn = useCallback((questionId) => {
+  const generateQuestionAiPackFn = useCallback((questionId, selectedAlternativeId) => {
     const question = liveRepository.indexes.questionsById[questionId];
     if (!question) return null;
-    const payload = generateQuestionAiPack(question);
+    const payload = generateQuestionAiPack(question, selectedAlternativeId);
     dispatch({ type: "save-ai-question-pack", questionId, payload });
     return payload;
   }, [liveRepository]);
