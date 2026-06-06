@@ -76,7 +76,7 @@ export function QuestionBankPage() {
             <h1 className="mt-1 text-2xl font-semibold text-[var(--text)]">
               {questions.length.toLocaleString("pt-BR")}{" "}
               <span className="text-[var(--muted)] font-normal text-lg">
-                questão{questions.length !== 1 ? "ões" : ""}
+                {questions.length !== 1 ? "questões" : "questão"}
               </span>
             </h1>
           </div>
