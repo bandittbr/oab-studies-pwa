@@ -38,16 +38,22 @@ export function DashboardPage() {
             </h1>
 
             {/* Doação */}
-            <div className="mt-4 soft-panel rounded-[var(--radius-md)] p-4 flex items-center gap-4">
-              <img
-                src="/pix-qr.png"
-                alt="QR Code PIX doação"
-                className="w-20 h-20 shrink-0 rounded-lg bg-white object-contain"
-              />
+            <div className="mt-4 soft-panel rounded-[var(--radius-md)] p-4 flex items-start gap-4">
+              <div className="shrink-0 flex flex-col items-center gap-1.5">
+                <img
+                  src="/pix-qr.png"
+                  alt="QR Code PIX doação"
+                  className="w-24 h-24 bg-white object-contain"
+                />
+                <span className="text-[0.62rem] text-[var(--muted)] text-center leading-4">
+                  Chave PIX (CPF):<br />
+                  <span className="font-semibold text-[var(--text)] select-all">022.374.951-65</span>
+                </span>
+              </div>
               <p className="text-sm leading-6 text-[var(--muted)]">
                 Caso queira incentivar o trabalho do Gabriel e contribuir para novas
                 atualizações, faça uma doação através do{" "}
-                <span className="font-semibold text-[var(--text)]">Pix</span> ao lado. 💙
+                <span className="font-semibold text-[var(--text)]">Pix</span>. 💙
               </p>
             </div>
 
