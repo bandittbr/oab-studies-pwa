@@ -315,7 +315,6 @@ export function StudyProvider({ children }) {
     if (!question) return null;
     const payload = generateQuestionAiPack(question);
     dispatch({ type: "save-ai-question-pack", questionId, payload });
-    dispatch({ type: "add-question-comment", questionId, comment: { id: `${questionId}-ai-${Date.now()}`, type: "ai", content: payload.explanation, createdAt: nowIso() } });
     return payload;
   }, [liveRepository]);
 

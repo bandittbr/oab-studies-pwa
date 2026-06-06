@@ -7,13 +7,23 @@ export function QuestionCommentaryPanel({
   onNoteChange
 }) {
   return (
-    <section className="glass-panel rounded-[2rem] p-5">
-      <div className="mb-4">
+    <section className="glass-panel rounded-[2rem] p-5 flex flex-col gap-5">
+
+      {/* Explicação IA — acima de tudo */}
+      {aiPack && (
+        <article className="soft-panel rounded-[1.4rem] p-4">
+          <div className="text-xs uppercase tracking-[0.18em] text-[var(--muted)] mb-3">Explicação IA</div>
+          <div className="text-sm leading-7 text-[var(--text)]">{aiPack.explanation}</div>
+        </article>
+      )}
+
+      {/* Comentários e notas pessoais */}
+      <div>
         <div className="text-xs uppercase tracking-[0.28em] text-[var(--muted)]">Comentarios e notas</div>
-        <h3 className="mt-2 text-2xl font-semibold text-[var(--text)]">Camada pessoal e IA</h3>
+        <h3 className="mt-2 text-2xl font-semibold text-[var(--text)]">Camada pessoal</h3>
       </div>
 
-      <label className="mt-5 block">
+      <label className="block">
         <span className="mb-2 block text-xs uppercase tracking-[0.18em] text-[var(--muted)]">Nota pessoal</span>
         <textarea
           value={annotation.personalNote}
@@ -23,16 +33,9 @@ export function QuestionCommentaryPanel({
         />
       </label>
 
-      {aiPack ? (
-        <article className="soft-panel mt-5 rounded-[1.4rem] p-4">
-          <div className="text-xs uppercase tracking-[0.18em] text-[var(--muted)]">Saida IA local</div>
-          <div className="mt-3 text-sm leading-7 text-[var(--text)]">{aiPack.explanation}</div>
-        </article>
-      ) : null}
-
-      <div className="mt-5 grid gap-3">
-        {annotation.comments.length ? (
-          annotation.comments.map((comment) => (
+      <div className="grid gap-3">
+        {annotation.comments.filter((c) => c.type !== "ai").length ? (
+          annotation.comments.filter((c) => c.type !== "ai").map((comment) => (
             <article key={comment.id} className="soft-panel rounded-[1.4rem] p-4">
               <div className="text-xs uppercase tracking-[0.18em] text-[var(--muted)]">{comment.type}</div>
               <div className="mt-2 text-sm leading-7 text-[var(--text)]">{comment.content}</div>
@@ -45,7 +48,7 @@ export function QuestionCommentaryPanel({
         )}
       </div>
 
-      <div className="mt-5 flex flex-wrap gap-3">
+      <div className="flex flex-wrap gap-3">
         <input
           value={draftComment}
           onChange={(event) => onDraftCommentChange(event.target.value)}
