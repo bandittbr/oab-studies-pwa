@@ -70,13 +70,10 @@ export function PracticePage() {
     return subjectId ? { ...base, subjectId } : base;
   }, [searchParams, state.filters, state.lastSessionFilters, subjectId]);
 
-  // ── Sessão estável: só recria quando filtros/modo/tamanho mudam, NÃO quando progresso muda ──
-  const sessionKey = [
-    derivedFilters.subjectId, derivedFilters.themeId, derivedFilters.examId,
-    derivedFilters.year, derivedFilters.difficulty,
-    String(derivedFilters.onlyWrong), String(derivedFilters.onlyFavorites),
-    derivedFilters.search, sessionMode, sessionSize
-  ].join("|");
+  // ── Sessão estável: só recria quando URL muda, NUNCA quando estado interno muda ──
+  // Usar searchParams.toString() + subjectId garante que mudanças de state (recordAnswer, etc.)
+  // não recriem a sessão e não causem tela em branco mid-session.
+  const sessionKey = `${searchParams.toString()}|${subjectId ?? ""}`;
 
   const sessionKeyRef = useRef(null);
   const sessionRef = useRef([]);
@@ -202,7 +199,7 @@ export function PracticePage() {
         <div className="glass-panel rounded-[var(--radius-xl)] p-4">
           <div className="text-xs uppercase tracking-[0.22em] text-[var(--muted)] mb-1">Sessão ativa</div>
           <div className="text-lg font-semibold text-[var(--text)]">
-            {derivedFilters.subjectId === "all" ? "Mix personalizado" : currentQuestion.subject.label}
+            {derivedFilters.subjectId === "all" ? "Mix personalizado" : (currentQuestion.subject?.label ?? "")}
           </div>
           <div className="text-xs text-[var(--muted)] mt-0.5 capitalize">{sessionMode}</div>
           <div className="mt-3 h-1 w-full overflow-hidden rounded-full bg-[var(--bg-soft)]">
@@ -266,20 +263,25 @@ export function PracticePage() {
 
       {/* Main content */}
       <div className="flex flex-col gap-4">
-        <div className="glass-panel rounded-[var(--radius-lg)] px-4 py-2.5 flex items-center justify-between gap-3">
-          <button
-            type="button"
-            onClick={() => navigate(-1)}
-            aria-label="Sair da sessão"
-            className="flex items-center gap-1.5 text-xs text-[var(--muted)] hover:text-[var(--text)] transition shrink-0"
-          >
-            <svg viewBox="0 0 20 20" fill="currentColor" className="h-3.5 w-3.5">
-              <path fillRule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clipRule="evenodd"/>
-            </svg>
-            Sair
-          </button>
-          <span className="text-xs text-[var(--muted)] truncate">{statusText}</span>
-          <span className="text-xs text-[var(--muted)] shrink-0">
+        {/* Barra de navegação rápida — sempre funciona independente do sidebar */}
+        <div className="glass-panel rounded-[var(--radius-lg)] px-3 py-2 flex items-center gap-2 flex-wrap">
+          {[
+            { to: "/", label: "Início" },
+            { to: "/questoes", label: "Questões" },
+            { to: "/provas", label: "Provas" },
+            { to: "/revisao", label: "Revisão" },
+          ].map((item) => (
+            <a
+              key={item.to}
+              href={item.to}
+              onClick={(e) => { e.preventDefault(); navigate(item.to); }}
+              className="text-xs text-[var(--muted)] hover:text-[var(--text)] px-2 py-1 rounded-[var(--radius-sm)] hover:bg-white/5 transition"
+            >
+              {item.label}
+            </a>
+          ))}
+          <span className="ml-auto text-xs text-[var(--muted)] truncate">{statusText}</span>
+          <span className="text-xs text-[var(--muted)] shrink-0 pl-2 border-l border-[var(--panel-border)]">
             {currentIndex + 1} / {questions.length}
           </span>
         </div>
@@ -299,7 +301,7 @@ export function PracticePage() {
           currentIndex={currentIndex}
           total={questions.length}
           statusText={statusText}
-          subjectLabel={currentQuestion.subject.label}
+          subjectLabel={currentQuestion.subject?.label ?? ""}
         />
 
         <QuestionCommentaryPanel

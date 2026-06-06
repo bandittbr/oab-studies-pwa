@@ -21,7 +21,7 @@ export function buildQuestionView(question, state) {
 }
 
 export function filterQuestions(repository, state, filters) {
-  const normalizedSearch = filters.search.trim().toLowerCase();
+  const normalizedSearch = (filters.search ?? "").trim().toLowerCase();
 
   return repository.questions
     .filter((question) => {
