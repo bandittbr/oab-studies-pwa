@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import { useKeyboardShortcuts } from "../hooks/use-keyboard-shortcuts";
 import { useStudy } from "../state/study-context";
+import { useAuth } from "../state/auth-context";
+import { logout } from "../services/auth-service";
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
    CONFIG DE NAVEGAÇÃO
@@ -230,6 +232,44 @@ function SidebarStat({ label, value, accent = false }) {
 }
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   USUÁRIO — SIDEBAR
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+function UserBlock() {
+  const { user } = useAuth();
+  if (!user) return null;
+  const name = user.displayName || user.email?.split("@")[0] || "Usuário";
+  const initial = name.charAt(0).toUpperCase();
+  return (
+    <div className="border-t border-[var(--panel-border)] px-3 py-3 flex items-center gap-2.5">
+      <div style={{
+        width: 32, height: 32, borderRadius: "50%", flexShrink: 0,
+        background: "linear-gradient(135deg, #6366f1, #8b5cf6)",
+        display: "flex", alignItems: "center", justifyContent: "center",
+        fontSize: "0.875rem", fontWeight: 700, color: "#fff"
+      }}>
+        {user.photoURL
+          ? <img src={user.photoURL} alt={name} style={{ width: 32, height: 32, borderRadius: "50%", objectFit: "cover" }} />
+          : initial}
+      </div>
+      <div className="flex-1 min-w-0">
+        <div className="text-xs font-semibold text-[var(--text)] truncate">{name}</div>
+        <div className="text-[0.6rem] text-[var(--muted)] truncate">{user.email}</div>
+      </div>
+      <button
+        type="button"
+        onClick={() => logout()}
+        title="Sair"
+        className="shrink-0 rounded-[var(--r-sm)] p-1.5 text-[var(--muted)] hover:text-[var(--text)] hover:bg-white/5 transition"
+      >
+        <svg viewBox="0 0 20 20" fill="currentColor" className="h-4 w-4">
+          <path fillRule="evenodd" d="M3 3a1 1 0 00-1 1v12a1 1 0 001 1h5a1 1 0 000-2H4V5h4a1 1 0 000-2H3zm10.293 4.293a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 01-1.414-1.414L14.586 12H8a1 1 0 010-2h6.586l-1.293-1.293a1 1 0 010-1.414z" clipRule="evenodd"/>
+        </svg>
+      </button>
+    </div>
+  );
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
    APP SHELL
    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 export function AppShell({ children }) {
@@ -292,6 +332,9 @@ export function AppShell({ children }) {
           <SidebarStat label="Precisão"    value={`${dashboardMetrics?.accuracy ?? 0}%`} />
           {due > 0 && <SidebarStat label="Fila revisão" value={String(due)} accent />}
         </div>
+
+        {/* Usuário + Logout */}
+        <UserBlock />
 
         {/* Tema */}
         <div className="border-t border-[var(--panel-border)] px-3 py-3">

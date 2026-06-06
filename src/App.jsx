@@ -2,6 +2,8 @@ import { Component, lazy, Suspense } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 import { AppShell } from "./components/app-shell";
 import { PageSkeleton } from "./components/skeletons";
+import { useAuth } from "./state/auth-context";
+import { LoginPage } from "./pages/login-page";
 
 class ErrorBoundary extends Component {
   constructor(props) {
@@ -74,7 +76,23 @@ const PlatformPage = lazy(() =>
   import("./pages/platform-page").then((m) => ({ default: m.PlatformPage }))
 );
 
+function LoadingScreen() {
+  return (
+    <div style={{
+      minHeight: "100dvh", display: "flex", alignItems: "center", justifyContent: "center",
+      background: "var(--bg, #0f1117)", color: "var(--muted, #8a8fa8)", fontSize: "0.875rem"
+    }}>
+      Carregando...
+    </div>
+  );
+}
+
 export default function App() {
+  const { user } = useAuth();
+
+  if (user === undefined) return <LoadingScreen />;
+  if (user === null) return <LoginPage />;
+
   return (
     <ErrorBoundary>
       <AppShell>

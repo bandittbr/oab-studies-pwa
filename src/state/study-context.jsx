@@ -1,4 +1,6 @@
 import { createContext, startTransition, useCallback, useContext, useEffect, useMemo, useReducer, useRef, useState } from "react";
+import { useAuth } from "./auth-context";
+import { loadUserProgress, saveUserProgress } from "../services/firestore-sync";
 import { buildAiContext } from "../ai/contracts";
 import { repository as seedRepository } from "../domain/repository";
 import { buildQuestionView, filterQuestions, getDashboardMetrics, getDueReviewQuestions } from "../domain/selectors";
@@ -99,16 +101,47 @@ function useDebouncedEffect(fn, deps, delay = 300) {
 }
 
 export function StudyProvider({ children }) {
+  const { user } = useAuth();
   const [state, dispatch] = useReducer(reducer, undefined, loadStudyState);
   const [contentPacks, setContentPacks] = useState([]);
   const [isBooting, setIsBooting] = useState(true);
   const [globalSearchQuery, setGlobalSearchQuery] = useState("");
   const [importState, setImportState] = useState({ status: "idle", message: "", report: null });
 
-  // Persistencia com debounce — evita writes a cada tecla/clique
+  // Persistencia local com debounce — evita writes a cada tecla/clique
   useDebouncedEffect(() => {
     saveStudyState(state);
   }, [state], 400);
+
+  // ─── Cloud sync: carrega do Firestore quando usuário loga ─────────────────
+  const cloudReadyRef = useRef(false);
+  const prevUserIdRef = useRef(null);
+
+  useEffect(() => {
+    if (!user) {
+      cloudReadyRef.current = false;
+      prevUserIdRef.current = null;
+      return;
+    }
+    // Evita recarregar se for o mesmo usuário
+    if (prevUserIdRef.current === user.uid) return;
+    prevUserIdRef.current = user.uid;
+    cloudReadyRef.current = false;
+
+    loadUserProgress(user.uid).then((cloudData) => {
+      if (cloudData) {
+        dispatch({ type: "replace-progress", state: cloudData });
+        saveStudyState({ ...defaultStudyState, ...cloudData });
+      }
+      cloudReadyRef.current = true;
+    });
+  }, [user]);
+
+  // Sincroniza state → Firestore com debounce (só após carregar dados da nuvem)
+  useDebouncedEffect(() => {
+    if (!user || !cloudReadyRef.current) return;
+    saveUserProgress(user.uid, state);
+  }, [state, user], 1500);
 
   // Aplica tema imediatamente sem debounce
   useEffect(() => {
