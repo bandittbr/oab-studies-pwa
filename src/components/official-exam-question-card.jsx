@@ -77,7 +77,7 @@ export const OfficialExamQuestionCard = memo(function OfficialExamQuestionCard({
 
         {/* ── Tema (discreto, abaixo do enunciado) ── */}
         <div className="text-[0.68rem] uppercase tracking-[0.18em] text-[var(--muted)] -mt-3">
-          {question.theme.label}
+          {question.theme?.label ?? ""}
         </div>
 
         {/* ── Alternativas ── */}
