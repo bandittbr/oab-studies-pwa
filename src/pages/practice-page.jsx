@@ -65,10 +65,17 @@ export function PracticePage() {
   const sessionMode = searchParams.get("mode") ?? state.studySession.mode;
   const sessionSize = Number(searchParams.get("size") ?? state.studySession.size);
 
+  // Captura os filtros de fallback uma única vez no mount — evita loop infinito
+  // com o useEffect que chama setLastSessionFilters(derivedFilters).
+  const fallbackFiltersRef = useRef(null);
+  if (!fallbackFiltersRef.current) {
+    fallbackFiltersRef.current = state.lastSessionFilters ?? state.filters;
+  }
+
   const derivedFilters = useMemo(() => {
-    const base = filtersFromSearchParams(searchParams, state.lastSessionFilters ?? state.filters);
+    const base = filtersFromSearchParams(searchParams, fallbackFiltersRef.current);
     return subjectId ? { ...base, subjectId } : base;
-  }, [searchParams, state.filters, state.lastSessionFilters, subjectId]);
+  }, [searchParams, subjectId]); // NÃO depende de state — evita re-render loop
 
   // ── Sessão estável: só recria quando URL muda, NUNCA quando estado interno muda ──
   // Usar searchParams.toString() + subjectId garante que mudanças de state (recordAnswer, etc.)
@@ -102,7 +109,11 @@ export function PracticePage() {
     : { personalNote: "", comments: [] };
   const questionAiPack = currentQuestion ? getQuestionAiPack(currentQuestion.id) : null;
 
+  const lastSetFiltersKeyRef = useRef("");
   useEffect(() => {
+    const key = JSON.stringify(derivedFilters);
+    if (lastSetFiltersKeyRef.current === key) return;
+    lastSetFiltersKeyRef.current = key;
     setLastSessionFilters(derivedFilters);
     if (derivedFilters.subjectId !== "all") setLastVisitedSubject(derivedFilters.subjectId);
   }, [derivedFilters, setLastSessionFilters, setLastVisitedSubject]);
