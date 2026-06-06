@@ -161,7 +161,7 @@ export function AppShell({ children }) {
             </svg>
           </div>
           <div className="leading-tight">
-            <div className="text-sm font-semibold text-[var(--text)]">LexFlow OAB</div>
+            <div className="text-sm font-semibold text-[var(--text)]">Estudo OAB</div>
             <div className="text-[0.65rem] text-[var(--muted)]">Estudo jurídico offline</div>
           </div>
         </Link>
@@ -215,7 +215,7 @@ export function AppShell({ children }) {
                   <path fillRule="evenodd" d="M10 2a1 1 0 01.894.553l7 14A1 1 0 0117 18H3a1 1 0 01-.894-1.447l7-14A1 1 0 0110 2zM10 7a1 1 0 011 1v3a1 1 0 11-2 0V8a1 1 0 011-1zm0 7a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd"/>
                 </svg>
               </div>
-              <span className="text-sm font-semibold text-[var(--text)]">LexFlow</span>
+              <span className="text-sm font-semibold text-[var(--text)]">Estudo OAB</span>
             </Link>
 
             {/* Busca rápida → studio */}
