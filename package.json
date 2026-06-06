@@ -10,6 +10,7 @@
     "seed:official": "node scripts/generate-official-oab-pack.mjs public/samples/official-oab-seed-manifest.json"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "pdf-parse": "^2.4.5",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
