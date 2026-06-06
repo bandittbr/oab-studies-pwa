@@ -1007,7 +1007,7 @@ export const questionSeedOab45 = [
   }),
   defineQuestion({
     id: "q-oab45-051",
-    subjectId: "processual-civil",
+    subjectId: "processo-civil",
     themeId: "",
     examId: "oab-45",
     year: 2025,
@@ -1027,7 +1027,7 @@ export const questionSeedOab45 = [
   }),
   defineQuestion({
     id: "q-oab45-052",
-    subjectId: "processual-civil",
+    subjectId: "processo-civil",
     themeId: "",
     examId: "oab-45",
     year: 2025,
@@ -1047,7 +1047,7 @@ export const questionSeedOab45 = [
   }),
   defineQuestion({
     id: "q-oab45-053",
-    subjectId: "processual-civil",
+    subjectId: "processo-civil",
     themeId: "",
     examId: "oab-45",
     year: 2025,
@@ -1067,7 +1067,7 @@ export const questionSeedOab45 = [
   }),
   defineQuestion({
     id: "q-oab45-054",
-    subjectId: "processual-civil",
+    subjectId: "processo-civil",
     themeId: "",
     examId: "oab-45",
     year: 2025,
@@ -1087,7 +1087,7 @@ export const questionSeedOab45 = [
   }),
   defineQuestion({
     id: "q-oab45-055",
-    subjectId: "processual-civil",
+    subjectId: "processo-civil",
     themeId: "",
     examId: "oab-45",
     year: 2025,
@@ -1107,7 +1107,7 @@ export const questionSeedOab45 = [
   }),
   defineQuestion({
     id: "q-oab45-056",
-    subjectId: "processual-civil",
+    subjectId: "processo-civil",
     themeId: "",
     examId: "oab-45",
     year: 2025,
@@ -1247,7 +1247,7 @@ export const questionSeedOab45 = [
   }),
   defineQuestion({
     id: "q-oab45-063",
-    subjectId: "processual-penal",
+    subjectId: "processo-penal",
     themeId: "",
     examId: "oab-45",
     year: 2025,
@@ -1267,7 +1267,7 @@ export const questionSeedOab45 = [
   }),
   defineQuestion({
     id: "q-oab45-064",
-    subjectId: "processual-penal",
+    subjectId: "processo-penal",
     themeId: "",
     examId: "oab-45",
     year: 2025,
@@ -1287,7 +1287,7 @@ export const questionSeedOab45 = [
   }),
   defineQuestion({
     id: "q-oab45-065",
-    subjectId: "processual-penal",
+    subjectId: "processo-penal",
     themeId: "",
     examId: "oab-45",
     year: 2025,
@@ -1307,7 +1307,7 @@ export const questionSeedOab45 = [
   }),
   defineQuestion({
     id: "q-oab45-066",
-    subjectId: "processual-penal",
+    subjectId: "processo-penal",
     themeId: "",
     examId: "oab-45",
     year: 2025,
@@ -1327,7 +1327,7 @@ export const questionSeedOab45 = [
   }),
   defineQuestion({
     id: "q-oab45-067",
-    subjectId: "processual-penal",
+    subjectId: "processo-penal",
     themeId: "",
     examId: "oab-45",
     year: 2025,
@@ -1347,7 +1347,7 @@ export const questionSeedOab45 = [
   }),
   defineQuestion({
     id: "q-oab45-068",
-    subjectId: "processual-penal",
+    subjectId: "processo-penal",
     themeId: "",
     examId: "oab-45",
     year: 2025,
@@ -1407,7 +1407,7 @@ export const questionSeedOab45 = [
   }),
   defineQuestion({
     id: "q-oab45-071",
-    subjectId: "trabalho",
+    subjectId: "trabalhista",
     themeId: "",
     examId: "oab-45",
     year: 2025,
@@ -1427,7 +1427,7 @@ export const questionSeedOab45 = [
   }),
   defineQuestion({
     id: "q-oab45-072",
-    subjectId: "trabalho",
+    subjectId: "trabalhista",
     themeId: "",
     examId: "oab-45",
     year: 2025,
@@ -1447,7 +1447,7 @@ export const questionSeedOab45 = [
   }),
   defineQuestion({
     id: "q-oab45-073",
-    subjectId: "trabalho",
+    subjectId: "trabalhista",
     themeId: "",
     examId: "oab-45",
     year: 2025,
@@ -1467,7 +1467,7 @@ export const questionSeedOab45 = [
   }),
   defineQuestion({
     id: "q-oab45-074",
-    subjectId: "trabalho",
+    subjectId: "trabalhista",
     themeId: "",
     examId: "oab-45",
     year: 2025,
@@ -1487,7 +1487,7 @@ export const questionSeedOab45 = [
   }),
   defineQuestion({
     id: "q-oab45-075",
-    subjectId: "trabalho",
+    subjectId: "trabalhista",
     themeId: "",
     examId: "oab-45",
     year: 2025,

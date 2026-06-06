@@ -86,6 +86,78 @@ export const subjects = [
     description: "Inqueriito policial, acao penal, provas, prisoes, recursos e habeas corpus.",
     accent: "from-pink-300/30 via-rose-300/10 to-transparent",
     order: 11
+  }  ,
+  {
+    id: "filosofia",
+    name: "Filosofia",
+    label: "Filosofia do Direito",
+    description: "Teoria geral do direito, hermeneutica juridica e escolas filosoficas.",
+    accent: "from-indigo-300/30 via-violet-300/10 to-transparent",
+    order: 12
+  },
+  {
+    id: "direitos-humanos",
+    name: "Dir. Humanos",
+    label: "Direitos Humanos",
+    description: "Sistemas internacionais de protecao, tratados e mecanismos de tutela.",
+    accent: "from-blue-300/30 via-sky-300/10 to-transparent",
+    order: 13
+  },
+  {
+    id: "eleitoral",
+    name: "Eleitoral",
+    label: "Direito Eleitoral",
+    description: "Sistemas eleitorais, partidos politicos, financiamento e processo eleitoral.",
+    accent: "from-green-300/30 via-emerald-300/10 to-transparent",
+    order: 14
+  },
+  {
+    id: "internacional",
+    name: "Internacional",
+    label: "Direito Internacional",
+    description: "Tratados internacionais, organizacoes internacionais e direito diplomatico.",
+    accent: "from-slate-300/30 via-gray-300/10 to-transparent",
+    order: 15
+  },
+  {
+    id: "financeiro",
+    name: "Financeiro",
+    label: "Direito Financeiro",
+    description: "Orcamento publico, receitas, despesas e responsabilidade fiscal.",
+    accent: "from-lime-300/30 via-yellow-300/10 to-transparent",
+    order: 16
+  },
+  {
+    id: "ambiental",
+    name: "Ambiental",
+    label: "Direito Ambiental",
+    description: "Legislacao ambiental, licenciamento, responsabilidade e protecao do meio ambiente.",
+    accent: "from-emerald-400/30 via-green-300/10 to-transparent",
+    order: 17
+  },
+  {
+    id: "eca",
+    name: "ECA",
+    label: "Estatuto da Crianca e do Adolescente",
+    description: "Direitos da crianca e do adolescente, medidas protetivas e socioeducativas.",
+    accent: "from-orange-400/30 via-amber-300/10 to-transparent",
+    order: 18
+  },
+  {
+    id: "previdenciario",
+    name: "Previdenciario",
+    label: "Direito Previdenciario",
+    description: "Seguridade social, beneficios previdenciarios e regime geral de previdencia.",
+    accent: "from-red-300/30 via-rose-300/10 to-transparent",
+    order: 19
+  },
+  {
+    id: "processual-trabalho",
+    name: "Proc. Trabalho",
+    label: "Processo do Trabalho",
+    description: "Reclamacao trabalhista, recursos, execucao e processo na Justica do Trabalho.",
+    accent: "from-rose-400/30 via-red-300/10 to-transparent",
+    order: 20
   }
 ];
 
