@@ -166,6 +166,10 @@ export function PracticePage() {
     if (!selectedAlternativeId || confirmedAlternativeId) return;
     recordAnswer(currentQuestion.id, selectedAlternativeId);
     setConfirmedAlternativeId(selectedAlternativeId);
+    // Gera comentário IA automaticamente se ainda não existe
+    if (!getQuestionAiPack(currentQuestion.id)) {
+      generateQuestionAiPack(currentQuestion.id);
+    }
   }
 
   function goToIndex(next) {

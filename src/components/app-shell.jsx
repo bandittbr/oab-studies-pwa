@@ -55,29 +55,28 @@ function ThemeButton({ iconOnly = false }) {
    ITEM DE NAVEGAÇÃO — SIDEBAR
    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 function SideNavItem({ item, due }) {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const isActive = item.to === "/"
+    ? location.pathname === "/"
+    : location.pathname.startsWith(item.to);
   const badge = item.badge === "due" && due > 0 ? due : null;
   return (
-    <NavLink
-      to={item.to}
-      end={item.to === "/"}
-      className={({ isActive }) =>
-        `group flex items-center gap-3 rounded-[var(--r-md)] px-3 py-2.5 text-sm font-medium transition ${
-          isActive
-            ? "bg-[var(--text)] text-[var(--bg)]"
-            : "text-[var(--muted)] hover:text-[var(--text)] hover:bg-white/5"
-        }`
-      }
+    <a
+      href={item.to}
+      onClick={(e) => { e.preventDefault(); navigate(item.to); }}
+      className={`group flex items-center gap-3 rounded-[var(--r-md)] px-3 py-2.5 text-sm font-medium transition ${
+        isActive
+          ? "bg-[var(--text)] text-[var(--bg)]"
+          : "text-[var(--muted)] hover:text-[var(--text)] hover:bg-white/5"
+      }`}
     >
-      {({ isActive }) => (
-        <>
-          <span className={isActive ? "text-[var(--bg)]" : "text-[var(--muted)] group-hover:text-[var(--text)] transition-colors"}>
-            {item.icon}
-          </span>
-          <span className="flex-1 leading-none">{item.label}</span>
-          {badge && <span className="nav-badge">{badge > 99 ? "99+" : badge}</span>}
-        </>
-      )}
-    </NavLink>
+      <span className={isActive ? "text-[var(--bg)]" : "text-[var(--muted)] group-hover:text-[var(--text)] transition-colors"}>
+        {item.icon}
+      </span>
+      <span className="flex-1 leading-none">{item.label}</span>
+      {badge && <span className="nav-badge">{badge > 99 ? "99+" : badge}</span>}
+    </a>
   );
 }
 
@@ -86,25 +85,28 @@ function SideNavItem({ item, due }) {
    Zona do polegar: ícone + rótulo
    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 function BottomNavItem({ item, due }) {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const isActive = item.to === "/"
+    ? location.pathname === "/"
+    : location.pathname.startsWith(item.to);
   const badge = item.badge === "due" && due > 0 ? due : null;
   return (
-    <NavLink
-      to={item.to}
-      end={item.to === "/"}
-      className={({ isActive }) =>
-        `relative flex flex-col items-center gap-1 rounded-[var(--r-sm)] py-2 px-1 text-[0.6rem] font-semibold uppercase tracking-[0.08em] transition ${
-          isActive
-            ? "bg-[var(--text)] text-[var(--bg)]"
-            : "text-[var(--muted)]"
-        }`
-      }
+    <a
+      href={item.to}
+      onClick={(e) => { e.preventDefault(); navigate(item.to); }}
+      className={`relative flex flex-col items-center gap-1 rounded-[var(--r-sm)] py-2 px-1 text-[0.6rem] font-semibold uppercase tracking-[0.08em] transition ${
+        isActive
+          ? "bg-[var(--text)] text-[var(--bg)]"
+          : "text-[var(--muted)]"
+      }`}
     >
       {item.icon}
       <span>{item.short}</span>
       {badge && (
         <span className="absolute -top-0.5 right-0.5 nav-badge">{badge > 9 ? "9+" : badge}</span>
       )}
-    </NavLink>
+    </a>
   );
 }
 

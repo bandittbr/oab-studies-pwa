@@ -4,23 +4,13 @@ export function QuestionCommentaryPanel({
   draftComment,
   onDraftCommentChange,
   onAddManualComment,
-  onGenerateAiComment,
   onNoteChange
 }) {
   return (
     <section className="glass-panel rounded-[2rem] p-5">
-      <div className="flex flex-wrap items-center justify-between gap-4">
-        <div>
-          <div className="text-xs uppercase tracking-[0.28em] text-[var(--muted)]">Comentarios e notas</div>
-          <h3 className="mt-2 text-2xl font-semibold text-[var(--text)]">Camada pessoal e IA</h3>
-        </div>
-        <button
-          type="button"
-          onClick={onGenerateAiComment}
-          className="rounded-2xl bg-[var(--text)] px-4 py-3 text-sm font-semibold text-[var(--bg)]"
-        >
-          Gerar comentario IA
-        </button>
+      <div className="mb-4">
+        <div className="text-xs uppercase tracking-[0.28em] text-[var(--muted)]">Comentarios e notas</div>
+        <h3 className="mt-2 text-2xl font-semibold text-[var(--text)]">Camada pessoal e IA</h3>
       </div>
 
       <label className="mt-5 block">
