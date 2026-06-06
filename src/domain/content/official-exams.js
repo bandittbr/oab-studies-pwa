@@ -646,4 +646,117 @@ export const officialExams = [
     fullLabel: "34o Exame de Ordem Unificado - 1a Fase",
     phase: "1a fase",
     year: 2021,
-    durationMinutes: 300
+    durationMinutes: 300,
+    totalQuestions: 80,
+    questionOrder: [
+      { number: 5, questionId: "q-const-012" },
+      { number: 12, questionId: "q-const-019" },
+      { number: 13, questionId: "q-civil-013" },
+      { number: 13, questionId: "q-penal-013" },
+      { number: 13, questionId: "q-cpc-013" },
+      { number: 13, questionId: "q-cpp-013" },
+      { number: 13, questionId: "q-adm-013" },
+      { number: 13, questionId: "q-trib-013" },
+      { number: 13, questionId: "q-trab-013" },
+      { number: 13, questionId: "q-emp-013" },
+      { number: 13, questionId: "q-cdc-013" },
+      { number: 13, questionId: "q-etica-013" }
+    ]
+  },
+  {
+    id: "oab-33-1fase",
+    examId: "oab-33",
+    label: "OAB 33",
+    fullLabel: "33o Exame de Ordem Unificado - 1a Fase",
+    phase: "1a fase",
+    year: 2021,
+    durationMinutes: 300,
+    totalQuestions: 80,
+    questionOrder: [
+      { number: 4, questionId: "q-const-011" },
+      { number: 11, questionId: "q-const-018" },
+      { number: 12, questionId: "q-civil-012" },
+      { number: 12, questionId: "q-penal-012" },
+      { number: 12, questionId: "q-cpc-012" },
+      { number: 12, questionId: "q-cpp-012" },
+      { number: 12, questionId: "q-adm-012" },
+      { number: 12, questionId: "q-trib-012" },
+      { number: 12, questionId: "q-trab-012" },
+      { number: 12, questionId: "q-emp-012" },
+      { number: 12, questionId: "q-cdc-012" },
+      { number: 12, questionId: "q-etica-012" }
+    ]
+  },
+  {
+    id: "oab-32-1fase",
+    examId: "oab-32",
+    label: "OAB 32",
+    fullLabel: "32o Exame de Ordem Unificado - 1a Fase",
+    phase: "1a fase",
+    year: 2020,
+    durationMinutes: 300,
+    totalQuestions: 80,
+    questionOrder: [
+      { number: 3, questionId: "q-const-010" },
+      { number: 10, questionId: "q-const-017" },
+      { number: 11, questionId: "q-civil-011" },
+      { number: 11, questionId: "q-penal-011" },
+      { number: 11, questionId: "q-cpc-011" },
+      { number: 11, questionId: "q-cpp-011" },
+      { number: 11, questionId: "q-adm-011" },
+      { number: 11, questionId: "q-trib-011" },
+      { number: 11, questionId: "q-trab-011" },
+      { number: 11, questionId: "q-emp-011" },
+      { number: 11, questionId: "q-cdc-011" },
+      { number: 11, questionId: "q-etica-011" }
+    ]
+  },
+  {
+    id: "oab-31-1fase",
+    examId: "oab-31",
+    label: "OAB 31",
+    fullLabel: "31o Exame de Ordem Unificado - 1a Fase",
+    phase: "1a fase",
+    year: 2020,
+    durationMinutes: 300,
+    totalQuestions: 80,
+    questionOrder: [
+      { number: 2, questionId: "q-const-009" },
+      { number: 9, questionId: "q-const-016" },
+      { number: 10, questionId: "q-civil-010" },
+      { number: 10, questionId: "q-penal-010" },
+      { number: 10, questionId: "q-cpc-010" },
+      { number: 10, questionId: "q-cpp-010" },
+      { number: 10, questionId: "q-adm-010" },
+      { number: 10, questionId: "q-trib-010" },
+      { number: 10, questionId: "q-trab-010" },
+      { number: 10, questionId: "q-emp-010" },
+      { number: 10, questionId: "q-cdc-010" },
+      { number: 10, questionId: "q-etica-010" }
+    ]
+  },
+  {
+    id: "oab-30-1fase",
+    examId: "oab-30",
+    label: "OAB 30",
+    fullLabel: "30o Exame de Ordem Unificado - 1a Fase",
+    phase: "1a fase",
+    year: 2019,
+    durationMinutes: 300,
+    totalQuestions: 80,
+    questionOrder: [
+      { number: 1, questionId: "q-const-008" },
+      { number: 8, questionId: "q-const-015" },
+      { number: 9, questionId: "q-civil-009" },
+      { number: 9, questionId: "q-penal-009" },
+      { number: 9, questionId: "q-cpc-009" },
+      { number: 9, questionId: "q-cpp-009" },
+      { number: 9, questionId: "q-adm-009" },
+      { number: 9, questionId: "q-trib-009" },
+      { number: 9, questionId: "q-trab-009" },
+      { number: 9, questionId: "q-emp-009" },
+      { number: 9, questionId: "q-cdc-009" },
+      { number: 9, questionId: "q-etica-009" }
+    ]
+  }
+];

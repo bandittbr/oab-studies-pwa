@@ -9126,4 +9126,10 @@ export const questionSeed = [
     relatedArticleIds: [],
     tags: ["vicio oculto", "servico", "30 dias"],
     alternatives: [
-      {
+      { id: "a", text: "7 dias." },
+      { id: "b", text: "30 dias.", correct: true },
+      { id: "c", text: "90 dias." },
+      { id: "d", text: "1 ano." }
+    ]
+  })
+];
