@@ -83,8 +83,7 @@ export function DashboardPage() {
             <div className="mt-4 soft-panel rounded-[var(--radius-md)] p-4 flex items-start gap-4">
               <PixQrButton />
               <p className="text-sm leading-6 text-[var(--muted)]">
-                Caso queira incentivar o trabalho do Gabriel e contribuir para novas
-                atualizações, faça uma doação através do{" "}
+                Incentive o meu trabalho, faça uma doação através do{" "}
                 <span className="font-semibold text-[var(--text)]">Pix</span>. 💙
               </p>
             </div>
