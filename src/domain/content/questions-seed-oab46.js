@@ -1412,6 +1412,29 @@ export const questionSeedOab46 = [
     ]
   }),
 
+
+  // Q68 - Processo Penal (Débora, simulacro, tráfico internacional)
+  defineQuestion({
+    id: "q-oab46-068",
+    subjectId: "processo-penal",
+    themeId: "prisoes",
+    examId: "oab-46",
+    year: 2026,
+    questionNumber: 68,
+    difficulty: "hard",
+    statement: "Débora, primária e sem antecedentes, foi presa em flagrante no Aeroporto Internacional de Guarulhos, quando desembarcava no Brasil, em voo vindo do exterior, com um artefato que simulava uma arma de fogo de uso proibido na bagagem, ou seja, um simulacro que pode facilmente ser confundido com uma arma de fogo real. O simulacro é produto de importação proibida no Brasil. Débora foi enquadrada no delito de tráfico internacional de armas, previsto no Art. 18 do Estatuto do Desarmamento, cuja pena cominada é de 8 a 16 anos de reclusão, com a causa de aumento de metade (Art. 19 do Estatuto). A Polícia Federal lavrou o auto de prisão em flagrante e Débora foi submetida à audiência de custódia perante o Juiz Federal de Guarulhos. Como advogado(a) de Débora, assinale a afirmativa que contém as teses defensivas corretas.",
+    explanation: "",
+    support: "",
+    relatedArticleIds: [],
+    tags: [],
+    alternatives: [
+      { id: "a", text: "A atipicidade do fato, ante o crime impossível e, ainda que assim não fosse, há incompetência absoluta da Justiça Federal." },
+      { id: "b", text: "A desclassificação para contrabando (pena de 2 a 5 anos) e o cabimento de liberdade provisória, com ou sem medidas cautelares diversas da prisão.", correct: true },
+      { id: "c", text: "Como Débora é mulher e não tem antecedentes criminais, e o fato não foi cometido mediante violência ou grave ameaça, é cabível a substituição da prisão preventiva por domiciliar." },
+      { id: "d", text: "O fato foi meramente tentado, de forma que a pena mínima cominada com a redução máxima pela tentativa é igual a 4 anos, tornando cabível o acordo de não persecução penal." }
+    ]
+  }),
+
   defineQuestion({
     id: "q-oab46-069",
     subjectId: "trabalhista",

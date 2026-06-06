@@ -76,6 +76,7 @@ export const officialExams = [
       { number: 65, questionId: "q-oab46-065" },
       { number: 66, questionId: "q-oab46-066" },
       { number: 67, questionId: "q-oab46-067" },
+      { number: 68, questionId: "q-oab46-068" },
       { number: 69, questionId: "q-oab46-069" }
     ]
   },
