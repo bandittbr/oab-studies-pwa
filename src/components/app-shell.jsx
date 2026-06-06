@@ -151,7 +151,7 @@ export function AppShell({ children }) {
     <div className="app-shell flex min-h-dvh">
 
       {/* ━━ SIDEBAR DESKTOP ━━ */}
-      <aside className="glass-panel hidden lg:flex w-60 xl:w-64 shrink-0 flex-col sticky top-0 h-dvh rounded-none border-y-0 border-l-0 overflow-y-auto">
+      <aside className="glass-panel hidden lg:flex w-60 xl:w-64 shrink-0 flex-col sticky top-0 h-dvh rounded-none border-y-0 border-l-0 overflow-y-auto z-10">
 
         {/* Marca */}
         <Link to="/" className="flex items-center gap-3 px-4 pt-5 pb-3">
