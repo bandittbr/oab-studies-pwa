@@ -299,26 +299,3 @@ export function PracticePage() {
     </div>
   );
 }
-urrentIndex={currentIndex}
-          total={questions.length}
-          statusText={statusText}
-          subjectLabel={currentQuestion.subject.label}
-        />
-
-        <QuestionCommentaryPanel
-          annotation={questionAnnotation}
-          aiPack={questionAiPack}
-          draftComment={draftComment}
-          onDraftCommentChange={setDraftComment}
-          onAddManualComment={() => {
-            if (!draftComment.trim()) return;
-            addQuestionComment(currentQuestion.id, draftComment.trim(), "manual");
-            setDraftComment("");
-          }}
-          onGenerateAiComment={() => generateQuestionAiPack(currentQuestion.id)}
-          onNoteChange={(note) => saveQuestionNote(currentQuestion.id, note)}
-        />
-      </div>
-    </div>
-  );
-}

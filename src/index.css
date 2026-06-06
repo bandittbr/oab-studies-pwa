@@ -308,13 +308,3 @@ input:focus, textarea:focus, select:focus {
 
 /* Zona segura — notch iPhones */
 .safe-pb { padding-bottom: env(safe-area-inset-bottom, 0px); }
-ter: center;
-  min-width: 1.1rem; height: 1.1rem;
-  padding: 0 0.2rem;
-  border-radius: 99px;
-  font-size: 0.6rem; font-weight: 700; line-height: 1;
-  background: var(--accent); color: #fff;
-}
-
-/* Zona segura — notch iPhones */
-.safe-pb { padding-bottom: env(safe-area-inset-bottom, 0px); }
