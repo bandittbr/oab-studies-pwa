@@ -1,5 +1,5 @@
 import { useDeferredValue, useEffect, useMemo, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import { FilterBar } from "../components/filter-bar";
 import { QuestionListItem } from "../components/question-list-item";
 import { filtersToSearchParams } from "../lib/session-filters";
@@ -20,7 +20,17 @@ export function QuestionBankPage() {
     toggleFavorite
   } = useStudy();
 
+  const [searchParams] = useSearchParams();
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
+
+  // Sync search param from URL (e.g. quando vem do sidebar search)
+  useEffect(() => {
+    const urlSearch = searchParams.get("search");
+    if (urlSearch && urlSearch !== state.filters.search) {
+      setFilter("search", urlSearch);
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const deferredSearch = useDeferredValue(state.filters.search);
   const deferredFilters = useMemo(
