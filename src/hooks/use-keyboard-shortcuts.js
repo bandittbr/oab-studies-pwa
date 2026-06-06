@@ -1,6 +1,12 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 export function useKeyboardShortcuts(bindings) {
+  // Guardar bindings em ref para evitar re-adicionar o listener a cada render
+  const bindingsRef = useRef(bindings);
+  useEffect(() => {
+    bindingsRef.current = bindings;
+  });
+
   useEffect(() => {
     function handleKeydown(event) {
       const target = event.target;
@@ -8,12 +14,10 @@ export function useKeyboardShortcuts(bindings) {
         target instanceof HTMLElement &&
         (target.tagName === "INPUT" || target.tagName === "TEXTAREA" || target.isContentEditable);
 
-      if (isTypingTarget) {
-        return;
-      }
+      if (isTypingTarget) return;
 
       const key = `${event.ctrlKey || event.metaKey ? "mod+" : ""}${event.key.toLowerCase()}`;
-      const handler = bindings[key];
+      const handler = bindingsRef.current[key];
 
       if (handler) {
         event.preventDefault();
@@ -23,5 +27,5 @@ export function useKeyboardShortcuts(bindings) {
 
     window.addEventListener("keydown", handleKeydown);
     return () => window.removeEventListener("keydown", handleKeydown);
-  }, [bindings]);
+  }, []); // Listener adicionado apenas uma vez
 }

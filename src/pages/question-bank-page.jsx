@@ -1,4 +1,4 @@
-import { useDeferredValue, useMemo, useState } from "react";
+import { useDeferredValue, useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { FilterBar } from "../components/filter-bar";
 import { QuestionListItem } from "../components/question-list-item";
@@ -41,7 +41,7 @@ export function QuestionBankPage() {
   }).length;
 
   // Reset pagination when filters change
-  useMemo(() => {
+  useEffect(() => {
     setVisibleCount(PAGE_SIZE);
   }, [deferredFilters]);
 

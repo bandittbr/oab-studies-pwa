@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Link, useParams, useSearchParams } from "react-router-dom";
 import { QuestionCard } from "../components/question-card";
 import { QuestionCommentaryPanel } from "../components/question-commentary-panel";
@@ -69,14 +69,28 @@ export function PracticePage() {
     return subjectId ? { ...base, subjectId } : base;
   }, [searchParams, state.filters, state.lastSessionFilters, subjectId]);
 
-  const questions = useMemo(() => {
+  // ── Sessão estável: só recria quando filtros/modo/tamanho mudam, NÃO quando progresso muda ──
+  const sessionKey = [
+    derivedFilters.subjectId, derivedFilters.themeId, derivedFilters.examId,
+    derivedFilters.year, derivedFilters.difficulty,
+    String(derivedFilters.onlyWrong), String(derivedFilters.onlyFavorites),
+    derivedFilters.search, sessionMode, sessionSize
+  ].join("|");
+
+  const sessionKeyRef = useRef(null);
+  const sessionRef = useRef([]);
+
+  if (sessionKeyRef.current !== sessionKey) {
+    sessionKeyRef.current = sessionKey;
     const filtered = getQuestionsByFilters(derivedFilters);
-    return createSession({
+    sessionRef.current = createSession({
       mode: sessionMode,
       filters: derivedFilters,
       size: sessionSize || filtered.length
     });
-  }, [createSession, derivedFilters, getQuestionsByFilters, sessionMode, sessionSize]);
+  }
+
+  const questions = sessionRef.current;
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedAlternativeId, setSelectedAlternativeId] = useState("");
@@ -101,12 +115,16 @@ export function PracticePage() {
     if (idx >= 0) setCurrentIndex(idx);
   }, [questions, searchParams]);
 
+  // Restaura resposta anterior ao MUDAR de questão (compara por ID, não por referência de objeto)
+  const prevQuestionIdRef = useRef(null);
   useEffect(() => {
     if (!currentQuestion) return;
+    if (prevQuestionIdRef.current === currentQuestion.id) return;
+    prevQuestionIdRef.current = currentQuestion.id;
     const result = getQuestionResult(currentQuestion.id);
     setSelectedAlternativeId(result?.selectedAlternativeId ?? "");
     setConfirmedAlternativeId(result?.selectedAlternativeId ?? "");
-  }, [currentQuestion, getQuestionResult]);
+  }, [currentQuestion?.id, getQuestionResult]);
 
   if (!currentQuestion) {
     return (
@@ -259,6 +277,29 @@ export function PracticePage() {
           onToggleFavorite={toggleFavorite}
           onSetPersonalDifficulty={setPersonalDifficulty}
           currentIndex={currentIndex}
+          total={questions.length}
+          statusText={statusText}
+          subjectLabel={currentQuestion.subject.label}
+        />
+
+        <QuestionCommentaryPanel
+          annotation={questionAnnotation}
+          aiPack={questionAiPack}
+          draftComment={draftComment}
+          onDraftCommentChange={setDraftComment}
+          onAddManualComment={() => {
+            if (!draftComment.trim()) return;
+            addQuestionComment(currentQuestion.id, draftComment.trim(), "manual");
+            setDraftComment("");
+          }}
+          onGenerateAiComment={() => generateQuestionAiPack(currentQuestion.id)}
+          onNoteChange={(note) => saveQuestionNote(currentQuestion.id, note)}
+        />
+      </div>
+    </div>
+  );
+}
+urrentIndex={currentIndex}
           total={questions.length}
           statusText={statusText}
           subjectLabel={currentQuestion.subject.label}
