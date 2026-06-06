@@ -1,0 +1,3222 @@
+{
+  "packId": "oab-43-1a-fase-official-pack",
+  "packName": "43o Exame de Ordem Unificado - 1a Fase",
+  "version": "1.0.0",
+  "metadata": {
+    "source": "OAB - Conselho Federal / FGV",
+    "phase": "1a fase",
+    "totalQuestions": 80
+  },
+  "officialExams": [
+    {
+      "id": "oab-43-1fase",
+      "exam": "OAB 43",
+      "label": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "durationMinutes": 300,
+      "questions": [
+        {
+          "questionId": "q-oab43-001",
+          "number": 1
+        },
+        {
+          "questionId": "q-oab43-002",
+          "number": 2
+        },
+        {
+          "questionId": "q-oab43-003",
+          "number": 3
+        },
+        {
+          "questionId": "q-oab43-004",
+          "number": 4
+        },
+        {
+          "questionId": "q-oab43-005",
+          "number": 5
+        },
+        {
+          "questionId": "q-oab43-006",
+          "number": 6
+        },
+        {
+          "questionId": "q-oab43-007",
+          "number": 7
+        },
+        {
+          "questionId": "q-oab43-008",
+          "number": 8
+        },
+        {
+          "questionId": "q-oab43-009",
+          "number": 9
+        },
+        {
+          "questionId": "q-oab43-010",
+          "number": 10
+        },
+        {
+          "questionId": "q-oab43-011",
+          "number": 11
+        },
+        {
+          "questionId": "q-oab43-012",
+          "number": 12
+        },
+        {
+          "questionId": "q-oab43-013",
+          "number": 13
+        },
+        {
+          "questionId": "q-oab43-014",
+          "number": 14
+        },
+        {
+          "questionId": "q-oab43-015",
+          "number": 15
+        },
+        {
+          "questionId": "q-oab43-016",
+          "number": 16
+        },
+        {
+          "questionId": "q-oab43-017",
+          "number": 17
+        },
+        {
+          "questionId": "q-oab43-018",
+          "number": 18
+        },
+        {
+          "questionId": "q-oab43-019",
+          "number": 19
+        },
+        {
+          "questionId": "q-oab43-020",
+          "number": 20
+        },
+        {
+          "questionId": "q-oab43-021",
+          "number": 21
+        },
+        {
+          "questionId": "q-oab43-022",
+          "number": 22
+        },
+        {
+          "questionId": "q-oab43-023",
+          "number": 23
+        },
+        {
+          "questionId": "q-oab43-024",
+          "number": 24
+        },
+        {
+          "questionId": "q-oab43-025",
+          "number": 25
+        },
+        {
+          "questionId": "q-oab43-026",
+          "number": 26
+        },
+        {
+          "questionId": "q-oab43-027",
+          "number": 27
+        },
+        {
+          "questionId": "q-oab43-028",
+          "number": 28
+        },
+        {
+          "questionId": "q-oab43-029",
+          "number": 29
+        },
+        {
+          "questionId": "q-oab43-030",
+          "number": 30
+        },
+        {
+          "questionId": "q-oab43-031",
+          "number": 31
+        },
+        {
+          "questionId": "q-oab43-032",
+          "number": 32
+        },
+        {
+          "questionId": "q-oab43-033",
+          "number": 33
+        },
+        {
+          "questionId": "q-oab43-034",
+          "number": 34
+        },
+        {
+          "questionId": "q-oab43-035",
+          "number": 35
+        },
+        {
+          "questionId": "q-oab43-036",
+          "number": 36
+        },
+        {
+          "questionId": "q-oab43-037",
+          "number": 37
+        },
+        {
+          "questionId": "q-oab43-038",
+          "number": 38
+        },
+        {
+          "questionId": "q-oab43-039",
+          "number": 39
+        },
+        {
+          "questionId": "q-oab43-040",
+          "number": 40
+        },
+        {
+          "questionId": "q-oab43-041",
+          "number": 41
+        },
+        {
+          "questionId": "q-oab43-042",
+          "number": 42
+        },
+        {
+          "questionId": "q-oab43-043",
+          "number": 43
+        },
+        {
+          "questionId": "q-oab43-044",
+          "number": 44
+        },
+        {
+          "questionId": "q-oab43-045",
+          "number": 45
+        },
+        {
+          "questionId": "q-oab43-046",
+          "number": 46
+        },
+        {
+          "questionId": "q-oab43-047",
+          "number": 47
+        },
+        {
+          "questionId": "q-oab43-048",
+          "number": 48
+        },
+        {
+          "questionId": "q-oab43-049",
+          "number": 49
+        },
+        {
+          "questionId": "q-oab43-050",
+          "number": 50
+        },
+        {
+          "questionId": "q-oab43-051",
+          "number": 51
+        },
+        {
+          "questionId": "q-oab43-052",
+          "number": 52
+        },
+        {
+          "questionId": "q-oab43-053",
+          "number": 53
+        },
+        {
+          "questionId": "q-oab43-054",
+          "number": 54
+        },
+        {
+          "questionId": "q-oab43-055",
+          "number": 55
+        },
+        {
+          "questionId": "q-oab43-056",
+          "number": 56
+        },
+        {
+          "questionId": "q-oab43-057",
+          "number": 57
+        },
+        {
+          "questionId": "q-oab43-058",
+          "number": 58
+        },
+        {
+          "questionId": "q-oab43-059",
+          "number": 59
+        },
+        {
+          "questionId": "q-oab43-060",
+          "number": 60
+        },
+        {
+          "questionId": "q-oab43-061",
+          "number": 61
+        },
+        {
+          "questionId": "q-oab43-062",
+          "number": 62
+        },
+        {
+          "questionId": "q-oab43-063",
+          "number": 63
+        },
+        {
+          "questionId": "q-oab43-064",
+          "number": 64
+        },
+        {
+          "questionId": "q-oab43-065",
+          "number": 65
+        },
+        {
+          "questionId": "q-oab43-066",
+          "number": 66
+        },
+        {
+          "questionId": "q-oab43-067",
+          "number": 67
+        },
+        {
+          "questionId": "q-oab43-068",
+          "number": 68
+        },
+        {
+          "questionId": "q-oab43-069",
+          "number": 69
+        },
+        {
+          "questionId": "q-oab43-070",
+          "number": 70
+        },
+        {
+          "questionId": "q-oab43-071",
+          "number": 71
+        },
+        {
+          "questionId": "q-oab43-072",
+          "number": 72
+        },
+        {
+          "questionId": "q-oab43-073",
+          "number": 73
+        },
+        {
+          "questionId": "q-oab43-074",
+          "number": 74
+        },
+        {
+          "questionId": "q-oab43-075",
+          "number": 75
+        },
+        {
+          "questionId": "q-oab43-076",
+          "number": 76
+        },
+        {
+          "questionId": "q-oab43-077",
+          "number": 77
+        },
+        {
+          "questionId": "q-oab43-078",
+          "number": 78
+        },
+        {
+          "questionId": "q-oab43-079",
+          "number": 79
+        },
+        {
+          "questionId": "q-oab43-080",
+          "number": 80
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q-oab43-001",
+      "statement": "O advogado Antonio comenta em materias veiculadas em pagina da internet, consistente em sitio eletronico especializado em publicar artigos academicos e juridicos, novas leis que sao sancionadas e faz explicacoes de facil compreensao de conceitos e normas juridicas. De acordo com o disposto no Codigo de Etica e Disciplina da OAB, assinale a afirmativa correta.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Etica e Estatuto da OAB",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 1,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "E autorizado que Antonio responda as consultas juridicas com habitualidade na pagina mencionada para promocao pessoal."
+        },
+        {
+          "id": "b",
+          "text": "E vedado que Antonio mencione seu e-mail e telefone na mencionada pagina, assim como o nome do escritorio onde trabalha."
+        },
+        {
+          "id": "c",
+          "text": "Antonio nao podera fornecer, nas materias que publica, seus meios de contato, tais como endereco e telefone, mas e permitida a referencia a e-mail."
+        },
+        {
+          "id": "d",
+          "text": "Nao e vedado que Antonio, ao comentar a atuacao de colegas advogados em tais feitos, cite casos emblematicos para a explicacao de tais normas e conceitos."
+        }
+      ],
+      "correctAlternativeId": "anulada"
+    },
+    {
+      "id": "q-oab43-002",
+      "statement": "Paulo Afranio foi representado ao Tribunal de Etica e Disciplina do Conselho Seccional do Estado Alfa pela pratica da infracao disciplinar de violar, sem justa causa, sigilo profissional. Com o recebimento da representacao, o Presidente designou relator, a quem competiu instruir o processo e oferecer parecer preliminar submetido ao Tribunal de Etica e Disciplina. Por se tratar de infracao leve, o relator dispensou as etapas de defesa previa e razoes finais, garantindo ao representado apenas a defesa oral. Ao final, o relator ofereceu parecer preliminar no sentido da aplicacao da pena de censura, submetido ao Tribunal de Etica e Disciplina que, acolhendo a proposta, aplicou a referida sancao ao advogado Paulo Afranio. Sobre o processo disciplinar no ambito da OAB, assinale a afirmativa correta.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Etica e Estatuto da OAB",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 2,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "O procedimento adotado pelo relator foi correto, porque a legislacao preve que a defesa oral, por ser mais ampla e contundente, substitui a etapa de defesa previa e a apresentacao de razoes finais."
+        },
+        {
+          "id": "b",
+          "text": "Nos casos de parecer preliminar do relator recomendando a aplicacao de pena de censura, o Presidente do Conselho Seccional pode, desde logo, diante da baixa gravidade da pena aplicada, homologar o parecer, aplicando essa sancao."
+        },
+        {
+          "id": "c",
+          "text": "A conducao do processo disciplinar pelo relator foi ilegal, porque a gravidade da infracao ou da sancao aplicada nao autorizam que sejam reduzidas as oportunidades de defesa do representado ou que se atropelem etapas do processo disciplinar.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Nao houve violacao da ampla defesa do advogado, porque o reconhecimento de nulidades processuais esta sujeito a constatacao de efetivo prejuizo e, como no caso foi aplicada apenas pena de censura, nao ocorreu dano suficiente a ponto de que se reconhecesse a ilegalidade do procedimento."
+        }
+      ],
+      "correctAlternativeId": "c"
+    },
+    {
+      "id": "q-oab43-003",
+      "statement": "Joao Pedro, destacado aluno do ultimo semestre do curso de Direito, logrou exito no Exame da Ordem dos Advogados do Brasil, sendo entao convidado a integrar, assim que formado, uma renomada sociedade de advogados da sua cidade. Apesar de ter ficado honrado com o convite, Joao Pedro esta em duvida, pois em seus estudos para o Exame da OAB verificou ser possivel constituir sociedade unipessoal de advocacia, opcao que lhe pareceu mais atrativa. Considerando o enunciado, assinale a afirmativa correta.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Etica e Estatuto da OAB",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 3,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "A sociedade unipessoal de advocacia de Joao Pedro podera ter como sede, filial ou local de trabalho, um espaco de uso individual ou compartilhado com outros escritorios de advocacia ou empresas, desde que respeitadas as hipoteses de sigilo previstas na legislacao.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Joao Pedro podera integrar a sociedade de advogados e, simultaneamente, constituir uma sociedade unipessoal de advocacia, ambas com sede ou filial na mesma area territorial do respectivo Conselho Seccional."
+        },
+        {
+          "id": "c",
+          "text": "Joao Pedro podera escolher livremente a denominacao da sociedade unipessoal de advocacia que vier a constituir, desde que complemente com a expressao \"Sociedade Individual de Advocacia\"."
+        },
+        {
+          "id": "d",
+          "text": "A sociedade unipessoal de advocacia de Joao Pedro adquirira personalidade juridica com o registro aprovado dos seus atos constitutivos no Conselho Federal da OAB."
+        }
+      ],
+      "correctAlternativeId": "a"
+    },
+    {
+      "id": "q-oab43-004",
+      "statement": "Roberto, advogado criminalista, foi contratado para promover a defesa de Juvenal, gestor publico acusado da pratica de corrupcao passiva, peculato e \"lavagem\" ou ocultacao de valores. No decorrer do processo criminal, foi decretado, pelo Juizo, o bloqueio universal do patrimonio de Juvenal, visando ao ressarcimento do suposto dano causado ao erario, o que inviabilizou o adimplemento dos honorarios contratuais devidos a Roberto e o reembolso de gastos com a defesa. Sobre essa hipotese, assinale a afirmativa correta.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Etica e Estatuto da OAB",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 4,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "Roberto tera direito a liberacao de ate 20% dos bens bloqueados para fins de recebimento de honorarios e o reembolso de gastos com a defesa.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Roberto devera solicitar, nos proprios autos da acao penal, a liberacao de ate 20% dos bens bloqueados, exclusivamente para o reembolso de gastos com a defesa."
+        },
+        {
+          "id": "c",
+          "text": "Em virtude da supremacia do interesse publico, Roberto nao fara jus a liberacao de qualquer valor tornado indisponivel, ate que sobrevenha eventual decisao promovendo o desbloqueio do patrimonio de Juvenal."
+        },
+        {
+          "id": "d",
+          "text": "Em virtude do carater alimentar dos honorarios advocaticios, caso apresente o respectivo contrato nos autos, Roberto fara jus a liberacao dos bens bloqueados ate a completa satisfacao da verba contratada, ainda que isso implique o esvaziamento do bloqueio judicial."
+        }
+      ],
+      "correctAlternativeId": "a"
+    },
+    {
+      "id": "q-oab43-005",
+      "statement": "Pedro, advogado regularmente inscrito na OAB, foi eleito Deputado Federal e deseja continuar exercendo a advocacia, patrocinando causas contra a Caixa Economica Federal. Ele tambem cogita a possibilidade de concorrer ao cargo de Presidente da Camara dos Deputados. Com base nas disposicoes do Estatuto da OAB, assinale a afirmativa correta sobre a possibilidade de Pedro continuar advogando.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Etica e Estatuto da OAB",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 5,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "Caso Pedro seja eleito Presidente da Camara dos Deputados, ele ficara impedido de atuar em causas contra a Caixa Economica Federal, mas podera advogar em causas particulares."
+        },
+        {
+          "id": "b",
+          "text": "Pedro, na condicao de Deputado Federal, podera advogar contra a Caixa Economica Federal, desde que seja em causa propria, tendo em vista que o impedimento se aplica apenas a causas de terceiros."
+        },
+        {
+          "id": "c",
+          "text": "Como Deputado Federal, Pedro esta impedido de exercer a advocacia contra a Caixa Economica Federal, mas pode atuar em causas que nao envolvam entes publicos ou concessionarias de servico publico.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Pedro, como Deputado Federal, estara em situacao de incompatibilidade total com o exercicio da advocacia e nao podera atuar como advogado em nenhuma causa, mesmo em processos particulares."
+        }
+      ],
+      "correctAlternativeId": "c"
+    },
+    {
+      "id": "q-oab43-006",
+      "statement": "Afonso, condenado por trafico de drogas, cumpre pena dividindo cela com Rodrigo, preso preventivamente ha mais de dois anos, sem que a instrucao do processo por roubo a que responde tenha sido concluida. Indignado com a situacao de Rodrigo, Afonso, que nao tem formacao juridica, mas sempre foi habilidoso com a escrita, decide redigir um pedido de habeas corpus em folha de caderno, a mao, em favor de seu companheiro de cela. Considerando o disposto no Estatuto da Ordem dos Advogados do Brasil (EOAB), assinale a afirmativa correta.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Etica e Estatuto da OAB",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 6,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "A impetracao de habeas corpus e atividade privativa de advogado regularmente inscrito na OAB, nao podendo ser realizada por um leigo, ainda que em defesa de direitos fundamentais."
+        },
+        {
+          "id": "b",
+          "text": "Afonso podera redigir e impetrar o habeas corpus em favor de Rodrigo, pois a impetracao desse remedio constitucional nao esta incluida entre as atividades privativas da advocacia.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Afonso somente poderia impetrar o habeas corpus se comprovasse que nao havia advogado disponivel para atuar no caso de Rodrigo."
+        },
+        {
+          "id": "d",
+          "text": "A impetracao de habeas corpus e vedada para leigos quando se trata de crimes graves, como roubo, exigindo obrigatoriamente a atuacao de advogado."
+        }
+      ],
+      "correctAlternativeId": "b"
+    },
+    {
+      "id": "q-oab43-007",
+      "statement": "Aurelio, advogado regularmente inscrito na OAB, recebeu uma ligacao urgente da familia de Adalberto, seu amigo de infancia, informando que este havia sido preso em flagrante, acusado da pratica de homicidio. Preocupado com a situacao, Aurelio dirigiu-se a Delegacia de Policia para conversar com Adalberto e prestar-lhe assistencia juridica. No entanto, o Delegado Moises negou o pedido de Aurelio para se comunicar pessoal e reservadamente com Adalberto, justificando a negativa pela gravidade do crime e pela ausencia de procuracao formal outorgada ao advogado. Sobre a hipotese narrada, com base no Estatuto da OAB, assinale a afirmativa correta.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Etica e Estatuto da OAB",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 7,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "A negativa do Delegado foi legitima, uma vez que, em razao da gravidade do crime de homicidio, e admissivel limitar a comunicacao do advogado com o preso."
+        },
+        {
+          "id": "b",
+          "text": "A comunicacao de Aurelio com Adalberto so poderia ocorrer mediante a apresentacao de procuracao assinada, conforme exigido para a assistencia juridica em casos graves."
+        },
+        {
+          "id": "c",
+          "text": "A atuacao de Aurelio e ilegal, pois a advocacia em favor de amigos proximos caracteriza conflito etico-profissional que inviabiliza a assistencia juridica."
+        },
+        {
+          "id": "d",
+          "text": "A negativa do Delegado foi ilegal, pois Aurelio tem direito de comunicar-se pessoal e reservadamente com Adalberto, mesmo sem procuracao, conforme previsto no Estatuto da OAB.",
+          "correct": true
+        }
+      ],
+      "correctAlternativeId": "d"
+    },
+    {
+      "id": "q-oab43-008",
+      "statement": "Antonio, advogado experiente e com extensa carteira de clientes, decidiu fazer uso de instrumentos de inteligencia artificial generativa para auxilia-lo na elaboracao de pecas processuais. Apesar da revisao posterior, com assessoramento de seu estagiario, dos textos produzidos pela nova tecnologia, determinado Magistrado notifica-o para prestar esclarecimentos acerca de recurso interposto de forma manifestamente incabivel. Ao ler a peca, Antonio identifica que foram citadas doutrina e jurisprudencia de forma deturpada, em situacao que poderia confundir o adversario ou iludir o Juiz da causa. Sobre esse contexto, de acordo com o Estatuto da Ordem dos Advogados do Brasil, assinale a afirmativa correta.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Etica e Estatuto da OAB",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 8,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "Por nao ter agido de forma dolosa, Antonio nao podera sofrer qualquer sancao disciplinar, uma vez que o advogado nao e responsavel pelos atos praticados com culpa."
+        },
+        {
+          "id": "b",
+          "text": "Em razao da gravidade da situacao, apos o devido processo disciplinar, Antonio podera ser apenado com a suspensao do exercicio da advocacia por periodo que podera variar de 30 dias a 12 meses."
+        },
+        {
+          "id": "c",
+          "text": "A Antonio podera ser aplicada a pena de censura, a qual pode ser convertida em advertencia, em oficio reservado, sem registro nos seus assentamentos, quando estiver presente circunstancia atenuante.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Caso se trate de situacao reincidente, Antonio podera ser apenado com a sancao de exclusao, devendo ser cancelada sua inscricao na Ordem dos Advogados do Brasil."
+        }
+      ],
+      "correctAlternativeId": "c"
+    },
+    {
+      "id": "q-oab43-009",
+      "statement": "Entre as diferentes correntes do positivismo juridico, a Escola da Exegese destacou-se, sobretudo, por seus estudos em torno do Codigo de Napoleao. O jusfIlosofo Miguel Reale, em seu livro Filosofia do Direito, afirma que, segundo essa escola, a evolucao do Direito somente poderia se operar por meio do processo legislativo. Assinale a opcao que, de acordo com Reale no livro em referencia, apresenta a tese fundamental da Escola da Exegese.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Filosofia do Direito",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 9,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "E a exegese da constituicao que pode oferecer aos juristas a compreensao do ideal de justica, que vincula e limita a liberdade de conformacao legislativa da autoridade politica."
+        },
+        {
+          "id": "b",
+          "text": "O Direito, por excelencia, e revelado pelas leis, que sao normas gerais escritas e emanadas pelo Estado, constitutivas de direito e instauradoras de faculdades e obrigacoes.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "A lei e o instrumento que revela os valores e principios que sao logicamente anteriores e eticamente superiores ao Estado e que conformam e estruturam o direito positivo."
+        },
+        {
+          "id": "d",
+          "text": "A interpretacao da lei e a atividade essencial do jurista, que deve realiza-la buscando a vontade da lei em si, seus fins sociais e as exigencias do bem comum, de modo a assegurar a propria evolucao do direito."
+        }
+      ],
+      "correctAlternativeId": "b"
+    },
+    {
+      "id": "q-oab43-010",
+      "statement": "Segundo Kant, em seu livro Fundamentacao da Metafisica dos Costumes, cada individuo, como ser moral, possui uma dignidade que lhe e propria. Assinale a afirmativa que, segundo Kant, no livro em referencia, mostra como a dignidade deve ser entendida.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Filosofia do Direito",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 10,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "Como o conjunto dos direitos fundamentais que devem ser assegurados pelo Estado e que permitem a cada individuo o exercicio de sua plena cidadania."
+        },
+        {
+          "id": "b",
+          "text": "Como o valor moral da humanidade que, por isso mesmo, deve ser sempre posto em calculo ou confronto com qualquer coisa que possua um preco, a fim de se verificar o que deve prevalecer."
+        },
+        {
+          "id": "c",
+          "text": "Como o valor do trabalho livre de uma pessoa no processo de transformacao da natureza em bens de consumo uteis a existencia e ao desenvolvimento economico e moral da sociedade."
+        },
+        {
+          "id": "d",
+          "text": "Como aquilo que nao possui um preco - valor relativo -, mas um valor intimo, ou seja, uma condicao gracas a qual algo deve ser considerado um fim em si mesmo.",
+          "correct": true
+        }
+      ],
+      "correctAlternativeId": "d"
+    },
+    {
+      "id": "q-oab43-011",
+      "statement": "O Presidente da Republica, por ter alegadamente atuado com o intuito de beneficiar pessoas de seu circulo de amizades pessoais, e acusado de influir diretamente no resultado de uma grande licitacao, cujo procedimento ocorreu em orgao do Ministerio X. Enzo, frances nato e naturalizado brasileiro, com candidatura deferida para disputar a eleicao para vereador no Municipio em que reside, resolve consulta-lo(a), como advogado(a), para saber se ele poderia ajuizar uma acao constitucional para anular a referida licitacao e para preservar a intangibilidade do patrimonio publico, bem como a integridade do principio da moralidade administrativa. Analisando a narrativa a luz do sistema juridico-constitucional, assinale a afirmativa que apresenta, corretamente, a solucao para o caso em tela.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Constitucional",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 11,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "Enzo, por ser frances nato, nao tem legitimidade ativa para ajuizar acao constitucional com o objetivo almejado, mas pode impetrar um mandado de seguranca perante o Superior Tribunal de Justica para sustar a eficacia do ato."
+        },
+        {
+          "id": "b",
+          "text": "Enzo, na qualidade de cidadao brasileiro, pode ajuizar uma acao popular perante o Supremo Tribunal Federal."
+        },
+        {
+          "id": "c",
+          "text": "Enzo, no exercicio de direito fundamental, pode ajuizar uma acao civil publica com o objetivo de proteger o interesse difuso de uma Administracao Publica proba."
+        },
+        {
+          "id": "d",
+          "text": "Enzo, por ser naturalizado brasileiro e ostentar a qualidade de cidadao, pode ajuizar uma acao popular perante o Juizo competente de primeiro grau.",
+          "correct": true
+        }
+      ],
+      "correctAlternativeId": "d"
+    },
+    {
+      "id": "q-oab43-012",
+      "statement": "Joao, pessoa com deficiencia, beneficiaria de pensao alimenticia devida pelo Estado Beta, ingressou com acao judicial para receber valores atrasados. Apos desfecho favoravel a Joao, o Poder Judiciario determinou que o pagamento dos debitos alimentares em precatorios seja efetuado, de acordo com a ordem cronologica de apresentacao, sem estabelecer qualquer prioridade para Joao. Com base na situacao descrita e no sistema juridico-constitucional brasileiro, assinale a opcao que apresenta, corretamente, o esclarecimento que voce, como advogado(a), daria a Joao.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Constitucional",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 12,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "Joao, por ser pessoa com deficiencia, tem preferencia no recebimento de precatorios referentes a debitos alimentares, independentemente do montante dos valores devidos."
+        },
+        {
+          "id": "b",
+          "text": "As pessoas com deficiencia, como Joao, tal como outras classes de pessoas, tem preferencia no recebimento de precatorios referentes a debitos alimentares, observados os balizamentos estabelecidos pela ordem juridica.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "A pessoa com deficiencia tem preferencia absoluta, em relacao a qualquer outro credor, no recebimento de precatorios e dividas de pequeno valor, somente em casos de debitos alimentares de ate cinco salarios minimos."
+        },
+        {
+          "id": "d",
+          "text": "A preferencia no recebimento de precatorios nao se aplica a debitos alimentares, mesmo que se trate de pessoa com deficiencia, considerando que todos os credores tem a mesma necessidade vital."
+        }
+      ],
+      "correctAlternativeId": "b"
+    },
+    {
+      "id": "q-oab43-013",
+      "statement": "Em razao de fenomenos climaticos que vem ocorrendo de forma reiterada nos ultimos anos, os Estados de determinada regiao do pais vem sofrendo grandes perdas economicas, o que acentua o desequilibrio socioeconomico em relacao as demais regioes do pais. Por haver no plano federal o entendimento de serem necessarias medidas que incentivem as atividades economicas da regiao prejudicada, surgiu a proposta para que bancos estatais concedessem juros favorecidos para financiar atividades consideradas prioritarias para a regiao. A essa proposta se opoe o Governador do Estado Beta, que, entendendo haver inconstitucionalidade nela, solicitou aconselhamento juridico ao seu corpo de advogados. Sobre a hipotese, segundo a perspectiva juridico-constitucional brasileira, assinale a opcao que apresenta, corretamente, a orientacao recebida.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Constitucional",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 13,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "O governador do Estado Beta esta correto, em razao da violacao ao principio da igualdade de tratamento entre as regioes de um Estado Federal."
+        },
+        {
+          "id": "b",
+          "text": "A medida encontra respaldo constitucional por ser o combate as desigualdades regionais um objetivo fundamental da Republica.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "A proposta de bancos estatais oferecerem juros favorecidos afronta a ordem constitucional, mesmo que seja licito combater as desigualdades regionais."
+        },
+        {
+          "id": "d",
+          "text": "O combate as desigualdades regionais nao configura tema de indole constitucional, sendo seu enfrentamento delineado pela via legal, conforme a opcao politica do legislador."
+        }
+      ],
+      "correctAlternativeId": "b"
+    },
+    {
+      "id": "q-oab43-014",
+      "statement": "A Comissao Parlamentar Permanente da Camara dos Deputados convocou um Ministro de Estado para prestar esclarecimentos sobre um episodio ocorrido em sua pasta. O Ministro consultou voce, na condicao de profissional designado(a) para prestar assessoria juridica a pasta, se ele deveria mesmo ir, ja que nao se tratava de uma Comissao Parlamentar de Inquerito (CPI), que possuiria poderes de investigacao proprios das autoridades judiciais. Com base na situacao descrita e no sistema juridico-constitucional brasileiro de 1988, assinale a afirmativa correta.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Constitucional",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 14,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "O Ministro de Estado deve comparecer, mesmo nao se tratando de uma convocacao realizada por CPI, pois a Comissao Parlamentar Permanente da Camara dos Deputados tem, de acordo com a CRFB/88, competencia para convoca-lo.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "A CRFB/88 estabelece que o Ministro de Estado, como autoridade do Poder Executivo Federal, nao pode ser convocado para prestar esclarecimentos a Comissao Parlamentar Permanente, sob pena de afronta ao principio da separacao dos Poderes."
+        },
+        {
+          "id": "c",
+          "text": "Assiste razao ao Ministro de Estado, porque, para prestar esclarecimentos a respeito de episodio ocorrido em sua pasta, ele so pode ser convocado por CPI, que possui poderes proprios das autoridades judiciais, incluindo o de tomar depoimentos de autoridades."
+        },
+        {
+          "id": "d",
+          "text": "Como o Ministro de Estado goza das mesmas imunidades do Presidente da Republica, ja que atua por delegacao desse ultimo agente, nao pode ser convocado por Comissao Parlamentar Permanente para prestar esclarecimentos sobre episodio ocorrido em sua pasta."
+        }
+      ],
+      "correctAlternativeId": "a"
+    },
+    {
+      "id": "q-oab43-015",
+      "statement": "Durante um violento temporal, em que as chuvas torrenciais poderiam levar ao desabamento de uma casa, os bombeiros militares ingressaram em um domicilio, sem o consentimento do morador, a noite, para socorrer as pessoas que estavam no imovel. Posteriormente, o morador propos acao indenizatoria por danos morais em face do ente federativo ao qual os bombeiros militares estavam vinculados, argumentando que o referido ingresso fora ilicito. Sobre a hipotese narrada, com base no sistema constitucional brasileiro, assinale a afirmativa correta.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Constitucional",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 15,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "A medida adotada pelos bombeiros militares, a despeito da boa intencao deles, foi incorreta, pois o domicilio e inviolavel, o que pressupoe a autorizacao do morador para que pudessem ingressar no local e prestar socorro."
+        },
+        {
+          "id": "b",
+          "text": "A acao indenizatoria nao prosperara, pois os bombeiros militares, diante do desastre iminente, nao precisam de consentimento do morador do imovel para prestar socorro.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "A despeito do direito a inviolabilidade do domicilio nao ser absoluto, o consentimento do morador somente pode ser dispensado por determinacao judicial, logo a acao dos bombeiros foi ilicita."
+        },
+        {
+          "id": "d",
+          "text": "Houve desproporcionalidade na atuacao dos agentes, o que permite a condenacao do ente federativo na acao indenizatoria, visto que a prestacao de socorro, sem consentimento do morador, so pode ocorrer durante o dia."
+        }
+      ],
+      "correctAlternativeId": "b"
+    },
+    {
+      "id": "q-oab43-016",
+      "statement": "O Presidente da Republica emitiu decreto autonomo, disciplinando a organizacao e o funcionamento da Administracao Federal. O Senador da Republica Joelson Cruz, Presidente do Partido Politico Beta, entende que esse decreto viola a Constituicao da Republica, alem de contrariar o interesse publico. Por essa razao, pretende que o seu Partido ajuize uma acao, pela via do controle concentrado de constitucionalidade, contra o ato presidencial. Todavia, por nao ter formacao juridica, procura os advogados do Partido Politico Beta, a fim de que lhe instruam sobre a melhor maneira de concretizar o seu intento. Diante disso, considerando o que estabelece o sistema juridico-constitucional brasileiro, os advogados informaram, corretamente, que o decreto autonomo",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Constitucional",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 16,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "deve ser atacado com o ajuizamento de acao popular, por se tratar de ato do Poder Executivo e em razao dos objetivos desejados pelo Senador Joelson Cruz."
+        },
+        {
+          "id": "b",
+          "text": "nao se submete ao controle concentrado de constitucionalidade, pois esse tipo de diploma nao possui natureza normativa, apresentando natureza mandamental."
+        },
+        {
+          "id": "c",
+          "text": "pode ser objeto de acao direta de inconstitucionalidade, por ser um diploma normativo que busca seu fundamento de validade diretamente na Constituicao da Republica.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "so pode ser objeto de apreciacao por meio de arguicao de descumprimento de preceito fundamental, pois esse e o instrumento adequado para impugnar atos administrativos do Poder Executivo."
+        }
+      ],
+      "correctAlternativeId": "c"
+    },
+    {
+      "id": "q-oab43-017",
+      "statement": "Na condicao de advogado(a), voce e procurado(a) por uma Organizacao nao Governamental que atua na defesa e protecao dos Direitos Humanos de grupos minoritarios no Brasil. A entidade solicita esclarecimentos quanto aos mecanismos de que dispoe para levar ao conhecimento das instancias competentes, no ambito do sistema global de protecao dos Direitos Humanos, uma situacao que entende violar a Convencao para a Prevencao e a Repressao do Crime de Genocidio, com o objetivo de responsabilizar o Estado brasileiro. Nesse contexto, voce deve esclarecer que, para a obtencao da finalidade pretendida, dentre os mecanismos existentes em nivel global, as Organizacoes nao Governamentais podem submeter o caso em questao diretamente a apreciacao",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direitos Humanos",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 17,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "da Corte Internacional de Justica."
+        },
+        {
+          "id": "b",
+          "text": "do Tribunal Penal Internacional."
+        },
+        {
+          "id": "c",
+          "text": "do Conselho de Direitos Humanos das Nacoes Unidas.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "do Alto Comissariado das Nacoes Unidas para os Direitos Humanos."
+        }
+      ],
+      "correctAlternativeId": "c"
+    },
+    {
+      "id": "q-oab43-018",
+      "statement": "Na condicao de advogado(a), voce foi procurado por um grupo de maes de criancas entre 6 e 10 anos que tentaram, sem sucesso, matricular seus filhos na rede basica de ensino. Elas alegam que ja envidaram todos os esforcos no ambito administrativo, sendo-lhes sempre apresentada a justificativa da inexistencia de vagas. Considerando a situacao hipotetica em questao, assinale a afirmativa correta.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direitos Humanos",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 18,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "Caso seja demonstrada a inertia do Estado em prover o efetivo acesso ao ensino de primeiro grau, comprovando-se ainda que a situacao foi devidamente submetida ao crivo do Poder Judiciario local, esgotados todos os recursos cabiveis, frustada a obtencao de tutela eficaz, o caso podera ser submetido diretamente pelas vitimas a analise da Comissao Interamericana de Direitos Humanos.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "De acordo com a interpretacao fixada pelo Supremo Tribunal Federal em relacao ao direito a educacao, em razao do seu desenvolvimento progressivo, nao se pode configura-lo como tipico direito subjetivo, cujo efetiva implementacao possa ser determinada por decisao judicial."
+        },
+        {
+          "id": "c",
+          "text": "Apesar de o direito a educacao, em razao da sua natureza social, estar previsto no Protocolo Adicional de Sao Salvador, no ambito do Sistema Regional Americano de Protecao dos Direitos Humanos foram previstos meios proprios para sua protecao, nao sendo possivel a utilizacao do sistema de peticoes individuais regulado pela Convencao Americana sobre Direitos Humanos."
+        },
+        {
+          "id": "d",
+          "text": "Em razao de o Brasil nao ter ratificado o Protocolo Adicional de Sao Salvador, o caso em questao nao podera ser submetido aos orgaos integrantes do Sistema Regional Americano de Protecao dos Direitos Humanos."
+        }
+      ],
+      "correctAlternativeId": "a"
+    },
+    {
+      "id": "q-oab43-019",
+      "statement": "Maria estava concorrendo ao cargo de Governadora do Estado Alfa. No decorrer da campanha, obteve prova documental e testemunhal de que Joana, sua adversaria direta na disputa, praticara abuso do poder economico. Por essa razao, solicitou a voce, como advogado(a), que a representasse a Justica Eleitoral para a abertura de investigacao judicial eleitoral. Assinale a opcao que indica, corretamente, a quem deve ser encaminhada a peticao.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Eleitoral",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 19,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "A um dos Juizes Eleitorais em atuacao no Estado Alfa."
+        },
+        {
+          "id": "b",
+          "text": "Ao Presidente do Tribunal Regional Eleitoral, que deve apreciar os fatos."
+        },
+        {
+          "id": "c",
+          "text": "A livre distribuicao do Tribunal Regional Eleitoral, que deve apreciar os fatos."
+        },
+        {
+          "id": "d",
+          "text": "Ao Corregedor Regional do Tribunal Regional Eleitoral, que deve apreciar os fatos.",
+          "correct": true
+        }
+      ],
+      "correctAlternativeId": "d"
+    },
+    {
+      "id": "q-oab43-020",
+      "statement": "No curso da campanha eleitoral, Joao, candidato ao cargo de Prefeito Municipal, doou tres sacos de cimento a Pedro, sob o compromisso de que este nele votaria. Ao tomar conhecimento dos fatos, Ana, candidata ao mesmo cargo, procurou voce, como advogado(a), e solicitou que fosse ajuizada a acao cabivel, de modo que o registro ou o diploma de Joao fosse cassado. Assinale a opcao que indica, corretamente, a acao cabivel no caso.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Eleitoral",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 20,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "Acao de impugnacao do registro, que pode ser ajuizada ate a data da eleicao."
+        },
+        {
+          "id": "b",
+          "text": "Recurso contra a expedicao de diploma, que pode ser ajuizada ate tres dias apos a diplomacao."
+        },
+        {
+          "id": "c",
+          "text": "Acao penal por ato de corrupcao eleitoral, que pode ser ajuizada ate fluir o prazo prescricional."
+        },
+        {
+          "id": "d",
+          "text": "Representacao por captacao ilicita de sufragio, que pode ser ajuizada ate a data da diplomacao.",
+          "correct": true
+        }
+      ],
+      "correctAlternativeId": "d"
+    },
+    {
+      "id": "q-oab43-021",
+      "statement": "Uma artista brasileira, que protagoniza filmes nos Estados Unidos, foi filmada em uma casa de festas no Brasil em estado de embriaguez e o video foi postado por um portal de noticias americano. O video \"viralizou\" e teve grande repercussao no Brasil. Com receio de prejudicar sua carreira com a exposicao negativa de sua imagem, ela decidiu ajuizar uma acao no Brasil contra o portal de noticias, que tem sua sede nos Estados Unidos. Nesse cenario, com base nos limites da jurisdicao nacional estabelecidos no Codigo de Processo Civil, assinale a afirmativa correta.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Internacional",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 21,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "A autoridade judiciaria brasileira nao e competente para julgar a acao, porque o reu e pessoa juridica estrangeira."
+        },
+        {
+          "id": "b",
+          "text": "A autoridade judiciaria brasileira e competente para julgar a acao, porque a autora tem nacionalidade brasileira."
+        },
+        {
+          "id": "c",
+          "text": "A autoridade judiciaria brasileira tem competencia para processar e julgar a acao, porque os danos a imagem ocorreram no Brasil.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "A autoridade brasileira deve remeter o caso, por carta rogatoria, a justica norte-americana, tendo em vista que o portal de noticias e sediado nos Estados Unidos."
+        }
+      ],
+      "correctAlternativeId": "c"
+    },
+    {
+      "id": "q-oab43-022",
+      "statement": "A cooperacao juridica internacional e uma modalidade formal de solicitar a outro pais uma medida judicial, investigativa ou administrativa para um caso concreto. Forcando-se para facilitar a cooperacao juridica nos casos de litigios e disputas internacionais, o Brasil aderiu a Convencao da Haia sobre a Obtencao de Provas no Estrangeiro em Materia Civil ou Comercial (Convencao da Haia sobre Provas), promulgada pelo Decreto no 9.039, de 27 de abril de 2017. Sobre a obtencao de provas no exterior, assinale a afirmativa correta.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Internacional",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 22,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "A tramitacao do pedido de cooperacao juridica internacional para a obtencao de prova no exterior apenas podera ser feita com base em acordo internacional vigente entre o Brasil e o Estado Requerido."
+        },
+        {
+          "id": "b",
+          "text": "A Convencao da Haia sobre a Obtencao de Provas no Estrangeiro em materia civil e comercial preve que a autoridade judicial deve aplicar integralmente a legislacao do Estado Requerente no que diz respeito as formalidades a serem seguidas na obtencao da prova."
+        },
+        {
+          "id": "c",
+          "text": "O cumprimento da Carta Rogatoria em que se requer a autoridade competente de um Estado Contratante a obtencao de provas so podera ser recusado quando, no Estado Requerido, o cumprimento nao estiver no ambito das atribuicoes do Poder Judiciario ou quando o Estado Requerido considera-lo prejudicial a sua soberania ou seguranca.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Cada Estado Contratante designara uma Autoridade Central para receber as Cartas Rogatorias procedentes de autoridade judiciaria de outro Estado Contratante e de transmiti-las a autoridade competente para cumprimento. A organizacao dessa Autoridade Central deve ser a mesma em todos os Estados signatarios da Convencao da Haia sobre Provas, sem a possibilidade de cada um legislar sobre essa organizacao."
+        }
+      ],
+      "correctAlternativeId": "c"
+    },
+    {
+      "id": "q-oab43-023",
+      "statement": "O Estado Beta, no ultimo ano, ultrapassou o limite de despesa total de pessoal, que, segundo a Lei de Responsabilidade Fiscal (LRF), e de, no maximo, 60% da Receita Corrente Liquida (RCL). Por falta de gestao responsavel, apesar de os demais Poderes e orgaos autonomos terem se enquadrado dentro dos respectivos percentuais fixados como limites individuais, o Poder Executivo Estadual ainda nao conseguiu alcancar a reducao determinada pela propria LRF, dentro do prazo por ela estipulado, para atender ao percentual maximo de 49% da RCL, fixado como limite individual de despesas com pessoal para o Poder Executivo Estadual. Diante desse cenario, a luz da Lei de Responsabilidade Fiscal, o Poder Executivo estadual nao podera",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Financeiro",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 23,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "realizar qualquer operacao de credito, apenas."
+        },
+        {
+          "id": "b",
+          "text": "receber transferencias voluntarias (exceto nas areas de educacao, saude e assistencia social), mas podera obter garantia de outro ente, bem como podera contratar operacoes de credito."
+        },
+        {
+          "id": "c",
+          "text": "obter garantia de outro ente, nem contratar operacoes de credito, ressalvadas as que visem a reducao das despesas com pessoal, mas podera receber transferencias voluntarias em quaisquer areas."
+        },
+        {
+          "id": "d",
+          "text": "receber transferencias voluntarias (exceto nas areas de educacao, saude e assistencia social), nem obter garantia de outro ente, nem contratar operacoes de credito, ressalvadas as destinadas ao pagamento da divida mobiliaria e as que visem a reducao das despesas com pessoal.",
+          "correct": true
+        }
+      ],
+      "correctAlternativeId": "d"
+    },
+    {
+      "id": "q-oab43-024",
+      "statement": "O projeto da Lei Orcamentaria Anual (LOA) de determinado ente federativo, encaminhado ao Poder Legislativo pelo Poder Executivo, preve apenas o orcamento fiscal do referido ente. Na mensagem de encaminhamento do projeto de LOA, esta esclarecido que o orcamento de investimentos das empresas em que o ente, direta ou indiretamente, detenha a maioria do capital social com direito a voto, bem como o orcamento da seguridade social do ente, sera encaminhado individualmente por meio de outros projetos. Diante desse cenario, sobre esse procedimento assinale a afirmativa correta.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Financeiro",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 24,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "Viola a regra constitucional de que o orcamento da seguridade social deve integrar a Lei de Diretrizes Orcamentarias."
+        },
+        {
+          "id": "b",
+          "text": "Nao atende a regra constitucional de que a LOA compreendera tambem o orcamento de investimentos e o orcamento da seguridade social.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Esta correto, pois apenas o orcamento fiscal compoe a LOA, devendo o orcamento de investimento e o orcamento da seguridade social serem previstos em leis proprias para cada um desses tipos de orcamentos."
+        },
+        {
+          "id": "d",
+          "text": "E inadequado em relacao ao orcamento de investimentos, que deveria compor a LOA, mas e admitido em relacao ao orcamento da seguridade social, que pode ser previsto em outra lei, desde que seu valor global esteja previsto na LOA."
+        }
+      ],
+      "correctAlternativeId": "b"
+    },
+    {
+      "id": "q-oab43-025",
+      "statement": "Joao da Silva, profissional liberal, foi notificado pela Administracao Tributaria Federal, em 20 de janeiro de 2023, para prestar esclarecimentos sobre possiveis rendimentos nao declarados recebidos no ano de 2019. Tais rendimentos foram identificados por meio de movimentacao financeira de sua conta bancaria, a partir da Lei Complementar Federal no XXX/2022, publicada em 15 de dezembro de 2022, que alterou os criterios de fiscalizacao, ampliando os poderes de investigacao do Fisco Federal, permitindo a este acesso aos dados financeiros bancarios dos contribuintes (apenas creditos e debitos) para fins de fiscalizacao, lancamento tributario e cobranca de Imposto sobre a Renda. Irresignado com a notificacao relativa aos fatos ocorridos varios anos atras, Joao consulta seu(sua) advogado(a), que emite um sucinto parecer e uma orientacao juridica. Diante desse cenario e de acordo com o Codigo Tributario Nacional (CTN), assinale a afirmativa correta.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Tributario",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 25,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "A notificacao e inconstitucional por violar o principio da irretroatividade tributaria, uma vez que a referida nova lei so poderia produzir efeitos a partir da sua publicacao."
+        },
+        {
+          "id": "b",
+          "text": "Por nao ter respeitado a anterioridade nonagesimal, que imporia a vigencia e eficacia daquela nova lei somente a partir do meio do mes de marco de 2023, a notificacao e indevida."
+        },
+        {
+          "id": "c",
+          "text": "A notificacao e regular e atende as regras constitucionais e as do CTN, devendo Joao da Silva prestar os esclarecimentos quanto aos rendimentos recebidos e, se for o caso, recolher o imposto devido com os acrescimos devidos.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Nao podera ocorrer lancamento tributario fundado em dados obtidos a partir de fiscalizacao com base na Lei Complementar no XXX/2022, ja que ela instituiu novos criterios de apuracao ou processos de fiscalizacao depois da ocorrencia do fato gerador da obrigacao."
+        }
+      ],
+      "correctAlternativeId": "c"
+    },
+    {
+      "id": "q-oab43-026",
+      "statement": "Um contrato de locacao residencial traz clausula expressa de que ao locatario cabera o encargo de pagar diretamente, para o Municipio ou a rede bancaria, o IPTU incidente sobre o imovel locado, enquanto durar o contrato de locacao, devendo remeter, posteriormente, o comprovante de pagamento ao locador. Sobre a posicao do locatario, a luz do Codigo Tributario Nacional, assinale a afirmativa correta.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Tributario",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 26,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "O locatario pode ser considerado contribuinte de direito quanto a este IPTU."
+        },
+        {
+          "id": "b",
+          "text": "Em caso de inadimplemento deste IPTU, o locatario nao podera ser executado pelo Municipio.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Quanto a este IPTU, o locatario tem responsabilidade tributaria por substituicao ao locador."
+        },
+        {
+          "id": "d",
+          "text": "O locatario e responsavel tributario por sucessao do locador quanto a este IPTU."
+        }
+      ],
+      "correctAlternativeId": "b"
+    },
+    {
+      "id": "q-oab43-027",
+      "statement": "Visando a melhoria do servico de iluminacao publica e da seguranca no Municipio Alfa, foi publicada lei municipal, em 20/02/2024, instituindo uma contribuicao cuja arrecadacao estaria vinculada ao custeio, a expansao e a melhoria do servico de iluminacao publica e de sistemas de monitoramento para a seguranca e a preservacao de logradouros publicos. Acerca desta lei, assinale a afirmativa correta.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Tributario",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 27,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "A contribuicao poderia ser instituida e vinculada a todas essas finalidades, por expressa previsao constitucional.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "E inconstitucional a tentativa de custear a iluminacao publica por especie tributaria distinta de impostos."
+        },
+        {
+          "id": "c",
+          "text": "A implantacao de sistemas de monitoramento para a seguranca e a preservacao de logradouros publicos somente poderia ser custeada com recursos advindos de taxas, e nao de uma contribuicao."
+        },
+        {
+          "id": "d",
+          "text": "A implantacao de sistemas de monitoramento para a seguranca e a preservacao de logradouros publicos somente poderia ser custeada com recursos advindos de impostos, e nao de uma contribuicao."
+        }
+      ],
+      "correctAlternativeId": "a"
+    },
+    {
+      "id": "q-oab43-028",
+      "statement": "Nova lei federal ordinaria, pretendendo oferecer uma oportunidade para que os empregadores possam quitar suas dividas de contribuicao previdenciaria patronal, criou um programa de parcelamento de dividas desse tributo em ate 90 (noventa) meses. Diante desse cenario, assinale a afirmativa correta.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Tributario",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 28,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "A nova lei, por nao ser complementar, nao poderia prever o parcelamento dessas dividas de contribuicoes de seguridade social."
+        },
+        {
+          "id": "b",
+          "text": "O numero maximo de meses de tal parcelamento extrapola o permitido pela Constituicao Federal/88.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "O parcelamento das contribuicoes de seguridade social, por determinacao da Constituicao Federal/88, precisa ser acompanhado do pagamento de uma parcela inicial que represente 20% do valor total da divida."
+        },
+        {
+          "id": "d",
+          "text": "A Constituicao Federal, dada a relevancia da seguridade social, veda a concessao de qualquer tipo de parcelamento de dividas de contribuicao previdenciaria patronal."
+        }
+      ],
+      "correctAlternativeId": "b"
+    },
+    {
+      "id": "q-oab43-029",
+      "statement": "A sociedade empresaria prestadora de servicos ABC Ltda., sediada no Municipio Alfa, deixou de declarar ao Fisco Municipal varios servicos que prestou no territorio desse municipio. Em razao disso, um agente fiscal do ISS municipal lavrou auto de infracao com multa e encargos em face da referida sociedade empresaria, por nao ter prestado as declaracoes no prazo e na forma da legislacao tributaria. Notificada do auto de infracao para o pagamento, a sociedade empresaria nem pagou nem impugnou o lancamento. Em razao do nao pagamento, a Procuradoria do Municipio ingressou com uma acao de cobranca pelo rito comum contra a sociedade ABC Ltda., fundamentada no Codigo de Processo Civil. Sobre a acao de cobranca ajuizada pela Procuradoria do Municipio, assinale a afirmativa correta.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Tributario",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 29,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "A via judicial adequada para a cobranca seria a acao de execucao fiscal, e nao uma acao de cobranca regida pelo Codigo de Processo Civil.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "O prazo prescricional do Fisco Municipal para a constituicao do credito tributario era de cinco anos, contados do primeiro dia do exercicio seguinte aquele em que o lancamento poderia ter sido efetuado."
+        },
+        {
+          "id": "c",
+          "text": "O prazo decadencial do Fisco Municipal para a constituicao do credito tributario era de cinco anos contados da data do fato gerador da obrigacao tributaria."
+        },
+        {
+          "id": "d",
+          "text": "A modalidade de lancamento efetivamente utilizada pelo agente fiscal do ISS foi o lancamento por declaracao."
+        }
+      ],
+      "correctAlternativeId": "a"
+    },
+    {
+      "id": "q-oab43-030",
+      "statement": "Tertuliano vem acumulando ilicitamente dois cargos publicos em autarquias federais diferentes. Ao detectar tal situacao, apos os devidos tramites, a autoridade competente notificou o servidor para que ele optasse pelo cargo em que pretendia permanecer. Em decorrencia da omissao de Tertuliano em realizar a aludida escolha, foi publicada a portaria atinente a instauracao do processo administrativo disciplinar por acumulacao ilegal de cargos. Tertuliano procurou voce, como advogado(a), para saber das peculiaridades do andamento desse procedimento. Diante dessa situacao hipotetica, assinale a afirmativa que indica, corretamente, sua orientacao.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Administrativo",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 30,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "A analise do caso devera ser feita por uma comissao processante, composta de tres servidores estaveis, cujo presidente devera ser ocupante de cargo superior ou de mesmo nivel de Tertuliano."
+        },
+        {
+          "id": "b",
+          "text": "A comissao processante, caracterizada a acumulacao ilegal e provada a ma-fe de Tertuliano, devera indicar o cargo que estara sujeito a pena de demissao."
+        },
+        {
+          "id": "c",
+          "text": "A notificacao para que Tertuliano realize a opcao por um dos cargos vai contra a lei, pois ele deve ser demitido de ambos os cargos ilicitamente acumulados, apos o devido processo administrativo."
+        },
+        {
+          "id": "d",
+          "text": "A opcao de Tertuliano por um dos cargos ate o ultimo dia do prazo para defesa configura sua boa-fe, hipotese que se convertera, automaticamente, em pedido de exoneracao do outro cargo.",
+          "correct": true
+        }
+      ],
+      "correctAlternativeId": "d"
+    },
+    {
+      "id": "q-oab43-031",
+      "statement": "O Estado Beta, apos os devidos tramites, promoveu a concessao de servicos de sua competencia para a sociedade empresaria Servicaos. Em decorrencia do descumprimento de algumas clausulas contratuais que estao impactando a qualidade da atividade delegada, o poder concedente editou um decreto, contendo a designacao do interventor, o prazo da intervencao e os objetivos e limites da medida, a fim de assegurar a adequacao na prestacao do servico, bem como o fiel cumprimento das normas contratuais, regulamentares e legais pertinentes. Em razao disso, a sociedade empresaria Servicaos procura voce, na condicao de advogado(a), a fim de obter esclarecimentos acerca da validade e dos desdobramentos da medida adotada. Assinale a opcao que apresenta o esclarecimento correto a ser prestado.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Administrativo",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 31,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "A medida e nula, pois nao poderia se materializar por meio de decreto, na medida em que o Poder Concedente deveria ter editado uma lei autorizativa para tal finalidade."
+        },
+        {
+          "id": "b",
+          "text": "Apos o devido processo administrativo, a constatacao de inexecucao do contrato deve ensejar sua extincao, constituindo causa justificadora da encampacao, que independe do interesse publico."
+        },
+        {
+          "id": "c",
+          "text": "O Poder Concedente, declarada a intervencao, devera, no prazo de 30 dias, instaurar procedimento administrativo para comprovar as causas determinantes da medida e apurar as responsabilidades, assegurado o direito de ampla defesa.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "A administracao do servico, cessada a intervencao e caso nao seja extinta a concessao, sera devolvida a concessionaria, independentemente da prestacao de contas do interventor, na medida em que este nao responde pelos atos por ele praticados na vigencia da medida."
+        }
+      ],
+      "correctAlternativeId": "c"
+    },
+    {
+      "id": "q-oab43-032",
+      "statement": "Com o intuito de promover o tombamento de dois imoveis vizinhos de inequivoco valor historico e cultural, o Instituto do Patrimonio Historico Nacional (Iphan), autarquia federal, no exercicio de suas atribuicoes, promoveu a notificacao dos respectivos proprietarios: o Municipio Alfa e a senhora Maria Silva. Maria Silva acredita que tera graves prejuizos financeiros com a materializacao do tombamento de ambos os imoveis, razao pela qual, logo apos a notificacao, procurou voce, como advogado(a), para dirimir duvidas acerca da materia. A luz do disposto no Decreto-Lei no 25/1937, assinale a opcao que apresenta, corretamente, o esclarecimento que voce deu a Maria Silva.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Administrativo",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 32,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "Com a notificacao, considera-se que ocorreu o tombamento provisorio do imovel de Maria.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "A conclusao do tombamento do imovel do Municipio Alfa nao gera qualquer efeito sobre o imovel de Maria."
+        },
+        {
+          "id": "c",
+          "text": "Caso Maria realize tempestivamente a impugnacao relacionada ao imovel de sua propriedade, nao sera cabivel o tombamento compulsorio."
+        },
+        {
+          "id": "d",
+          "text": "Nao e possivel o tombamento do imovel vizinho a propriedade de Maria, por se tratar de bem publico que integra o patrimonio do Municipio Alfa."
+        }
+      ],
+      "correctAlternativeId": "a"
+    },
+    {
+      "id": "q-oab43-033",
+      "statement": "Januario, ex-prefeito do Municipio Imaginario, teve conhecimento de um inquerito civil que tem por objeto avaliar condutas praticadas no exercicio de seu mandato que se enquadram como atos de improbidade e que causaram prejuizo ao erario. Em razao disso, ele procurou voce, na qualidade de advogada(o), para definir uma estrategia de defesa, destacando que tem provas de que atuou de forma culposa. Considerando o fato de a conduta ter sido culposa, a luz do disposto na Lei no 8.429/1992, com a redacao conferida pela Lei no 14.230/2021, assinale a opcao que apresenta, corretamente, a orientacao juridica prestada.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Administrativo",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 33,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "O fato e determinante para a estrategia de defesa, na medida em que os atos de improbidade nao mais podem ser caracterizados na modalidade culposa.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "O fato e importante para a estrategia de defesa, para fins de reducao da pena, pois os atos de improbidade que ocasionam prejuizo ao erario admitem a modalidade culposa."
+        },
+        {
+          "id": "c",
+          "text": "O fato e desinfluente para a respectiva estrategia de defesa, em um primeiro momento, pois os atos de improbidade admitem tanto a modalidade culposa quanto a dolosa."
+        },
+        {
+          "id": "d",
+          "text": "O fato nao tem muita relevancia para a estrategia de defesa, na medida em que a responsabilizacao por improbidade administrativa e objetiva."
+        }
+      ],
+      "correctAlternativeId": "a"
+    },
+    {
+      "id": "q-oab43-034",
+      "statement": "Rodrigo agrediu fisicamente seu desafeto Afonso, quando estava no exercicio de suas atribuicoes como servidor publico do Estado Alfa, em decorrencia de uma desavenca entre eles, no momento em que realizava atendimento ao publico. Em razao dos danos sofridos, Afonso ajuizou acao de responsabilidade civil em face do mencionado ente federativo. Depois do transito em julgado da sentenca condenatoria ao pagamento da quantia indenizatoria de R$ 20.000 (vinte mil reais), o Estado Alfa ajuizou acao de regresso em desfavor de Rodrigo, com vistas a obter o ressarcimento do erario. O entao agente publico foi citado na ultima segunda-feira, motivo pelo qual ele procurou voce, como advogado(a), para a realizacao da sua defesa no respectivo processo. Assinale a opcao que indica, corretamente, a orientacao juridica que voce prestou e que deve constar da contestacao na acao de regresso em que Rodrigo e o demandado.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Administrativo",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 34,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "A responsabilidade civil do Estado e objetiva, com base na teoria do risco integral, enquanto a de Rodrigo, apesar de objetiva, com base na teoria do risco administrativo, admite a discussao acerca do elemento subjetivo."
+        },
+        {
+          "id": "b",
+          "text": "A responsabilidade civil e objetiva, com base na teoria do risco administrativo, tanto para Rodrigo quanto para o Estado Alfa, motivo pelo qual a peca de defesa deve se restringir a indicar eventuais causas excludentes do nexo de causalidade."
+        },
+        {
+          "id": "c",
+          "text": "A responsabilidade civil e subjetiva na situacao de Rodrigo, sendo necessaria a demonstracao de dolo ou culpa na acao de regresso em questao, a qual foi ajuizada em decorrencia da condenacao do Estado fundada em sua responsabilizacao objetiva, com base na teoria do risco administrativo.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "A responsabilidade civil e subjetiva tanto para Rodrigo quanto para o Estado, com base na teoria do risco administrativo, admitindo, contudo, a discussao do elemento subjetivo em ambas as hipoteses, que e imprescindivel para fins de romper o nexo de causalidade."
+        }
+      ],
+      "correctAlternativeId": "c"
+    },
+    {
+      "id": "q-oab43-035",
+      "statement": "Diante das numerosas tragedias climaticas registradas, ganhou forca nas recentes discussoes juridicas a pauta relacionada a designada litigancia climatica, por meio da qual o Judiciario e instado a se manifestar para impor medidas com vistas a reduzir efeitos deletarios sobre o clima, especialmente por meio de acoes civis publicas ajuizadas pelo Ministerio Publico. A associacao Puravida, que atua na area ambiental, tem especial interesse na aludida materia, de modo que procurou voce, como advogado(a), para esclarecer duvidas acerca do respectivo arcabouco juridico. Com relacao a atuacao jurisdicional da litigancia climatica, assinale a afirmativa que apresenta, corretamente, seu esclarecimento.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Ambiental",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 35,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "Inexiste qualquer amparo no ordenamento juridico, diante da primazia do principio da livre iniciativa e do desenvolvimento economico do pais."
+        },
+        {
+          "id": "b",
+          "text": "Tem assento, exclusivamente, em normas infraconstitucionais, notadamente na lei que institui a Politica Nacional sobre a Mudanca do Clima (PNMC)."
+        },
+        {
+          "id": "c",
+          "text": "A tematica dispoe de previsao em normas nacionais e internacionais que versam sobre o tema, mas nao ha fundamento constitucional que lhe confira amparo."
+        },
+        {
+          "id": "d",
+          "text": "Decorre das normas previstas na CRFB/88 para a protecao do meio ambiente ecologicamente equilibrado e de normas internacionais, alem das editadas internamente para tal fim, como a Politica Nacional sobre a Mudanca do Clima (PNMC).",
+          "correct": true
+        }
+      ],
+      "correctAlternativeId": "d"
+    },
+    {
+      "id": "q-oab43-036",
+      "statement": "A sociedade empresaria XYZ, recentemente constituida, exercera atividade economica potencialmente causadora de degradacao ambiental, tornando-se necessario o licenciamento ambiental. Os socios da entidade verificaram, contudo, que o Municipio Alfa, responsavel pelo licenciamento ambiental no caso concreto, nao dispoe de orgao ambiental capacitado ou de conselho do meio ambiente. Logo, a entidade contratou os servicos de um(a) advogado(a) para orienta-la sobre como proceder na sequencia. O patrono constatou, entao, que o Estado Beta, cuja capital esta no Municipio Alfa, e a Uniao possuem orgaos ambientais capacitados. Nesse cenario, considerando as disposicoes da Lei Complementar no 140/2011, que versa sobre a competencia ambiental dos entes federativos, assinale a afirmativa correta.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Ambiental",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 36,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "Na ausencia de orgao ambiental capacitado ou conselho do meio ambiente no Municipio Alfa, a acao administrativa de licenciamento ocorrera perante a Uniao."
+        },
+        {
+          "id": "b",
+          "text": "Inexistindo orgao ambiental capacitado ou conselho do meio ambiente no Municipio Alfa, a acao administrativa de licenciamento ocorrera perante o Estado Beta.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Ate que o Municipio Alfa crie um orgao ambiental capacitado ou um conselho do meio ambiente, a sociedade empresaria XYZ nao podera exercer, regularmente, as suas atividades, por ausencia de licenciamento ambiental."
+        },
+        {
+          "id": "d",
+          "text": "Como nao ha orgao ambiental capacitado ou conselho do meio ambiente no Municipio Alfa, a sociedade empresaria XYZ tera direito ao licenciamento ambiental tacito, podendo exercer suas atividades de forma regular."
+        }
+      ],
+      "correctAlternativeId": "b"
+    },
+    {
+      "id": "q-oab43-037",
+      "statement": "Mario conduzia imprudentemente seu veiculo quando perdeu o controle do automovel e colidiu contra uma banca de jornais situada na calcada. Joao, que estava parado ao lado da banca, foi atingido e faleceu na hora do acidente. Mario permaneceu internado por cerca de dois meses antes de tambem falecer em decorrencia dos ferimentos sofridos. Sobre as implicacoes do caso acima, segundo o ordenamento juridico brasileiro, assinale a afirmativa correta.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Civil",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 37,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "Eventuais herdeiros de Joao terao o prazo decadencial de quatro anos para pleitear indenizacao em face do espolio de Mario."
+        },
+        {
+          "id": "b",
+          "text": "A prescricao iniciada em face de Mario continua a correr contra seu sucessor.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "O prazo prescricional, diante da inexistencia de previsao legal especifica, e de dez anos."
+        },
+        {
+          "id": "d",
+          "text": "A prescricao intercorrente, se ajuizada acao indenizatoria pelos eventuais herdeiros de Joao, nao observara o mesmo prazo de prescricao da pretensao, possuindo prazo fixo de cinco anos."
+        }
+      ],
+      "correctAlternativeId": "b"
+    },
+    {
+      "id": "q-oab43-038",
+      "statement": "Claudia comprou um apartamento e contratou o arquiteto Lucio para elaborar o projeto de redecoracao. Pelo contrato celebrado, Lucio devera entregar o projeto a Claudia no prazo de 30 dias, contados da assinatura do instrumento. Em caso de mora, Lucio fica obrigado a pagar multa diaria a Claudia. Considerando essa hipotese, assinale a afirmativa correta.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Civil",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 38,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "Caso haja atraso na entrega do projeto, Claudia podera exigir a multa de Lucio, independentemente de alegar prejuizo da mora.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "A obrigacao de pagar multa por dia de atraso afigura-se invalida, pois configura onus manifestamente excessivo em detrimento do devedor."
+        },
+        {
+          "id": "c",
+          "text": "Havendo mora, caso Claudia cobre a verba estipulada, nao podera exigir de Lucio o cumprimento da obrigacao principal, isto e, a entrega do projeto de redecoracao."
+        },
+        {
+          "id": "d",
+          "text": "A obrigacao de pagar a multa em caso de mora tem natureza juridica de astreintes e nao pode ser reduzida equitativamente pelo Juiz caso se revele manifestamente excessiva."
+        }
+      ],
+      "correctAlternativeId": "a"
+    },
+    {
+      "id": "q-oab43-039",
+      "statement": "Andre, pessoa fisica, faz a coleta de dados pessoais de seus conhecidos e os arquiva em seus cadernos pessoais. A coleta e feita para fins exclusivamente particulares e nao economicos. Sobre a aplicacao da Lei Geral de Protecao de Dados Pessoais (Lei no 13.709/2018) ao caso narrado, assinale a afirmativa correta.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Civil",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 39,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "Nao e aplicavel, porque se trata de pessoa natural e a referida lei somente se aplica as pessoas juridicas, de direito publico ou privado."
+        },
+        {
+          "id": "b",
+          "text": "Nao e aplicavel, porque o tratamento de dados pessoais, na hipotese em questao, e realizado por pessoa fisica com finalidade exclusivamente particular e nao economica.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Nao e aplicavel, porque o tratamento de dados pessoais, na hipotese em questao, e realizado em meio fisico e nao digital."
+        },
+        {
+          "id": "d",
+          "text": "E aplicavel, porque, mesmo sendo realizada por pessoa natural, em meio fisico e sem finalidade lucrativa, a lei define \"tratamento\" de modo amplo."
+        }
+      ],
+      "correctAlternativeId": "b"
+    },
+    {
+      "id": "q-oab43-040",
+      "statement": "Paulo e Gloria mantiveram uniao estavel por 22 anos, sem que nunca tivessem celebrado pacto de convivencia. Ao longo da relacao, amelharam, por esforco comum, patrimonio de R$ 1.600.000 (um milhao e seiscentos mil reais). Paulo faleceu, nao deixando filhos nem pais, apenas seus quatro avos e dois irmaos. Diante dos fatos hipoteticos narrados, sobre a sucessao de Paulo, assinale a afirmativa correta.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Civil",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 40,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "Gloria tera direito a meacao, R$ 800.000 (oitocentos mil reais), mais metade do valor da heranca, ou seja, R$ 400.000 (quatrocentos mil reais). O valor restante, de R$ 400.000 (quatrocentos mil reais), sera dividido igualmente entre os avos de Paulo.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Gloria tera direito a meacao, no valor de R$ 800.000 (oitocentos mil reais), ao direito real de habitacao, mas nao concorrera com os ascendentes de Paulo."
+        },
+        {
+          "id": "c",
+          "text": "Gloria tera direito ao valor total dos bens, ja que o conjuge afasta da sucessao os ascendentes do falecido."
+        },
+        {
+          "id": "d",
+          "text": "Gloria tera direito a meacao, no valor de R$ 800.000 (oitocentos mil reais), e o valor da heranca sera dividido em tres partes iguais, recebendo Gloria e os dois irmaos de Paulo, o correspondente a 1/3 (um terco) cada um."
+        }
+      ],
+      "correctAlternativeId": "a"
+    },
+    {
+      "id": "q-oab43-041",
+      "statement": "No edificio em que reside Carolina, ha, nas janelas das salas de todos os apartamentos, jardineiras com pequenas plantas. Trata-se de elemento original do projeto arquitetonico. Na sua jardineira, Carolina colocou alguns vasos de plantas. Certo dia, caiu um vaso da jardineira de Carolina sobre o carro de Thiago, que estava estacionado na rua, e causou um pequeno amassado. Sobre o caso narrado, assinale a afirmativa correta.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Civil",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 41,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "Carolina somente responde pelo prejuizo de Thiago, se este provar dolo por parte dela."
+        },
+        {
+          "id": "b",
+          "text": "Carolina somente responde pelo prejuizo de Thiago, se este provar dolo ou culpa por parte dela."
+        },
+        {
+          "id": "c",
+          "text": "Carolina responde pelo prejuizo de Thiago, independentemente de prova de dolo ou culpa por parte dela.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Por se tratar de elemento original da construcao, Carolina nao tem responsabilidade pelo que cair da jardineira."
+        }
+      ],
+      "correctAlternativeId": "c"
+    },
+    {
+      "id": "q-oab43-042",
+      "statement": "Fabiano e Vitoria, casados pelo regime de comunhao parcial de bens, sao possuidores de boa-fe de um imovel residencial localizado no municipio de Quebrangulo, AL, com area de 160 m2 (cento e sessenta metros quadrados). O proprietario do imovel e Graciliano, que se mudou para Maceio, no inicio do ano de 2011, nunca mais retornando a cidade. Destaca-se que Graciliano havia hipotecado o bem dias antes de sua mudanca para a capital. No dia de ontem, o casal procurou voce, como advogado(a), com o proposito da verificar uma possivel usucapiao, visto que residem no bem desde 2018. Com base no sistema juridico brasileiro, assinale a opcao que apresenta, corretamente, sua orientacao.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Civil",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 42,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "A usucapiao e forma de aquisicao derivada, de modo que permanecem os onus reais que gravavam o imovel antes de sua declaracao, nao podendo ser oposta em caso de hipoteca."
+        },
+        {
+          "id": "b",
+          "text": "O casal, Fabiano e Vitoria, podera adquirir o dominio do imovel por usucapiao especial urbana, desde que demonstre a posse sem oposicao, a utilizacao para sua moradia ou de sua familia e que nao seja proprietario de outro imovel urbano ou rural.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Em eventual falecimento do casal, os herdeiros nao tem legitimidade na propositura da acao de usucapiao, visto que o Codigo Civil impede o acrescimo da posse a dos seus antecessores, ainda que sejam continuas e pacificas."
+        },
+        {
+          "id": "d",
+          "text": "O sistema juridico brasileiro inibe que um casal casado por regime da comunhao adquira um bem por usucapiao, mesmo para fins de moradia, pois nesse regime devem ser partilhados apenas os bens adquiridos a titulo oneroso."
+        }
+      ],
+      "correctAlternativeId": "b"
+    },
+    {
+      "id": "q-oab43-043",
+      "statement": "Herminda, de 50 anos, e tia materna de Julia, de 16 anos. Apos verificar que Julia teve notas baixas no colegio, Herminda decidiu ir a porta da escola e, com o intuito de correcao, ridicularizou e humilhou a adolescente na frente de seus colegas, dizendo que Julia era desleixada, que nunca conseguiria acesso a universidade, sendo uma vergonha para a familia. Os pais de Julia tomaram conhecimento do fato e ficaram revoltados. Decidiram, entao, procurar voce, como advogado(a), para que indicasse a orientacao juridica adequada para sancionar o ato praticado por Herminda. Nesse caso, de acordo com o ECA, assinale a afirmativa que apresenta, corretamente, sua orientacao.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Estatuto da Crianca e do Adolescente",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 43,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "Herminda pode ser encaminhada a cursos ou programas de orientacao, sendo que a aplicacao dessa medida so pode ser feita pela autoridade judiciaria."
+        },
+        {
+          "id": "b",
+          "text": "Herminda, em virtude de tal ato, pode receber sancoes, como a advertencia, a ser aplicada pelo Conselho Tutelar, sem prejuizo de outras providencias legais.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Herminda pode sofrer sancoes, entre elas, a advertencia. Para a aplicacao da medida, e preciso representacao do Ministerio Publico e decisao da autoridade judiciaria."
+        },
+        {
+          "id": "d",
+          "text": "Herminda nao tinha o direito de humilhar e ridicularizar Julia, mesmo para fins corretivos, o que caberia aos pais por serem detentores do poder familiar, mas o ECA nao preve qualquer possibilidade de sancao a tia materna."
+        }
+      ],
+      "correctAlternativeId": "b"
+    },
+    {
+      "id": "q-oab43-044",
+      "statement": "Carlos e Mario possuem uniao estavel homoafetiva ha mais de 15 anos. Ambos trabalham como medicos em prestigiado hospital e contam com vida estavel e harmonica. O casal, em comum acordo, deseja adotar uma crianca, e lhe fornecer todos os direitos que uma pessoa deve ter, tais como educacao, saude e lazer. Para concretizar esse sonho, Carlos e Mario procuram voce, como advogado(a), para que lhes preste a assessoria juridica adequada envolvendo o processo de adocao. Diante desse contexto, assinale a afirmativa correta.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Estatuto da Crianca e do Adolescente",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 44,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "Carlos e Mario nao poderao realizar a adocao conjunta, sendo-lhes assegurado, entretanto, que adotem individualmente."
+        },
+        {
+          "id": "b",
+          "text": "Carlos e Mario podem adotar. Entretanto, nao terao preferencia na lista de adotantes, pois um casal com relacionamento heteroafetivo tera prioridade."
+        },
+        {
+          "id": "c",
+          "text": "Carlos e Mario podem adotar, mas precisam definir previamente sobre a guarda da crianca e eventual regime de visitas para a hipotese eventual de termino da uniao."
+        },
+        {
+          "id": "d",
+          "text": "Carlos e Mario podem realizar a adocao conjunta, pois, de acordo com o ECA, e indispensavel que sejam casados civilmente ou mantenham uniao estavel, comprovada a estabilidade da familia.",
+          "correct": true
+        }
+      ],
+      "correctAlternativeId": "d"
+    },
+    {
+      "id": "q-oab43-045",
+      "statement": "A sociedade empresaria Fabrica de Alimentos Epsilon Ltda. alterou a embalagem de seu principal biscoito, destinado ao publico infantil. O produto foi comercializado com reducao de peso sem a devida ostensividade da informacao no rotulo do produto, sem diminuicao proporcional no preco e inexistencia de indicacao acerca da quantidade de acucar e de lactose. Uma associacao de defesa do consumidor procurou voce, como advogada(o), a respeito da conduta da sociedade empresaria. A respeito do dever de informacao previsto no Codigo de Defesa do Consumidor, assinale a afirmativa correta.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito do Consumidor",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 45,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "A informacao acerca da reducao quantitativa e dos ingredientes deve estar visivel, sendo disponibilizada em mensagem clara e precisa.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "A falta e a deficiencia material ou formal de informacao so violam as normas de protecao do consumidor quando causam danos materiais ao consumidor."
+        },
+        {
+          "id": "c",
+          "text": "As informacoes a respeito da quantidade, da composicao e do preco dos produtos podem constar em lingua portuguesa ou estrangeira, desde que seja de facil compreensao do consumidor."
+        },
+        {
+          "id": "d",
+          "text": "Caso o produto tenha na embalagem mencao ao site da empresa, as informacoes a respeito da pesagem e dos ingredientes nao precisam constar na embalagem, desde que estejam no endereco eletronico."
+        }
+      ],
+      "correctAlternativeId": "a"
+    },
+    {
+      "id": "q-oab43-046",
+      "statement": "Angela Silva, com o proposito de celebrar os seus 20 anos de formada, adquiriu um pacote de viagens, na loja virtual de uma conhecida sociedade empresaria de turismo. Ocorre que, seis dias apos a aquisicao, foi surpreendida por seus filhos com pacote de viagens semelhante. Em razao disso, contactou, imediatamente, a sociedade empresaria, por meio dos canais de comunicacao disponibilizados no sitio eletronico, informando a sua desistencia pela aquisicao do servico, pleiteando, portanto, o cancelamento da contratacao. Apos quatro dias da efetiva comunicacao, Angela recebeu resposta da agencia de turismo, informando que o cancelamento era possivel, porem seria cobrada uma taxa de 10% do valor total do pacote, pois, conforme a politica da sociedade empresaria, a desistencia gratuita deve ser informada em ate cinco dias da contratacao. Diante do fato, voce, consultado(a) como advogado(a), ofereceu, corretamente, a seguinte orientacao.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito do Consumidor",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 46,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "A sociedade empresaria nao pode reter o percentual informado, pois Angela tem justo e legitimo motivo para o cancelamento."
+        },
+        {
+          "id": "b",
+          "text": "A sociedade empresaria pode reter o percentual informado, desde que comprove que teve custos operacionais com o servico cancelado."
+        },
+        {
+          "id": "c",
+          "text": "A sociedade empresaria pode reter o percentual informado, pois Angela nao exerceu o seu direito de arrependimento no prazo assegurado pelo CDC."
+        },
+        {
+          "id": "d",
+          "text": "A sociedade empresaria nao pode reter o percentual informado, pois Angela desistiu da aquisicao do servico e informou dentro do prazo estabelecido pelo CDC.",
+          "correct": true
+        }
+      ],
+      "correctAlternativeId": "d"
+    },
+    {
+      "id": "q-oab43-047",
+      "statement": "Uma sociedade simples que adotou um dos tipos societarios previstos no Codigo Civil, com sede em Guarapari/ES, foi constituida por prazo determinado, ate 31 de dezembro de 2023. Sobre a situacao da sociedade empresaria a partir de 1o de janeiro de 2024, assinale a afirmativa correta.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Empresarial",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 47,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "Ela continuara em atividade normalmente ate que algum socio ou credor requeira sua dissolucao judicial nos 30 (trinta) dias seguintes apos o termino do prazo de duracao.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Os administradores devem providenciar imediatamente a investidura do liquidante, mantendo os negocios sociais por ate 180 dias (cento e oitenta dias); findo esse prazo, a continuidade da atividade implica na responsabilidade ilimitada e solidaria deles."
+        },
+        {
+          "id": "c",
+          "text": "A dissolucao judicial da sociedade pode ser requerida por qualquer socio, devido ao exaurimento do fim social, cabendo ao Juiz a nomeacao do liquidante."
+        },
+        {
+          "id": "d",
+          "text": "A sociedade reputa-se dissolvida em razao do vencimento do prazo de duracao, salvo se, sem oposicao de socio, nao entrar a sociedade em liquidacao, caso em que se prorrogara por tempo indeterminado."
+        }
+      ],
+      "correctAlternativeId": "a"
+    },
+    {
+      "id": "q-oab43-048",
+      "statement": "Lucelia, Marilia e Natividade constituiram uma sociedade empresaria sem levar o documento escrito de constituicao a qualquer registro. Ficou estabelecido verbalmente entre as socias que os atos sociais seriam praticados por Marilia, no interesse comum. Inadimplida uma obrigacao social, o credor, ciente da existencia da sociedade, demandou a sociedade e todas as socias, responsabilizando-as solidariamente e sem beneficio de ordem pela obrigacao assumida por Marilia. Considerados tais fatos, assinale a afirmativa correta.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Empresarial",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 48,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "O credor nao poderia demandar a sociedade em razao da ausencia de personalidade juridica, sendo, contudo, possivel exigir de todas as socias, solidariamente e sem beneficio de ordem, a obrigacao assumida por Marilia."
+        },
+        {
+          "id": "b",
+          "text": "O credor agiu corretamente ao demandar a sociedade, ainda que diante da ausencia de personalidade juridica; contudo, mesmo havendo solidariedade entre as socias, Lucelia e Natividade possuem beneficio de ordem.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "O credor esta autorizado a demandar a sociedade, diante da ausencia de personalidade juridica, como tambem podera responsabilizar as socias Lucelia e Natividade, solidariamente e sem beneficio de ordem, pela obrigacao assumida por Marilia."
+        },
+        {
+          "id": "d",
+          "text": "O credor esta totalmente equivocado, pois a sociedade nao poderia ser demandada, em razao da ausencia de personalidade juridica, e deve ser respeitado o beneficio de ordem das socias Lucelia e Natividade, que nao contrataram pela sociedade."
+        }
+      ],
+      "correctAlternativeId": "b"
+    },
+    {
+      "id": "q-oab43-049",
+      "statement": "Bento de Abreu e Bernardino de Campos sao os unicos socios e fundadores da sociedade empresaria Abreu & Campos Ltda. Os socios deliberaram a transformacao da sociedade de limitada para companhia e lhe pediram orientacao sobre o nome empresarial. Considerando algumas das regras para a formacao do nome empresarial do tipo que a sociedade adotara, assinale a afirmativa correta.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Empresarial",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 49,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "A companhia adotara denominacao, na qual podera constar o(s) nome(s) do(s) fundador(es), sendo facultada a designacao do objeto social."
+        },
+        {
+          "id": "b",
+          "text": "A companhia adotara firma, sendo formada por nome de fantasia a partir da escolha dos socios, seguido obrigatoriamente pela designacao do objeto social."
+        },
+        {
+          "id": "c",
+          "text": "A companhia adotara denominacao, formada apenas pelo nome dos socios, seguida facultativamente pela expressao Sociedade Anonima ou Companhia, indicadas unicamente ao final."
+        },
+        {
+          "id": "d",
+          "text": "A companhia podera adotar firma ou denominacao, devendo ser mantido o nome antigo Abreu & Campos, substituindo-se o aditivo Ltda. pelo aditivo Companhia ou Cia.",
+          "correct": true
+        }
+      ],
+      "correctAlternativeId": "d"
+    },
+    {
+      "id": "q-oab43-050",
+      "statement": "Itarana Avicola e Abatedouro S.A. celebrou contrato de alienacao fiduciaria de veiculos automotores com o Banco Alegre S.A. O valor financiado deveria ser pago em 60 (sessenta) prestacoes mensais, mas, apos o vencimento da 14a (decima quarta) prestacao, a fiduciante cessou o pagamento. Sobre a hipotese, assinale a opcao que indica a providencia assegurada por lei ao fiduciario.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Empresarial",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 50,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "Vender os bens alienados a terceiros, independentemente de leilao, hasta publica, avaliacao previa ou qualquer outra medida judicial ou extrajudicial, apos a comprovacao previa da mora do fiduciante, salvo disposicao expressa em contrario prevista no contrato.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Requerer, independentemente de comprovacao da mora, contra o fiduciante, a busca e apreensao dos bens alienados fiduciariamente, a qual sera concedida liminarmente, podendo ser apreciada em plantao judiciario."
+        },
+        {
+          "id": "c",
+          "text": "Ajuizar acao de execucao para a entrega de coisa certa, pleiteando nos mesmos autos a busca e apreensao, que sera deferida liminarmente, salvo na hipotese de ter sido requerida recuperacao judicial pelo fiduciante."
+        },
+        {
+          "id": "d",
+          "text": "Promover, alternativamente ao pedido de busca e apreensao dos bens, independentemente de comprovacao da mora, a consolidacao da propriedade perante o competente cartorio de registro de titulos e documentos, desde que haja previsao expressa no contrato em clausula em destaque."
+        }
+      ],
+      "correctAlternativeId": "a"
+    },
+    {
+      "id": "q-oab43-051",
+      "statement": "Rodrigo e Thais, apos o inicio do namoro, assistiam a um show em uma arena lotada, com cerca de dez mil pessoas, promovido pela Alegria Producoes Artisticas. Em um determinado momento, eles perceberam que o teto montado especialmente para o evento estava desabando e, em consequencia, duas mil pessoas ficaram feridas, entre elas, Rodrigo e Thais. Apos a negativa da Alegria Producoes Artisticas em reparar os danos causados, Rodrigo e Thais convenceram todas as pessoas feridas no show a proporenacao, em conjunto, em face da produtora. Sobre o caso concreto, assinale a afirmativa correta.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Processual Civil",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 51,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "Duas ou mais pessoas nao podem litigar no mesmo processo, haja vista que a acao judicial devera ser proposta de forma individualizada."
+        },
+        {
+          "id": "b",
+          "text": "Duas ou mais pessoas podem litigar no mesmo processo, em conjunto, mas apenas no polo ativo, ficando vedado o litisconsorcio passivo."
+        },
+        {
+          "id": "c",
+          "text": "O Juiz podera limitar o litisconsorcio facultativo quanto ao numero de litigantes na fase de conhecimento, quando este comprometer a rapida solucao do litigio ou dificultar a defesa ou o cumprimento de sentenca.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "O Juiz nao podera limitar o litisconsorcio facultativo, por ausencia de previsao legal, sendo direito de todos os envolvidos no acidente propor a acao em conjunto."
+        }
+      ],
+      "correctAlternativeId": "c"
+    },
+    {
+      "id": "q-oab43-052",
+      "statement": "Voce, como advogado(a), foi procurado(a) por Joana e por Regina, cada uma pretendendo propor acao reparatoria perante os Juizados Especiais Civeis. Joana deseja ajuizar acao para cobrar o equivalente a 100 salarios minimos, ao passo que Regina pretende cobrar o correspondente a 30 salarios minimos. Sobre as acoes pretendidas por Joana e Regina, assinale a afirmativa correta.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Processual Civil",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 52,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "Regina podera propor acao sem advogado, pois nas causas de ate 30 salarios minimos nao e obrigatoria a assistencia de advogado."
+        },
+        {
+          "id": "b",
+          "text": "Em nenhuma hipotese Joana podera ingressar no Juizado Especial Civel, pois este nao tem competencia para processar causas cujo valor exceda a 40 salarios minimos, independentemente da materia."
+        },
+        {
+          "id": "c",
+          "text": "Para o deferimento da gratuidade de justica, Joana e Regina deverao comprovar ter renda inferior a 10 salarios minimos."
+        },
+        {
+          "id": "d",
+          "text": "Se nas acoes propostas por Joana e Regina, o demandado nao comparecer a sessao de conciliacao ou a audiencia de instrucao e julgamento, reputar-se-ao verdadeiros os fatos alegados no pedido inicial, salvo se o contrario resultar da convicao motivada do Juiz.",
+          "correct": true
+        }
+      ],
+      "correctAlternativeId": "d"
+    },
+    {
+      "id": "q-oab43-053",
+      "statement": "Maria ajuizou acao em face da Uniao, com pedido de condenacao desta a entrega de remedios, por ser portadora de grave doenca cardiaca. Apos o regular processamento, o Juizo da Vara Federal competente proferiu sentenca de procedencia condenando a Uniao a entregar o medicamento solicitado. A Fazenda Publica foi vencida e, na hipotese, foi aplicado pelo Juiz o instituto da remessa necessaria, com o envio do processo ao Tribunal Regional Federal, embora a Uniao nao tenha apelado da sentenca. Acerca da remessa necessaria, segundo o ordenamento juridico brasileiro, assinale a afirmativa correta.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Processual Civil",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 53,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "Aplica-se a remessa necessaria quando a sentenca estiver fundada em entendimento firmado em incidente de assuncao de competencia."
+        },
+        {
+          "id": "b",
+          "text": "Aplica-se a remessa necessaria quando a condenacao ou o proveito economico obtido na causa for de valor certo e liquido inferior a mil salarios minimos para a Uniao."
+        },
+        {
+          "id": "c",
+          "text": "Nao se aplica a remessa necessaria aos casos de competencia de Juizados Especiais da Fazenda Publica, mas pode ser aplicada as sentencas de acoes ajuizadas em Varas Federais.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Como a Uniao nao interpos o recurso de apelacao no prazo legal, o Juiz nao podera ordenar a remessa do processo para o reexame necessario no Tribunal, independentemente do valor dos remedios."
+        }
+      ],
+      "correctAlternativeId": "c"
+    },
+    {
+      "id": "q-oab43-054",
+      "statement": "Henrique propos acao condenatoria de alimentos em face de Juliano, seu pai. A sentenca julgou procedente o pedido, condenando o reu ao pagamento de R$ 5.000 (cinco mil reais) por mes. Inconformado, Juliano interpos recurso de apelacao, buscando a reforma da sentenca. Apos a intimacao para apresentacao de contrarrazoes, voce, como advogado(a) contratado por Henrique, deseja requerer o cumprimento provisorio da sentenca, com o intuito de, desde logo, receber os alimentos vincendos. Tomando o caso acima como premissa, assinale a afirmativa correta.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Processual Civil",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 54,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "Voce podera requerer o cumprimento provisorio de sentenca, com dispensa de caucao para a execucao da decisao.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Eventual reforma parcial da sentenca, em razao do recurso de apelacao, levara a perda de eficacia total do cumprimento, em razao de sua provisoriedade."
+        },
+        {
+          "id": "c",
+          "text": "Nao incidirao multa e honorarios no cumprimento provisorio de sentenca, pois o executado, em razao da pendencia do recurso, nao e obrigado a cumprir a decisao ate o seu transito em julgado."
+        },
+        {
+          "id": "d",
+          "text": "Iniciado o cumprimento provisorio de sentenca, caso Juliano deposite o valor exequendo para se exonerar da multa, seu recurso de apelacao nao sera conhecido ante a preclusao logica do direito de recorrer."
+        }
+      ],
+      "correctAlternativeId": "a"
+    },
+    {
+      "id": "q-oab43-055",
+      "statement": "Anacleto ajuizou acao de indenizacao contra a sociedade empresaria de telefonia Alo, tendo sido proferida sentenca de procedencia do pedido, com a condenacao da re ao pagamento de indenizacao por danos morais e materiais, mas sem especificacao dos valores. A sociedade Alo interpos recurso de apelacao, ainda pendente de julgamento, mas Anacleto deseja desde logo obter a definicao do montante correspondente aos danos sofridos. Acerca da situacao apresentada, assinale a afirmativa correta.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Processual Civil",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 55,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "A liquidacao da sentenca antes do transito em julgado so e cabivel caso o autor ofereca caucao."
+        },
+        {
+          "id": "b",
+          "text": "E possivel a liquidacao de sentenca mesmo antes do transito em julgado, independentemente dos efeitos em que foi recebido o recurso de apelacao.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Anacleto podera promover a liquidacao de sentenca antes do transito em julgado, caso a apelacao tenha sido recebida unicamente no efeito devolutivo."
+        },
+        {
+          "id": "d",
+          "text": "Anacleto nao podera promover a liquidacao de sentenca antes do transito em julgado, uma vez que a decisao ainda pode ser modificada quando do julgamento de recurso de apelacao."
+        }
+      ],
+      "correctAlternativeId": "b"
+    },
+    {
+      "id": "q-oab43-056",
+      "statement": "Joao e Marina celebraram contrato de arrendamento com previsao de clausula compromissoria arbitral, na qual estipularam que qualquer disputa de natureza patrimonial decorrente do contrato seria submetida a arbitragem. Apos desentendimentos acerca do cumprimento de uma das obrigacoes previstas em contrato, Marina resolveu ajuizar acao judicial contra Joao, na qual busca indenizacao pelos prejuizos que alega ter sofrido. Uma vez citado, Joao nao apresentou contestacao. Durante a fase instrucao, ao examinar o contrato celebrado entre as partes, o Magistrado do caso visualizou a existencia de clausula compromissoria celebrada entre as partes. Considerando o caso narrado, assinale a afirmativa correta.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Processual Civil",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 56,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "Caso Joao instaure procedimento arbitral contra Marina no curso da acao judicial ajuizada por ela, ambos terao seu caso julgado exclusivamente pelo Tribunal Arbitral."
+        },
+        {
+          "id": "b",
+          "text": "As partes terao seu caso julgado pela jurisdicao estatal, tendo em vista que Joao nao alegou convencao de arbitragem como preliminar de contestacao, circunstancia que representa renuncia a jurisdicao arbitral.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Joao deve arguir a existencia de clausula compromissoria quando apresentar manifestacao requerendo a producao de provas, por se tratar do momento apropriado para apontar a existencia de clausula compromissoria no contrato celebrado entre as partes."
+        },
+        {
+          "id": "d",
+          "text": "Joao nao precisa se manifestar nos autos acerca da existencia de clausula compromissoria no contrato, pois cabe ao Magistrado conhecer de oficio a existencia de tal clausula e extinguir a acao sem resolucao do merito, uma vez que nao tem competencia para julgar o caso."
+        }
+      ],
+      "correctAlternativeId": "b"
+    },
+    {
+      "id": "q-oab43-057",
+      "statement": "Um grupo realizava uma manifestacao social pacifica contra o aumento da tarifa de onibus. A atividade era acompanhada por grande contingente de policiais militares. Rodrigo, um dos manifestantes, de forma exaltada, arremessou uma pedra em uma viatura da Policia Militar estacionada na localidade, quebrando dolosamente o vidro do para-brisa dianteiro. A partir das informacoes acima trazidas, assinale a opcao que indica o crime cometido por Rodrigo.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Penal",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 57,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "Terrorismo."
+        },
+        {
+          "id": "b",
+          "text": "Dano simples."
+        },
+        {
+          "id": "c",
+          "text": "Dano qualificado.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Ilicito civil, pois a conduta descrita nao configura crime."
+        }
+      ],
+      "correctAlternativeId": "c"
+    },
+    {
+      "id": "q-oab43-058",
+      "statement": "Oliver, que ja fora condenado por crime culposo anteriormente e que terminara de cumprir sua pena ha dois anos, cometeu o crime de lesao corporal de natureza grave, previsto no Art. 129, par. 1o, do CP, cuja pena cominada e de um a cinco anos de reclusao. Ele foi condenado a pena de um ano e oito meses de reclusao, tendo sua condenacao sido proferida tres anos apos o termino do cumprimento da pena pelo crime culposo anterior. Tomando por base o delito praticado e a pena aplicada, sobre a possibilidade de Oliver ter sua pena privativa de liberdade substituida por duas penas restritivas de direitos, assinale a afirmativa correta.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Penal",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 58,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "A reincidencia so impediria a substituicao se o crime anterior tambem fosse doloso."
+        },
+        {
+          "id": "b",
+          "text": "A reincidencia em crime culposo nao impede a substituicao e tampouco ha obice pelo fato de o crime ser cometido com violencia a pessoa."
+        },
+        {
+          "id": "c",
+          "text": "Uma vez que Oliver e reincidente, a substituicao e vedada, sendo indiferente o fato de o crime anterior ser culposo ou mesmo o fato de o novo crime ter sido cometido com violencia a pessoa."
+        },
+        {
+          "id": "d",
+          "text": "Apesar de a reincidencia em crime culposo nao obstar a substituicao, o fato de o crime ter sido cometido com violencia a pessoa impede a substituicao pela pena restritiva de direitos.",
+          "correct": true
+        }
+      ],
+      "correctAlternativeId": "d"
+    },
+    {
+      "id": "q-oab43-059",
+      "statement": "Rodrigo, brasileiro, obteve bolsa de estudos para intercambio de seis meses em uma universidade nos Estados Unidos. Nesse periodo, Rodrigo comecou a namorar Mary, uma jovem estadunidense. Apos uma crise de ciumes, Rodrigo matou Mary, por estrangulamento, no apartamento em que morava na Florida. O feminicidio constitui infracao penal nos Estados Unidos. No dia seguinte aos fatos, Rodrigo retornou ao Brasil. Como advogado da familia da vitima, esclareca a viabilidade de aplicacao da Lei Penal brasileira a Rodrigo, identificando o principio penal correspondente.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Penal",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 59,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "O principio da bandeira ou do pavilhao admite a responsabilidade penal de Rodrigo pelo fato ocorrido no estrangeiro."
+        },
+        {
+          "id": "b",
+          "text": "O principio da personalidade passiva impede a responsabilidade penal de Rodrigo, pois a vitima era estadunidense."
+        },
+        {
+          "id": "c",
+          "text": "O principio da personalidade ativa enseja a hipotese de extraterritorialidade condicionada, autorizando a aplicacao da Lei Penal brasileira a Rodrigo.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "O principio da defesa ou da protecao impede a aplicacao da Lei brasileira a fatos ocorridos no exterior, especialmente quando o autor do fato for brasileiro nato."
+        }
+      ],
+      "correctAlternativeId": "c"
+    },
+    {
+      "id": "q-oab43-060",
+      "statement": "Joao mora em Ipanema e, ha dois anos, faz aula de futevolei na praia do Leblon, tres vezes por semana. Joao sempre realiza tal trajeto em sua bicicleta eletrica, da marca Bike legal, cor preta com banco de couro marrom. No mes passado, ao final do treino, Joao pegou uma bicicleta eletrica identica a sua e voltou para casa. Dias depois, Joao foi intimado a comparecer a Delegacia de Policia para prestar declaracoes sobre um possivel crime de furto, uma vez que o circuito de cameras permitiu identificar que Joao havia levado a bicicleta de uma moca de nome Fernanda. No caso narrado, e correto afirmar que Joao agiu diante de",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Penal",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 60,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "erro de tipo essencial.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "erro de tipo acidental."
+        },
+        {
+          "id": "c",
+          "text": "estado de necessidade."
+        },
+        {
+          "id": "d",
+          "text": "erro de proibicao direto."
+        }
+      ],
+      "correctAlternativeId": "a"
+    },
+    {
+      "id": "q-oab43-061",
+      "statement": "Ateneu e Moises combinaram a pratica conjunta de um crime de furto. Moises, exmio motorista, aguardou na rua com o carro ja ligado e Ateneu, especialista em abertura de cofres, ingressou na residencia de um famoso jogador de futebol que atuava no exterior. Ambos pensavam que a casa estava vazia, mas ao ingressar no imovel, Ateneu se deparou com Izabel, empregada domestica que trabalhava no local, tendo, entao, sacado a arma de fogo que portava, sem a ciencia de Moises, e matado Izabel com um tiro na testa. Ateneu levou consigo joias e dinheiro. Ao tomar ciencia da morte de Izabel, Moises nao quis ficar com nada. Diante de tal situacao hipotetica, assinale a afirmativa correta.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Penal",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 61,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "Moises nao praticou fato criminalmente punivel."
+        },
+        {
+          "id": "b",
+          "text": "Ambos praticaram, em coautoria, os delitos de homicidio e roubo."
+        },
+        {
+          "id": "c",
+          "text": "Ateneu praticou o delito de furto qualificado pelo resultado morte."
+        },
+        {
+          "id": "d",
+          "text": "Moises deve ser responsabilizado mediante aplicacao da pena relativa ao crime de furto.",
+          "correct": true
+        }
+      ],
+      "correctAlternativeId": "d"
+    },
+    {
+      "id": "q-oab43-062",
+      "statement": "Apos ter seu pedido de aumento salarial negado, Sara, empregada domestica, adicionou, com intencao de matar, veneno na feijoada que preparou para Raquel, sua patroa. Raquel sentiu-se mal, sendo socorrida por terceiros e levada ao hospital, onde contraiu uma infeccao. Ela veio a falecer dois meses apos ser internada, pois a infeccao fora agravada pela ingestao de veneno. Sobre tal situacao hipotetica, assinale a opcao que indica, corretamente, o delito praticado por Sara.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Penal",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 62,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "Homicidio doloso tentado."
+        },
+        {
+          "id": "b",
+          "text": "Homicidio culposo tentado."
+        },
+        {
+          "id": "c",
+          "text": "Homicidio doloso consumado.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Lesao corporal seguida de morte."
+        }
+      ],
+      "correctAlternativeId": "c"
+    },
+    {
+      "id": "q-oab43-063",
+      "statement": "Gabriela se dirigiu a uma agencia da Caixa Economica Federal, empresa publica federal, a fim de tentar sacar beneficio assistencial pago pela Uniao a pessoas em situacao de vulnerabilidade financeira, munida de documentos falsos, em nome de terceira pessoa. Gabriela foi presa em flagrante, sendo constatado que ela estava cumprindo pena em regime aberto domiciliar por condenacao relativa a outro fato. Em relacao a execucao penal, assinale a afirmativa que define as consequencias do evento narrado.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Processual Penal",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 63,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "A responsabilizacao de Gabriela depende de representacao da vitima, por se tratar de delito de estelionato."
+        },
+        {
+          "id": "b",
+          "text": "Ao tomar conhecimento do novo crime, o Juiz da execucao pode reconhecer a falta grave e determinar a regressao de regime sem necessidade de contraditorio."
+        },
+        {
+          "id": "c",
+          "text": "Em razao da pratica de crime, em tese, no curso da execucao, Gabriela perdeu em definitivo o direito de obter livramento condicional pela condenacao em execucao."
+        },
+        {
+          "id": "d",
+          "text": "A pratica de novo crime cometido por Gabriela configura, em tese, falta disciplinar de natureza grave, autorizando, de forma fundamentada, a regressao de regime per saltum.",
+          "correct": true
+        }
+      ],
+      "correctAlternativeId": "d"
+    },
+    {
+      "id": "q-oab43-064",
+      "statement": "Marcos foi denunciado como incurso nas penas do delito de furto simples, que consiste em um a quatro anos de reclusao. Ao apresentar resposta a acusacao, a defesa se resguardou o direito de se manifestar sobre o merito em momento oportuno. Entretanto, antes da audiencia de instrucao e do julgamento, voce foi nomeado(a), em substituicao ao advogado anterior, e percebeu que, a epoca da citacao, ja havia sido concluida a prescricao da pretensao punitiva. Assinale a opcao que apresenta, corretamente, sua conduta para o caso.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Processual Penal",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 64,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "Somente pela via do habeas corpus perante o Tribunal sera possivel alegar, pela primeira vez, a tese de extincao da punibilidade."
+        },
+        {
+          "id": "b",
+          "text": "Nao ha que se falar em preclusao, porque o requerimento de extincao da punibilidade pode ser formulado a qualquer tempo.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Ha preclusao temporal para alegar a materia, porque a alegacao de extincao da punibilidade somente pode ser feita por ocasiao da resposta a acusacao."
+        },
+        {
+          "id": "d",
+          "text": "Aguardar o momento das alegacoes finais para postular a extincao da punibilidade, sendo certo que a viabilidade de debater o tema depende do reconhecimento de deficiencia da defesa anteriormente constituida."
+        }
+      ],
+      "correctAlternativeId": "b"
+    },
+    {
+      "id": "q-oab43-065",
+      "statement": "Fabio foi submetido a julgamento pelo Tribunal do Juri e, ao final, condenado a uma pena de 15 anos de reclusao, em regime inicial fechado. Voce, como advogado(a) de Fabio, interpos tempestivo e cabivel recurso. Assinale a opcao que indica o recurso correto interposto e/ou suas caracteristicas.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Processual Penal",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 65,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "O recurso cabivel e de apelacao e o efeito devolutivo e restrito aos fundamentos de interposicao.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "A alegacao de decisao manifestamente contraria a prova dos autos so pode ser repetida por, no maximo, tres vezes."
+        },
+        {
+          "id": "c",
+          "text": "O recurso cabivel e o recurso em sentido estrito e tem efeito regressivo que pode ser exercido pelos proprios jurados."
+        },
+        {
+          "id": "d",
+          "text": "O recurso cabivel tem ampla devolutividade, podendo o Tribunal rever todos os aspectos da sentenca penal condenatoria, inclusive as teses atinentes a materialidade e a autoria."
+        }
+      ],
+      "correctAlternativeId": "a"
+    },
+    {
+      "id": "q-oab43-066",
+      "statement": "Leda se candidatou a uma vaga de emprego na sociedade empresaria X. Ao se apresentar, a socia-administradora Vera afirmou que \"pessoas de cor de pele escura nao sao compativeis com o perfil da vaga\", impedindo, assim, que Leda prosseguisse no processo seletivo. Indignada, Leda procura voce, como advogado(a), a fim de defender seus interesses. Atuando na seara criminal em defesa dos interesses de Leda, voce pode",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Processual Penal",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 66,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "propor acordo de nao persecucao penal a sociedade empresaria X."
+        },
+        {
+          "id": "b",
+          "text": "ajuizar queixa-crime em face de Vera pelo delito de acao penal privada em tese ocorrido."
+        },
+        {
+          "id": "c",
+          "text": "promover, diretamente, a acao penal privada subsidiaria da publica, de competencia da Justica Federal."
+        },
+        {
+          "id": "d",
+          "text": "comunicar o fato a autoridade policial e/ou ao Ministerio Publico, por se tratar de fato sujeito a acao penal publica incondicionada.",
+          "correct": true
+        }
+      ],
+      "correctAlternativeId": "d"
+    },
+    {
+      "id": "q-oab43-067",
+      "statement": "Bernardo agrediu Carolina, sua ex-companheira, causando-lhe lesoes corporais leves, em razao de a vitima ser mulher. O delito em questao e apenado com reclusao de dois a cinco anos. Na qualidade de advogado(a) de Carolina, cabe notar que,",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Processual Penal",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 67,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "apesar do termino do relacionamento, as disposicoes da Lei de Violencia Domestica e Familiar contra a Mulher sao aplicaveis; ademais, nao e cabivel o Acordo de Nao Persecucao Penal, nao havendo medida processual consensual em favor de Bernardo.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "devido ao termino do relacionamento, as disposicoes da Lei de Violencia Domestica e Familiar contra a Mulher nao sao aplicaveis, mas Bernardo nao pode se beneficiar de sursis processual ante a quantidade de pena abstratamente cominada ao delito."
+        },
+        {
+          "id": "c",
+          "text": "apesar do termino do relacionamento, as disposicoes da Lei de Violencia Domestica e Familiar contra a Mulher sao aplicaveis, de forma a se admitir a retratacao da representacao de Carolina, antes do recebimento da denuncia, em audiencia especialmente designada para tal fim."
+        },
+        {
+          "id": "d",
+          "text": "devido ao termino do relacionamento, as disposicoes da Lei de Violencia Domestica e Familiar contra a Mulher nao sao aplicaveis, de modo que Bernardo pode se beneficiar de sursis processual."
+        }
+      ],
+      "correctAlternativeId": "a"
+    },
+    {
+      "id": "q-oab43-068",
+      "statement": "Em uma audiencia, o Ministerio Publico indicou como testemunha a psiquiatra do reu. Apos a qualificacao da testemunha, voce, na condicao de advogado(a) do reu, deve",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Processual Penal",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 68,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "solicitar excecao de suspeicao da testemunha, em razao de sua profissao."
+        },
+        {
+          "id": "b",
+          "text": "oferecer contradita, alegando ser a testemunha proibida de depor por ter conhecimento dos fatos em razao de sua profissao.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "oferecer excecao de litispendencia, ja que a testemunha tem conhecimento dos fatos em razao de sua profissao."
+        },
+        {
+          "id": "d",
+          "text": "aguardar para alegar a nulidade apenas em eventual recurso extraordinario, momento previsto na legislacao como o unico adequado para esse tipo de arguicao."
+        }
+      ],
+      "correctAlternativeId": "b"
+    },
+    {
+      "id": "q-oab43-069",
+      "statement": "Maria, empregada domestica desde julho de 1990, no deslocamento para seu local de trabalho, sofreu um acidente em virtude de uma queda na saida do onibus. Maria nao sabe se deve procurar o sistema previdenciario desde ja e se tem direito a algum beneficio. Por isso, procurou voce, como advogado(a). Assinale a opcao que apresenta, corretamente, sua orientacao.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Previdenciario",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 69,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "O direito ao beneficio nao e reconhecido, pois os empregados domesticos nao sao cobertos pela Previdencia Social brasileira."
+        },
+        {
+          "id": "b",
+          "text": "Sobre o afastamento do trabalho, sendo superior a 15 dias consecutivos, havera direito ao beneficio previdenciario por incapacidade temporaria.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "O beneficio previdenciario deve ser requerido de imediato pelo sitio eletronico do Instituto Nacional do Seguro Social (INSS) ou por central telefonica."
+        },
+        {
+          "id": "d",
+          "text": "Sobre o afastamento do trabalho, se a incapacidade for inferior a 30 dias de afastamento, nao havera qualquer direito subjetivo a beneficio previdenciario."
+        }
+      ],
+      "correctAlternativeId": "b"
+    },
+    {
+      "id": "q-oab43-070",
+      "statement": "Lucas, segurado obrigatorio do Regime Geral de Previdencia Social (RGPS), cometeu um crime e foi recolhido a prisao em regime fechado, em 1o/1/2023, tendo contribuido previamente por 24 meses. Sobre a hipotese narrada, assinale a afirmativa correta.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Previdenciario",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 70,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "O auxilio-reclusao e destinado ao segurado que foi preso, para que ele nao fique desamparado."
+        },
+        {
+          "id": "b",
+          "text": "Os dependentes de Lucas fazem jus ao auxilio-reclusao, mesmo que o segurado preso nao seja de baixa renda."
+        },
+        {
+          "id": "c",
+          "text": "A conjuge de Lucas nao podera acumular o auxilio por incapacidade temporaria que hoje recebe com o auxilio-reclusao decorrente da prisao do marido, devendo optar pelo mais favoravel."
+        },
+        {
+          "id": "d",
+          "text": "O exercicio de atividade remunerada do segurado recluso, em cumprimento de pena em regime fechado, nao acarreta a perda do direito ao recebimento do auxilio-reclusao para seus dependentes.",
+          "correct": true
+        }
+      ],
+      "correctAlternativeId": "d"
+    },
+    {
+      "id": "q-oab43-071",
+      "statement": "Rogeria, socia de uma sociedade empresaria especializada em festas infantis, saiu fraudulentamente da empresa em 2018, transferindo formalmente suas cotas sociais a um dos empregados da sociedade empresaria que nao tinha condicoes economicas ou solvabilidade. Rogeria, mesmo apos sua saida, permaneceu com uma procuracao da sociedade empresaria para movimentar as contas bancarias e fazia uso regular delas com transferencias para sua conta, pagamentos de empregados, fornecedores e outros compromissos. Em 2022, um dos empregados ajuizou uma reclamacao trabalhista que terminou em acordo no valor de R$ 30.000 (trinta mil reais), que nao foram pagos na data acertada. Nao havendo condicoes de executar a sociedade empresaria, voce, como advogado(a) do exequente, requereu o incidente de desconsideracao da personalidade juridica, incluindo os socios atuais e Rogeria. Sobre a acao interposta, considerando o que dispoe a CLT, assinale a afirmativa correta.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito do Trabalho",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 71,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "Rogeria nao podera ser alcancada, porque desligou-se formalmente da sociedade empresaria ha mais de dois anos."
+        },
+        {
+          "id": "b",
+          "text": "A ex-socia, em razao da fraude perpetrada, tera responsabilidade subsidiaria em relacao aos socios atuais."
+        },
+        {
+          "id": "c",
+          "text": "Rogeria tera responsabilidade solidaria para com os demais socios, em virtude da fraude na alteracao societaria.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Nao existe responsabilidade dos socios atuais, porque eles nao agiram com fraude e, assim, Rogeria tambem nao pode ser responsabilizada."
+        }
+      ],
+      "correctAlternativeId": "c"
+    },
+    {
+      "id": "q-oab43-072",
+      "statement": "Sergio foi contratado, em 2022, por uma industria mecanica para receber um salario mensal de R$ 3.000 (tres mil reais). Ele pediu para nao ter a CTPS assinada, porque estava recebendo o seguro-desemprego do emprego anterior. Tambem nao queria ter contracheque formal para que a ex-esposa nao soubesse do novo emprego, uma vez que estava devendo a pensao alimenticia e nao queria que houvesse desconto judicial. A sociedade empresaria cedeu aos seus argumentos e nao assinou sua carteira profissional. Sobre a decisao da sociedade empresaria, considerando o que dispoe a CLT, assinale a afirmativa correta.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito do Trabalho",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 72,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "Ela nao precisa assinar a CTPS, desde que isso esteja previsto em norma coletiva."
+        },
+        {
+          "id": "b",
+          "text": "Ela agiu incorretamente, porque deveria anotar o contrato de trabalho na CTPS no prazo de cinco dias uteis.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Ela esta equivocada, pois a anotacao da CTPS e direito irrenunciavel e deve ser feita em 15 (quinze) dias corridos."
+        },
+        {
+          "id": "d",
+          "text": "Ela agiu corretamente, porque essa era a vontade livre manifestada pelo empregado e, atualmente, o negociado suplanta o legislado."
+        }
+      ],
+      "correctAlternativeId": "b"
+    },
+    {
+      "id": "q-oab43-073",
+      "statement": "As irmas Margarida, Hortencia e Rosa aderiram ao plano de demissao voluntaria (PDV) oferecido pelos seus respectivos empregadores. No caso de Margarida, a previsao do PDV encontrava-se em acordo coletivo de trabalho; no caso de Hortencia, estava previsto em convencao coletiva de trabalho; e, no caso de Rosa, em norma interna definida pelo empregador. Feitas as extincoes dos contratos em 2024, sem ressalvas, as irmas pretendem ajuizar reclamacao trabalhista postulando direitos supostamente lesados ao longo do pacto laboral. Considerando a situacao apresentada e os termos da CLT, assinale a afirmativa correta.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito do Trabalho",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 73,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "Margarida e Hortencia deram quitacao plena e irrevogavel dos direitos decorrentes da relacao empregaticia, nao podendo postular diferencas.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "As tres irmas poderao ajuizar acao trabalhista com chance de sucesso, porque nao houve homologacao do PDV no sindicato de classe das empregadas."
+        },
+        {
+          "id": "c",
+          "text": "A quitacao geral somente ocorrera no caso de Hortencia, porque foi elaborada em convencao coletiva de trabalho."
+        },
+        {
+          "id": "d",
+          "text": "Nenhuma das irmas podera ajuizar acao, porque elas se submeteram as regras do PDV e nao fizeram constar ressalva."
+        }
+      ],
+      "correctAlternativeId": "a"
+    },
+    {
+      "id": "q-oab43-074",
+      "statement": "Em sede de sentenca prolatada nos autos de reclamacao trabalhista, na qual voce advoga para a sociedade empresaria, parte re, o Juiz reconheceu que tanto o seu cliente como o autor da acao foram responsaveis pela rescisao motivada do contrato de trabalho, tendo se operado a justa causa do empregado, concomitantemente com a rescisao indireta por parte do empregador. Sobre os fatos apresentados, assinale a afirmativa correta. (QUESTAO ANULADA)",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito do Trabalho",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 74,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "Dada a concomitancia de motivacoes para o termino motivado da relacao contratual, presume-se pela dispensa imotivada, sendo devidas as verbas trabalhistas dai decorrentes."
+        },
+        {
+          "id": "b",
+          "text": "Configurada a culpa reciproca, seu cliente tera direito apenas a 50% das ferias vencidas e ao saldo de salarios integral, nao havendo direito aos valores de aviso previo, ferias e 13o salario proporcionais e a multa sobre o FGTS."
+        },
+        {
+          "id": "c",
+          "text": "Configurada a culpa reciproca, seu cliente tera direito a 50% do valor do aviso previo, das ferias proporcionais e do 13o salario proporcional, alem dos valores das ferias vencidas e do saldo de salarios. A multa sobre o FGTS, no entanto, nao sera devida."
+        },
+        {
+          "id": "d",
+          "text": "Configurada a culpa reciproca, seu cliente tera direito a 50% do valor do aviso previo, das ferias proporcionais e do 13o salario proporcional e 20% da multa sobre o FGTS, alem dos valores que ja seriam devidos na hipotese de justa causa, quais sejam, ferias vencidas e saldo de salarios."
+        }
+      ],
+      "correctAlternativeId": "anulada"
+    },
+    {
+      "id": "q-oab43-075",
+      "statement": "Determinada sociedade empresaria firmou acordo coletivo com o sindicato dos empregados dispondo sobre banco de horas e compensacao de horas extras, assim como sobre reducao de intervalo. A jornada inicial de oito horas diarias, de segunda a sexta-feira, e quatro horas no sabado, perfazendo um total de 44 horas foi alterada. Pelo acordo coletivo, foi estabelecido que os empregados trabalhariam 30 minutos a mais no final do dia de segunda a quinta-feira e teriam apenas 30 minutos de intervalo, o que aumentaria o total trabalhado para nove horas diarias. Na sexta-feira o trabalho seria normal, com oito horas de jornada e intervalo de uma hora, e nao haveria mais trabalho aos sabados. As horas extras excedentes seriam compensadas em ate tres meses com folgas ou reducao da jornada diaria de acordo com o banco de horas. Alguns empregados ajuizaram reclamacao trabalhista questionando a alteracao, alegando prejuizo por trabalharem mais, com a reducao do intervalo e uma maior jornada, afirmando que isso contrariava a CLT e a CRFB. Sobre a hipotese apresentada, assinale a afirmativa correta.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito do Trabalho",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 75,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "O acordo coletivo e valido, exceto quanto ao banco de horas."
+        },
+        {
+          "id": "b",
+          "text": "O acordo coletivo e invalido com relacao ao acrescimo de jornada, pois o limite diario constitucional e de oito horas."
+        },
+        {
+          "id": "c",
+          "text": "O acordo coletivo e invalido apenas com relacao a reducao do intervalo, pois, para a jornada de oito horas, o intervalo minimo e de uma hora."
+        },
+        {
+          "id": "d",
+          "text": "Em todas as hipoteses, nao ha violacao a CLT ou a CRFB, pois admite-se a prevalencia do negociado sobre o legislado, respeitados os limites minimos previstos na Constituicao.",
+          "correct": true
+        }
+      ],
+      "correctAlternativeId": "d"
+    },
+    {
+      "id": "q-oab43-076",
+      "statement": "Voce, como advogado(a), foi procurado(a) por Orlando, ex-funcionario da sociedade empresaria Limpeza Total Ltda., a qual prestava servicos para uma autarquia publica federal, aduzindo que foi dispensado sem receber as verbas rescisorias. Voce deseja propor uma reclamacao trabalhista em face da ex-empregadora, mas tem conhecimento de que esta nao possui lastro financeiro algum, apesar do valor da causa da acao, que monta o equivalente a 30 salarios-minimos. Orlando, como trabalhava no Departamento de Recursos Humanos, forneceu dados e provas de que a tomadora dos servicos nunca fiscalizou o contrato, nem conferiu o adimplemento de quaisquer dos direitos trabalhistas dos empregados terceirizados. Na melhor defesa de seu cliente, assinale a afirmativa que apresenta, corretamente, o que voce devera propor.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Processual do Trabalho",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 76,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "Uma acao apenas em face da ex-empregadora, pois nao cabe responsabilidade subsidiaria da autarquia publica federal."
+        },
+        {
+          "id": "b",
+          "text": "Uma acao exclusivamente em face da tomadora dos servicos, pelo rito sumarissimo, pois ja tem conhecimento do inadimplemento da ex-empregadora."
+        },
+        {
+          "id": "c",
+          "text": "Uma reclamacao trabalhista em face da ex-empregadora e da tomadora dos servicos, que respondera subsidiariamente, sendo certo que a acao correra pelo rito ordinario.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Uma reclamacao trabalhista em face da ex-empregadora e da tomadora dos servicos, que respondera subsidiariamente, sendo certo que a acao correra pelo rito sumarissimo."
+        }
+      ],
+      "correctAlternativeId": "c"
+    },
+    {
+      "id": "q-oab43-077",
+      "statement": "Jose Luiz ajuizou reclamacao trabalhista em face de Lojas Internacionais Ltda., pleiteando verbas resilisorias e horas extras. No dia da audiencia, apesar de regularmente notificado, Jose Luiz injustificadamente nao compareceu. Seu advogado, presente, requereu a dispensa de custas pela gratuidade de justica, o que foi deferido pelo Juiz, com a concordancia do reu e do respectivo advogado, tambem presentes na audiencia. Acao identica foi ajuizada um mes apos o fato, e, de novo, Jose Luiz injustificadamente nao compareceu, sendo que, dessa vez, uma hora apos a audiencia, ele compareceu a sala de audiencia e disse ao Juiz e ao secretario da audiencia que dormira demais, perdendo a hora, e, por isso, atrasou-se e nao chegou no horario. Foi juntada certidao do fato ao processo, no qual, novamente, foi acolhido o seu requerimento de gratuidade de justica. As duas acoes anteriormente ajuizadas foram extintas sem resolucao do merito. Agora, voce foi procurado por Jose Luiz para, como advogado(a), ajuizar outra acao identica. Sobre as consequencias das ausencias de Jose Luiz para o ajuizamento de outra demanda, assinale a afirmativa correta.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Processual do Trabalho",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 77,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "Ocorrera a confissao do autor."
+        },
+        {
+          "id": "b",
+          "text": "Nao ha penalidade, ja que Jose Luiz, em ambas as situacoes, foi dispensado do pagamento das custas."
+        },
+        {
+          "id": "c",
+          "text": "Jose Luiz incorrera na pena da perempacao, perdendo, pelo prazo de seis meses, o direito de reclamar perante a Justica do Trabalho.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Jose Luiz podera reclamar imediatamente, mas, independentemente, da prescricao parcial quinquenal, sera descontado do prazo da sua reclamacao o periodo de seis meses."
+        }
+      ],
+      "correctAlternativeId": "c"
+    },
+    {
+      "id": "q-oab43-078",
+      "statement": "Voce, na qualidade de advogado(a) de Pedro, ajuizou reclamacao trabalhista em face da industria de calcados Guanabara. Pedro trabalhou para a sociedade empresaria re, entre os anos de 2018 e 2022, e afirma que nao recebeu o 13o salario de 2021 e que trabalhava cerca de 10 horas por dia. Voce ajuizou reclamacao trabalhista, pretendendo o pagamento do 13o salario de 2021 e as horas extras. A ex-empregadora apresentou defesa, aduzindo que pagou o 13o salario, que, conforme cartoes de ponto juntados, Pedro nao realizava horas extras e sua jornada estava prevista em norma coletiva da categoria. Na qualidade de advogado(a) de Pedro, voce impugnou os cartoes de ponto argumentando que nao refletiam o real horario laborado, sendo certo que os documentos mostram horarios variados de inicio e fim da jornada. Acerca do onus da prova que incumbira ao seu cliente, de acordo com a CLT, e o entendimento jurisprudencial consolidado do TST, assinale a afirmativa correta.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Processual do Trabalho",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 78,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "O onus da prova do pagamento do 13o salario cabera a re e, o das horas extras, ao autor.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "A re devera provar o pagamento do 13o salario, assim como a inexistencia das horas extras, uma vez que os controles de ponto foram impugnados."
+        },
+        {
+          "id": "c",
+          "text": "Em razao da variacao de horarios registrada nos cartoes de ponto, o onus da prova recaira sobre a re para as horas extras, bem como para o 13o salario, ja que o pagamento e fato extintivo da obrigacao."
+        },
+        {
+          "id": "d",
+          "text": "Dada a variacao de horarios, ha presuncao absoluta da validade da jornada indicada nos cartoes de ponto, tendo a re se desincumbido do onus. Cabe a re a prova do pagamento do 13o salario, por ser fato extintivo da obrigacao."
+        }
+      ],
+      "correctAlternativeId": "a"
+    },
+    {
+      "id": "q-oab43-079",
+      "statement": "Em sede de reclamacao trabalhista, voce e advogado(a) da parte autora, um ex-empregado de uma sociedade empresaria. No curso da instrucao, apos ser ouvida uma testemunha da re, o advogado da parte contraria requereu a oitiva da segunda testemunha, que estava sentada dentro da sala de audiencia, tendo presenciado o curso da instrucao ate aquele momento. Apesar da sua manifestacao em sentido contrario, o Juiz deferiu a producao da prova, prosseguindo com a instrucao, sendo certo que permitiu que o advogado da parte re interrogasse diretamente a testemunha, o que causava o risco de inducao de respostas. A fim de assegurar o bom curso da instrucao probatoria, assinale a afirmativa que apresenta a acao que voce, corretamente, assumiu na defesa do interesse de seu cliente.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Processual do Trabalho",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 79,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "Interpor reclamacao correicional imediatamente, o que acarretara na suspensao da audiencia."
+        },
+        {
+          "id": "b",
+          "text": "Interpor agravo de instrumento contra a decisao de prosseguimento na instrucao, acarretando a suspensao do processo."
+        },
+        {
+          "id": "c",
+          "text": "Lavrar protesto quanto a presenca da testemunha na sala de audiencia durante a instrucao, mas nao ha irregularidade quanto a forma de inquiricao."
+        },
+        {
+          "id": "d",
+          "text": "Consignar protestos pela contaminacao do depoimento da segunda testemunha da re, bem como pela inquiricao direta da testemunha, na primeira oportunidade de se manifestar em audiencia.",
+          "correct": true
+        }
+      ],
+      "correctAlternativeId": "d"
+    },
+    {
+      "id": "q-oab43-080",
+      "statement": "Em execucao que tramita perante a 120a Vara do Trabalho de Salvador, o executado e um ente publico condenado de forma subsidiaria em virtude de uma terceirizacao na qual foi comprovado que nao houve fiscalizacao adequada. Contudo, o valor homologado pelo Juizo nao obteve a concordancia do executado, que entende estar majorado em relacao a coisa julgada formada. Considerando a dinamica da execucao prevista na norma de regencia, assinale a afirmativa correta.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "Direito Processual do Trabalho",
+      "theme": "Geral",
+      "exam": "OAB 43",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 80,
+      "difficulty": "medium",
+      "tags": [],
+      "relatedArticleIds": [],
+      "alternatives": [
+        {
+          "id": "a",
+          "text": "E desnecessaria a garantia do Juizo e o ente publico tera 30 (trinta) dias para embargar.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Cabera ao ente publico garantir o Juizo e ajuizar embargos a execucao no prazo de oito dias."
+        },
+        {
+          "id": "c",
+          "text": "E desnecessaria a garantia do Juizo e o ente publico tera oito dias para embargar."
+        },
+        {
+          "id": "d",
+          "text": "Cabera ao ente publico garantir o Juizo e ajuizar embargos a execucao no prazo de 16 dias."
+        }
+      ],
+      "correctAlternativeId": "a"
+    }
+  ]
+}

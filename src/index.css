@@ -1,0 +1,298 @@
+@import "tailwindcss";
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   DESIGN TOKENS — LexFlow OAB
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+:root {
+  color-scheme: dark;
+
+  /* ── Superfícies ── */
+  --bg:          #08101e;
+  --bg-elevated: rgba(12, 22, 40, 0.92);
+  --bg-soft:     rgba(18, 32, 56, 0.55);
+  --soft-bg:     rgba(18, 32, 56, 0.55);
+
+  /* ── Bordas ── */
+  --panel-border:  rgba(160, 185, 255, 0.09);
+  --border-hover:  rgba(160, 185, 255, 0.18);
+  --border-focus:  rgba(125, 211, 252, 0.50);
+
+  /* ── Texto ── */
+  --text:         #e8f2ff;
+  --text-2:       #b8cce8;   /* secundário */
+  --muted:        #7a96be;   /* terciário  */
+
+  /* ── Marca / status ── */
+  --brand:   #67c8f8;
+  --accent:  #f59e0b;
+  --success: #2dd4a0;
+  --danger:  #f87171;
+  --warn:    #fbbf24;
+
+  /* ── Sombras ── */
+  --shadow-sm:    0 1px 4px  rgba(2,  8, 18, 0.30);
+  --shadow-md:    0 4px 16px rgba(2,  8, 18, 0.35);
+  --shadow-lg:    0 12px 40px rgba(2, 8, 18, 0.40);
+
+  /* ── Raios ── */
+  --r-xs: 0.5rem;    /*  8px */
+  --r-sm: 0.875rem;  /* 14px */
+  --r-md: 1.125rem;  /* 18px */
+  --r-lg: 1.5rem;    /* 24px */
+  --r-xl: 2rem;      /* 32px */
+
+  /* ── Espaçamento (ritmo de 4px) ── */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.25rem;
+  --sp-6: 1.5rem;
+  --sp-8: 2rem;
+
+  /* ── Transições ── */
+  --t-instant: 80ms  ease;
+  --t-fast:    140ms ease;
+  --t-base:    200ms ease;
+  --t-slow:    320ms ease;
+
+  /* ── Tipografia ── */
+  font-family: "Inter", "Segoe UI Variable", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+
+  /* ── Fundo ── */
+  background:
+    radial-gradient(ellipse 80% 50% at 15% 0%,   rgba(103, 200, 248, 0.10) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 90% 5%,   rgba(245, 158, 11, 0.08)  0%, transparent 55%),
+    linear-gradient(175deg, #08101e 0%, #0c1828 60%, #101e30 100%);
+  color: var(--text);
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+
+  --bg:          #f0f4fb;
+  --bg-elevated: rgba(255, 255, 255, 0.95);
+  --bg-soft:     rgba(235, 242, 255, 0.85);
+  --soft-bg:     rgba(235, 242, 255, 0.85);
+  --panel-border:  rgba(25, 50, 110, 0.08);
+  --border-hover:  rgba(25, 50, 110, 0.18);
+  --border-focus:  rgba(14, 116, 144, 0.45);
+  --text:         #0d1e36;
+  --text-2:       #354e6e;
+  --muted:        #5c7499;
+  --brand:  #0e7490;
+  --accent: #b45309;
+  --success:#047857;
+  --danger: #be123c;
+  --warn:   #92400e;
+  --shadow-sm:    0 1px 4px  rgba(10, 25, 60, 0.08);
+  --shadow-md:    0 4px 16px rgba(10, 25, 60, 0.10);
+  --shadow-lg:    0 12px 40px rgba(10, 25, 60, 0.12);
+
+  background:
+    radial-gradient(ellipse 80% 50% at 10% 0%,   rgba(56, 189, 248, 0.09), transparent),
+    radial-gradient(ellipse 60% 40% at 95% 5%,   rgba(251, 146, 60, 0.10), transparent),
+    linear-gradient(175deg, #eaf2fb 0%, #f4f8fd 60%, #edf2ff 100%);
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   BASE
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  background: inherit;
+  color: var(--text);
+}
+
+#root { min-height: 100dvh; }
+
+*, *::before, *::after { box-sizing: border-box; }
+
+button, input, select, textarea { font: inherit; }
+
+::selection {
+  background: rgba(103, 200, 248, 0.22);
+  color: var(--text);
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   TIPOGRAFIA
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.display-face {
+  font-family: Georgia, "Times New Roman", serif;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+}
+
+/* Escala fluida */
+.text-display { font-size: clamp(2rem,   4vw, 3rem);    line-height: 1.12; }
+.text-heading { font-size: clamp(1.25rem, 2vw, 1.75rem); line-height: 1.2;  }
+
+/* Leitura jurídica — enunciados de questão */
+.question-statement {
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  line-height: 1.85;
+  font-weight: 500;
+  letter-spacing: 0.005em;
+}
+
+h1, h2, h3, h4 { line-height: 1.25; text-wrap: balance; }
+p, li { text-wrap: pretty; max-width: 72ch; }
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   PAINÉIS / ELEVAÇÃO
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+/* Nível 1 — contêineres principais */
+.glass-panel {
+  background: var(--bg-elevated);
+  border: 1px solid var(--panel-border);
+  box-shadow: var(--shadow-lg);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  transition: border-color var(--t-base), box-shadow var(--t-base);
+}
+
+/* Nível 2 — elementos embutidos (sem backdrop-filter = melhor perf mobile) */
+.soft-panel {
+  background: var(--bg-soft);
+  border: 1px solid var(--panel-border);
+  transition: background-color var(--t-base), border-color var(--t-fast);
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   INTERATIVOS
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+a, button {
+  -webkit-tap-highlight-color: transparent;
+  transition:
+    opacity       var(--t-fast),
+    transform     var(--t-fast),
+    background-color var(--t-base),
+    border-color  var(--t-base),
+    color         var(--t-fast),
+    box-shadow    var(--t-base);
+}
+
+button:active, a:active { transform: scale(0.97); }
+
+/* Áreas de toque mínimas — acessibilidade mobile */
+button, a[role="button"], [role="tab"] {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Focus ring acessível */
+:focus-visible {
+  outline: 2px solid var(--border-focus);
+  outline-offset: 2px;
+  border-radius: var(--r-sm);
+}
+
+/* Inputs */
+input, textarea, select {
+  outline: none;
+  transition: border-color var(--t-base), box-shadow var(--t-base);
+}
+input:focus, textarea:focus, select:focus {
+  border-color: var(--border-focus) !important;
+  box-shadow: 0 0 0 3px rgba(103, 200, 248, 0.10);
+}
+:root[data-theme="light"] input:focus,
+:root[data-theme="light"] textarea:focus,
+:root[data-theme="light"] select:focus {
+  box-shadow: 0 0 0 3px rgba(14, 116, 144, 0.10);
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   SCROLLBAR
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(103, 200, 248, 0.15) transparent;
+}
+::-webkit-scrollbar        { width: 4px; height: 4px; }
+::-webkit-scrollbar-track  { background: transparent; }
+::-webkit-scrollbar-thumb  { background: rgba(103, 200, 248, 0.15); border-radius: 99px; }
+
+:root[data-theme="light"] {
+  scrollbar-color: rgba(14, 116, 144, 0.15) transparent;
+}
+:root[data-theme="light"] ::-webkit-scrollbar-thumb {
+  background: rgba(14, 116, 144, 0.15);
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   ANIMAÇÕES
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@keyframes page-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.page-enter { animation: page-in 260ms ease both; }
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+.fade-in { animation: fade-in 200ms ease both; }
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.slide-up { animation: slide-up 240ms ease both; }
+
+@keyframes pop {
+  0%   { transform: scale(0.95); opacity: 0; }
+  60%  { transform: scale(1.02); }
+  100% { transform: scale(1);    opacity: 1; }
+}
+.pop { animation: pop 200ms ease both; }
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   APP SHELL — AMBIENT
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.app-shell::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    radial-gradient(ellipse 55% 28% at 8% 4%,  rgba(103, 200, 248, 0.045), transparent),
+    radial-gradient(ellipse 45% 22% at 94% 3%, rgba(245, 158, 11, 0.04),  transparent);
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   UTILITÁRIOS
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0;
+  margin: -1px; overflow: hidden; clip: rect(0,0,0,0);
+  white-space: nowrap; border-width: 0;
+}
+
+.nav-badge {
+  display: inline-flex;
+  align-items: center; justify-content: center;
+  min-width: 1.1rem; height: 1.1rem;
+  padding: 0 0.2rem;
+  border-radius: 99px;
+  font-size: 0.6rem; font-weight: 700; line-height: 1;
+  background: var(--accent); color: #fff;
+}
+
+/* Zona segura — notch iPhones */
+.safe-pb { padding-bottom: env(safe-area-inset-bottom, 0px); }

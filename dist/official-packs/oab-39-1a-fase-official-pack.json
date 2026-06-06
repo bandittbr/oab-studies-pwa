@@ -1,0 +1,1951 @@
+{
+  "packId": "oab-39-1a-fase-official-pack",
+  "packName": "39o Exame de Ordem Unificado - 1a Fase",
+  "version": "1.0.0",
+  "metadata": {
+    "source": "OAB - Conselho Federal",
+    "phase": "1a fase",
+    "totalQuestions": 80
+  },
+  "officialExams": [
+    {
+      "id": "oab-39-1fase",
+      "exam": "OAB 39",
+      "label": "OAB 39",
+      "year": 2024,
+      "phase": "1a fase",
+      "durationMinutes": 300,
+      "questions": [
+        {
+          "questionId": "q-oab39-001",
+          "number": 1
+        },
+        {
+          "questionId": "q-oab39-002",
+          "number": 2
+        },
+        {
+          "questionId": "q-oab39-003",
+          "number": 3
+        },
+        {
+          "questionId": "q-oab39-004",
+          "number": 4
+        },
+        {
+          "questionId": "q-oab39-005",
+          "number": 5
+        },
+        {
+          "questionId": "q-oab39-006",
+          "number": 6
+        },
+        {
+          "questionId": "q-oab39-007",
+          "number": 7
+        },
+        {
+          "questionId": "q-oab39-008",
+          "number": 8
+        },
+        {
+          "questionId": "q-oab39-009",
+          "number": 9
+        },
+        {
+          "questionId": "q-oab39-010",
+          "number": 10
+        },
+        {
+          "questionId": "q-oab39-011",
+          "number": 11
+        },
+        {
+          "questionId": "q-oab39-012",
+          "number": 12
+        },
+        {
+          "questionId": "q-oab39-013",
+          "number": 13
+        },
+        {
+          "questionId": "q-oab39-014",
+          "number": 14
+        },
+        {
+          "questionId": "q-oab39-015",
+          "number": 15
+        },
+        {
+          "questionId": "q-oab39-016",
+          "number": 16
+        },
+        {
+          "questionId": "q-oab39-017",
+          "number": 17
+        },
+        {
+          "questionId": "q-oab39-018",
+          "number": 18
+        },
+        {
+          "questionId": "q-oab39-019",
+          "number": 19
+        },
+        {
+          "questionId": "q-oab39-020",
+          "number": 20
+        },
+        {
+          "questionId": "q-oab39-021",
+          "number": 21
+        },
+        {
+          "questionId": "q-oab39-022",
+          "number": 22
+        },
+        {
+          "questionId": "q-oab39-023",
+          "number": 23
+        },
+        {
+          "questionId": "q-oab39-024",
+          "number": 24
+        },
+        {
+          "questionId": "q-oab39-025",
+          "number": 25
+        },
+        {
+          "questionId": "q-oab39-026",
+          "number": 26
+        },
+        {
+          "questionId": "q-oab39-027",
+          "number": 27
+        },
+        {
+          "questionId": "q-oab39-028",
+          "number": 28
+        },
+        {
+          "questionId": "q-oab39-029",
+          "number": 29
+        },
+        {
+          "questionId": "q-oab39-030",
+          "number": 30
+        },
+        {
+          "questionId": "q-oab39-031",
+          "number": 31
+        },
+        {
+          "questionId": "q-oab39-032",
+          "number": 32
+        },
+        {
+          "questionId": "q-oab39-033",
+          "number": 33
+        },
+        {
+          "questionId": "q-oab39-034",
+          "number": 34
+        },
+        {
+          "questionId": "q-oab39-035",
+          "number": 35
+        },
+        {
+          "questionId": "q-oab39-036",
+          "number": 36
+        },
+        {
+          "questionId": "q-oab39-037",
+          "number": 37
+        },
+        {
+          "questionId": "q-oab39-038",
+          "number": 38
+        },
+        {
+          "questionId": "q-oab39-039",
+          "number": 39
+        },
+        {
+          "questionId": "q-oab39-040",
+          "number": 40
+        },
+        {
+          "questionId": "q-oab39-041",
+          "number": 41
+        },
+        {
+          "questionId": "q-oab39-042",
+          "number": 42
+        },
+        {
+          "questionId": "q-oab39-043",
+          "number": 43
+        },
+        {
+          "questionId": "q-oab39-044",
+          "number": 44
+        },
+        {
+          "questionId": "q-oab39-045",
+          "number": 45
+        },
+        {
+          "questionId": "q-oab39-046",
+          "number": 46
+        },
+        {
+          "questionId": "q-oab39-047",
+          "number": 47
+        },
+        {
+          "questionId": "q-oab39-048",
+          "number": 48
+        },
+        {
+          "questionId": "q-oab39-049",
+          "number": 49
+        },
+        {
+          "questionId": "q-oab39-050",
+          "number": 50
+        },
+        {
+          "questionId": "q-oab39-051",
+          "number": 51
+        },
+        {
+          "questionId": "q-oab39-052",
+          "number": 52
+        },
+        {
+          "questionId": "q-oab39-053",
+          "number": 53
+        },
+        {
+          "questionId": "q-oab39-054",
+          "number": 54
+        },
+        {
+          "questionId": "q-oab39-055",
+          "number": 55
+        },
+        {
+          "questionId": "q-oab39-056",
+          "number": 56
+        },
+        {
+          "questionId": "q-oab39-057",
+          "number": 57
+        },
+        {
+          "questionId": "q-oab39-058",
+          "number": 58
+        },
+        {
+          "questionId": "q-oab39-059",
+          "number": 59
+        },
+        {
+          "questionId": "q-oab39-060",
+          "number": 60
+        },
+        {
+          "questionId": "q-oab39-061",
+          "number": 61
+        },
+        {
+          "questionId": "q-oab39-062",
+          "number": 62
+        },
+        {
+          "questionId": "q-oab39-063",
+          "number": 63
+        },
+        {
+          "questionId": "q-oab39-064",
+          "number": 64
+        },
+        {
+          "questionId": "q-oab39-065",
+          "number": 65
+        },
+        {
+          "questionId": "q-oab39-066",
+          "number": 66
+        },
+        {
+          "questionId": "q-oab39-067",
+          "number": 67
+        },
+        {
+          "questionId": "q-oab39-068",
+          "number": 68
+        },
+        {
+          "questionId": "q-oab39-069",
+          "number": 69
+        },
+        {
+          "questionId": "q-oab39-070",
+          "number": 70
+        },
+        {
+          "questionId": "q-oab39-071",
+          "number": 71
+        },
+        {
+          "questionId": "q-oab39-072",
+          "number": 72
+        },
+        {
+          "questionId": "q-oab39-073",
+          "number": 73
+        },
+        {
+          "questionId": "q-oab39-074",
+          "number": 74
+        },
+        {
+          "questionId": "q-oab39-075",
+          "number": 75
+        },
+        {
+          "questionId": "q-oab39-076",
+          "number": 76
+        },
+        {
+          "questionId": "q-oab39-077",
+          "number": 77
+        },
+        {
+          "questionId": "q-oab39-078",
+          "number": 78
+        },
+        {
+          "questionId": "q-oab39-079",
+          "number": 79
+        },
+        {
+          "questionId": "q-oab39-080",
+          "number": 80
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q-oab39-001",
+      "subject": "Ética e Estatuto da OAB",
+      "theme": "Incompatibilidades",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 1,
+      "difficulty": "medium",
+      "statement": "Acerca das incompatibilidades e impedimentos ao exercício da advocacia, assinale a afirmativa correta:",
+      "explanation": "Art. 28, I, EAOAB: membros do MP são incompatíveis; professores de direito têm impedimento apenas em causas da própria instituição.",
+      "support": "Lei 8.906/1994, art. 28; 30.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "incompatibilidades",
+        "MP"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-002",
+      "subject": "Ética e Estatuto da OAB",
+      "theme": "Deveres",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 2,
+      "difficulty": "hard",
+      "statement": "O advogado que, no exercício da profissão, violar o dever de lealdade processual, praticando atos protelatórios, comete:",
+      "explanation": "Art. 34, VI, EAOAB: exercitar atividade que sujeite o advogado à sanção disciplinar é infração.",
+      "support": "Lei 8.906/1994, art. 34, VI; CED, art. 2o.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "deveres",
+        "lealdade processual"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-003",
+      "subject": "Ética e Estatuto da OAB",
+      "theme": "Honorarios",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 3,
+      "difficulty": "medium",
+      "statement": "O advogado que receber indevidamente valores do cliente, retendo-os sem justificativa, comete:",
+      "explanation": "Art. 34, XXIV, EAOAB: reter os autos de processo depois de encerrada a prestação de serviço ou receber indevidamente valores é infração disciplinar.",
+      "support": "Lei 8.906/1994, art. 34, XXIV.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "honorarios",
+        "retencao indevida"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-004",
+      "subject": "Ética e Estatuto da OAB",
+      "theme": "Prerrogativas",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 4,
+      "difficulty": "medium",
+      "statement": "A prerrogativa do advogado de ter acesso ao acusado preso, mesmo sem procuração, é:",
+      "explanation": "Art. 7o, III, EAOAB: o advogado pode comunicar-se com seus clientes pessoalmente e reservadamente, mesmo recolhidos em estabelecimentos civis ou militares.",
+      "support": "Lei 8.906/1994, art. 7o, III.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "prerrogativas",
+        "acusado preso"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-005",
+      "subject": "Ética e Estatuto da OAB",
+      "theme": "Sigilo Profissional",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 5,
+      "difficulty": "hard",
+      "statement": "Em relação ao sigilo profissional, é correto afirmar que o advogado:",
+      "explanation": "Art. 25-27, CED: o sigilo é irrenunciável e pode ser invocado até como testemunha.",
+      "support": "CED/OAB, art. 25-27.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "sigilo profissional"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-006",
+      "subject": "Ética e Estatuto da OAB",
+      "theme": "Publicidade",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 6,
+      "difficulty": "medium",
+      "statement": "A publicidade advocatícia é permitida pelo CED desde que tenha caráter meramente informativo. É vedada:",
+      "explanation": "CED art. 39-41: captação de clientela, mercantilização, captação com oferta de serviços.",
+      "support": "CED/OAB, art. 39-41.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "publicidade",
+        "captacao clientela"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-007",
+      "subject": "Ética e Estatuto da OAB",
+      "theme": "Inscricao Oab",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 7,
+      "difficulty": "easy",
+      "statement": "O estudante de Direito que ainda não obteve o diploma pode exercer a atividade de advocacia?",
+      "explanation": "Art. 3o e 8o, EAOAB: somente o bacharel inscrito na OAB pode exercer a advocacia.",
+      "support": "Lei 8.906/1994, art. 3o; 8o.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "inscricao OAB",
+        "diploma"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-008",
+      "subject": "Ética e Estatuto da OAB",
+      "theme": "Infrações Disciplinares",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 8,
+      "difficulty": "hard",
+      "statement": "O advogado que, em causa judicial, lançar expressões injuriosas nos autos, comete:",
+      "explanation": "Art. 34, XIV, EAOAB: lançar, em autos, expressão injuriosa ou atentatória à dignidade da Justiça é infração disciplinar.",
+      "support": "Lei 8.906/1994, art. 34, XIV.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "infracoes disciplinares",
+        "dignidade da justica"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-009",
+      "subject": "Ética e Estatuto da OAB",
+      "theme": "Honorarios",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 9,
+      "difficulty": "medium",
+      "statement": "Acerca dos honorários advocatícios, é correto afirmar que o direito ao recebimento:",
+      "explanation": "Art. 22, EAOAB: o advogado tem direito aos honorários em qualquer hipótese, salvo contrato em contrário, mesmo que a causa seja perdida.",
+      "support": "Lei 8.906/1994, art. 22.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "honorarios",
+        "resultado da causa"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-010",
+      "subject": "Ética e Estatuto da OAB",
+      "theme": "Deveres",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 10,
+      "difficulty": "medium",
+      "statement": "O advogado que patrocinar, simultaneamente, partes com interesses opostos comete:",
+      "explanation": "Art. 34, XIII, EAOAB: representar partes com interesses opostos é infração disciplinar grave.",
+      "support": "Lei 8.906/1994, art. 34, XIII.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "conflito de interesses",
+        "partes opostas"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-011",
+      "subject": "Direito Constitucional",
+      "theme": "Direitos Fundamentais",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 11,
+      "difficulty": "medium",
+      "statement": "O princípio da presunção de não culpabilidade (inocência), previsto no art. 5o, LVII, da CF/88, estabelece que:",
+      "explanation": "Ninguém será considerado culpado até o trânsito em julgado de sentença penal condenatória.",
+      "support": "CF/88, art. 5o, LVII.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "presuncao de inocencia"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-012",
+      "subject": "Direito Constitucional",
+      "theme": "Controle Constitucionalidade",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 12,
+      "difficulty": "hard",
+      "statement": "Na arguição de descumprimento de preceito fundamental (ADPF), é correto afirmar que:",
+      "explanation": "A ADPF é instrumento subsidiário (art. 4o, §1o, Lei 9.882/1999), cabível quando não houver outro meio eficaz.",
+      "support": "CF/88, art. 102, §1o; Lei 9.882/1999.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "ADPF",
+        "subsidiariedade"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-013",
+      "subject": "Direito Constitucional",
+      "theme": "Poder Judiciario",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 13,
+      "difficulty": "medium",
+      "statement": "O Conselho Nacional de Justiça (CNJ), criado pela EC 45/2004, tem como função principal:",
+      "explanation": "O CNJ é órgão de controle administrativo e disciplinar do Poder Judiciário.",
+      "support": "CF/88, art. 103-B.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "CNJ",
+        "controle administrativo"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-014",
+      "subject": "Direito Constitucional",
+      "theme": "Organizacao Estado",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 14,
+      "difficulty": "hard",
+      "statement": "A intervenção federal nos Estados pode ser decretada pelo Presidente da República para:",
+      "explanation": "Art. 34, VII, CF: garantir o cumprimento dos princípios constitucionais sensíveis.",
+      "support": "CF/88, art. 34.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "intervencao federal",
+        "principios sensiveis"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-015",
+      "subject": "Direito Constitucional",
+      "theme": "Direitos Fundamentais",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 15,
+      "difficulty": "medium",
+      "statement": "O direito à tutela coletiva, que protege interesses transindividuais, tem como instrumento constitucional:",
+      "explanation": "A ação popular (art. 5o, LXXIII, CF) e o mandado de segurança coletivo (art. 5o, LXX) são instrumentos de tutela coletiva.",
+      "support": "CF/88, art. 5o, LXXIII; LXX.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "acao popular",
+        "mandado de seguranca coletivo"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-016",
+      "subject": "Direito Constitucional",
+      "theme": "Poder Legislativo",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 16,
+      "difficulty": "hard",
+      "statement": "A medida provisória que não for convertida em lei dentro do prazo constitucional:",
+      "explanation": "Art. 62, §3o, CF: perde eficácia desde a edição, cabendo ao Congresso disciplinar as relações jurídicas dela decorrentes.",
+      "support": "CF/88, art. 62, §3o.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "medida provisoria",
+        "perda de eficacia"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-017",
+      "subject": "Direito Constitucional",
+      "theme": "Poder Executivo",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 17,
+      "difficulty": "medium",
+      "statement": "O controle externo da atividade policial, nos termos da Constituição Federal, compete ao:",
+      "explanation": "Art. 129, VII, CF: ao Ministério Público compete o controle externo da atividade policial.",
+      "support": "CF/88, art. 129, VII.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "controle externo",
+        "policia",
+        "MP"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-018",
+      "subject": "Direito Constitucional",
+      "theme": "Mandado Seguranca",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 18,
+      "difficulty": "medium",
+      "statement": "O mandado de segurança individual pode ser impetrado no prazo decadencial de:",
+      "explanation": "Lei 12.016/2009, art. 23: 120 dias contados da ciência do ato impugnado.",
+      "support": "Lei 12.016/2009, art. 23.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "mandado de seguranca",
+        "prazo decadencial",
+        "120 dias"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-019",
+      "subject": "Direito Constitucional",
+      "theme": "Adi Ação Direta",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 19,
+      "difficulty": "hard",
+      "statement": "A ADI interventiva (ação direta de inconstitucionalidade interventiva) é proposta pelo:",
+      "explanation": "Art. 36, III, CF c/c art. 103-A: o PGR propõe a ADI interventiva perante o STF para assegurar observância dos princípios sensíveis.",
+      "support": "CF/88, art. 36, III.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "ADI interventiva",
+        "PGR"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-020",
+      "subject": "Direito Constitucional",
+      "theme": "Principios Constitucionais",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 20,
+      "difficulty": "easy",
+      "statement": "A forma federativa de Estado no Brasil é cláusula pétrea, não podendo ser abolida nem mesmo por emenda constitucional. Essa proteção está prevista no:",
+      "explanation": "Art. 60, §4o, I, CF: as cláusulas pétreas incluem a forma federativa de Estado.",
+      "support": "CF/88, art. 60, §4o, I.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "clausula petrea",
+        "forma federativa"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-021",
+      "subject": "administrativo",
+      "theme": "Licitacao",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 21,
+      "difficulty": "hard",
+      "statement": "Na Nova Lei de Licitações (Lei 14.133/2021), o diálogo competitivo:",
+      "explanation": "Art. 32, Lei 14.133/2021: o diálogo competitivo é modalidade para contratos de grande complexidade, em que a Administração dialoga com os licitantes para desenvolver a solução.",
+      "support": "Lei 14.133/2021, art. 32.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "dialogo competitivo",
+        "licitacao"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-022",
+      "subject": "administrativo",
+      "theme": "Atos Administrativos",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 22,
+      "difficulty": "medium",
+      "statement": "A revogação de atos administrativos difere da anulação porque:",
+      "explanation": "A revogação extingue atos legais por conveniência e oportunidade (efeito ex nunc); a anulação extingue atos ilegais (efeito ex tunc).",
+      "support": "STF, Súmulas 346 e 473.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "revogacao",
+        "anulacao"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-023",
+      "subject": "administrativo",
+      "theme": "Responsabilidade Estado",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 23,
+      "difficulty": "hard",
+      "statement": "A responsabilidade civil do Estado por danos decorrentes de atos omissivos segue, para parte da doutrina e STJ:",
+      "explanation": "Parte da doutrina e do STJ adota a teoria subjetiva (culpa do serviço) para omissões genéricas, distinguindo da omissão específica.",
+      "support": "CF/88, art. 37, §6o; STJ.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "responsabilidade por omissao",
+        "culpa do servico"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-024",
+      "subject": "administrativo",
+      "theme": "Concessoes",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 24,
+      "difficulty": "medium",
+      "statement": "Na concessão de serviço público (Lei 8.987/1995), a encampação:",
+      "explanation": "Art. 37, Lei 8.987/1995: encampação é a retomada do serviço pela Administração por razões de interesse público, com indenização prévia.",
+      "support": "Lei 8.987/1995, art. 37.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "encampacao",
+        "concessao"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-025",
+      "subject": "administrativo",
+      "theme": "Improbidade",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 25,
+      "difficulty": "hard",
+      "statement": "As ações de improbidade administrativa, após a Lei 14.230/2021, são de competência:",
+      "explanation": "Art. 17, Lei 8.429/1992 (redação Lei 14.230/2021): competência do juízo singular de 1a instância, sem julgamento por tribunais em 1a instância.",
+      "support": "Lei 8.429/1992, art. 17; Lei 14.230/2021.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "improbidade",
+        "competencia",
+        "juizo singular"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-026",
+      "subject": "administrativo",
+      "theme": "Poder Policia",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 26,
+      "difficulty": "medium",
+      "statement": "O exercício do poder de polícia pela Administração Pública implica, entre outros, o atributo da:",
+      "explanation": "A discricionariedade permite à Administração escolher a medida mais adequada para proteger o interesse público.",
+      "support": "Doutrina.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "poder de policia",
+        "discricionariedade"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-027",
+      "subject": "administrativo",
+      "theme": "Atos Administrativos",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 27,
+      "difficulty": "medium",
+      "statement": "O princípio da eficiência na Administração Pública, inserido expressamente na CF/88 pela EC 19/1998:",
+      "explanation": "O princípio da eficiência exige o melhor resultado com menor dispêndio de recursos.",
+      "support": "CF/88, art. 37, caput; EC 19/1998.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "eficiencia",
+        "principio"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-028",
+      "subject": "tributario",
+      "theme": "Principios Tributarios",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 28,
+      "difficulty": "medium",
+      "statement": "O princípio da isonomia tributária veda o tratamento desigual entre contribuintes em situação equivalente. Esse princípio:",
+      "explanation": "Art. 150, II, CF: veda distinção em razão de ocupação profissional ou função exercida.",
+      "support": "CF/88, art. 150, II.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "isonomia tributaria",
+        "ocupacao profissional"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-029",
+      "subject": "tributario",
+      "theme": "Lancamento",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 29,
+      "difficulty": "hard",
+      "statement": "O lançamento de ofício é modalidade em que:",
+      "explanation": "Art. 149 CTN: a autoridade lança por iniciativa própria, sem participação do sujeito passivo.",
+      "support": "CTN, art. 149.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "lancamento de oficio"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-030",
+      "subject": "tributario",
+      "theme": "Espécies Tributarias",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 30,
+      "difficulty": "medium",
+      "statement": "O IPVA, imposto sobre propriedade de veículos automotores, é de competência:",
+      "explanation": "Art. 155, III, CF: o IPVA é de competência dos Estados e do DF.",
+      "support": "CF/88, art. 155, III.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "IPVA",
+        "competencia estadual"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-031",
+      "subject": "tributario",
+      "theme": "Obrigacao Tributaria",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 31,
+      "difficulty": "hard",
+      "statement": "A obrigação tributária acessória, diferentemente da principal:",
+      "explanation": "Art. 113 CTN: a obrigação acessória decorre da legislação tributária e tem por objeto prestações positivas ou negativas no interesse da arrecadação.",
+      "support": "CTN, art. 113.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "obrigacao acessoria",
+        "prestacoes"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-032",
+      "subject": "tributario",
+      "theme": "Imunidades Tributarias",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 32,
+      "difficulty": "hard",
+      "statement": "A imunidade recíproca entre os entes federativos alcança:",
+      "explanation": "Art. 150, VI, a, §2o, CF: abrange os impostos e também as autarquias e fundações instituídas e mantidas pelo poder público, quando relacionadas às suas finalidades essenciais.",
+      "support": "CF/88, art. 150, VI, a; §2o.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "imunidade reciproca",
+        "impostos"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-033",
+      "subject": "tributario",
+      "theme": "Prescricao Tributaria",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 33,
+      "difficulty": "medium",
+      "statement": "O prazo de decadência para a Fazenda constituir o crédito tributário, previsto no art. 173, I, do CTN, começa a correr:",
+      "explanation": "Art. 173, I, CTN: do primeiro dia do exercício seguinte àquele em que o lançamento poderia ter sido efetuado.",
+      "support": "CTN, art. 173, I.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "decadencia",
+        "credito tributario"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-034",
+      "subject": "Direito Civil",
+      "theme": "Contratos",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 34,
+      "difficulty": "medium",
+      "statement": "Os contratos de adesão, no Código Civil, têm as cláusulas ambíguas ou contraditórias interpretadas:",
+      "explanation": "Art. 423 CC: em favor do aderente.",
+      "support": "CC/2002, art. 423.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "contratos de adesao",
+        "interpretacao"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-035",
+      "subject": "Direito Civil",
+      "theme": "Responsabilidade Civil",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 35,
+      "difficulty": "hard",
+      "statement": "A responsabilidade civil por atividade de risco (art. 927, parágrafo único, CC) é:",
+      "explanation": "Art. 927, §único, CC: objetiva, independendo de culpa, quando a atividade normalmente desenvolvida pelo autor do dano implicar risco para os direitos de outrem.",
+      "support": "CC/2002, art. 927, §único.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "responsabilidade civil",
+        "atividade de risco",
+        "objetiva"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-036",
+      "subject": "Direito Civil",
+      "theme": "Familia",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 36,
+      "difficulty": "hard",
+      "statement": "A guarda compartilhada, no Código Civil e no ECA, é:",
+      "explanation": "Art. 1584, §2o, CC: a guarda compartilhada é regra quando ambos os pais são aptos, independentemente de acordo.",
+      "support": "CC/2002, art. 1584, §2o.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "guarda compartilhada"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-037",
+      "subject": "Direito Civil",
+      "theme": "Obrigacoes",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 37,
+      "difficulty": "medium",
+      "statement": "Na cessão de crédito, o cedente não responde ao cessionário pela solvência do devedor, salvo:",
+      "explanation": "Art. 296 CC: o cedente só responde pela solvência do devedor quando estipulado e até o preço recebido.",
+      "support": "CC/2002, art. 296.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "cessao de credito",
+        "solvencia"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-038",
+      "subject": "Direito Civil",
+      "theme": "Negocio Juridico",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 38,
+      "difficulty": "medium",
+      "statement": "O negócio jurídico nulo diferencia-se do anulável porque o nulo:",
+      "explanation": "O negócio nulo não é suscetível de confirmação, nem convalesce pelo decurso do tempo (art. 169 CC).",
+      "support": "CC/2002, art. 169.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "negocio nulo",
+        "convalescimento"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-039",
+      "subject": "Direito Civil",
+      "theme": "Sucessoes",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 39,
+      "difficulty": "hard",
+      "statement": "O herdeiro que concorrer com o cônjuge sobrevivente na sucessão legítima, no regime de comunhão parcial, receberá:",
+      "explanation": "Art. 1832 CC: em concorrência com os filhos, o cônjuge tem parte igual à dos que a sucederem por cabeça, exceto se o casamento for em comunhão universal ou separação obrigatória.",
+      "support": "CC/2002, art. 1832.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "concorrencia hereditaria",
+        "conjuge"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-040",
+      "subject": "Direito Civil",
+      "theme": "Pessoa Juridica",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 40,
+      "difficulty": "medium",
+      "statement": "A associação, como espécie de pessoa jurídica de direito privado, diferencia-se da sociedade porque:",
+      "explanation": "Art. 53 CC: as associações constituem-se para fins não econômicos, enquanto as sociedades têm finalidade econômica.",
+      "support": "CC/2002, art. 53.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "associacao",
+        "fins nao economicos"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-041",
+      "subject": "Direito Civil",
+      "theme": "Contratos",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 41,
+      "difficulty": "hard",
+      "statement": "O contrato de seguro obriga o segurador a garantir interesse legítimo do segurado, relativo a pessoa ou coisa. A apólice:",
+      "explanation": "Art. 759 CC: a emissão da apólice deve ser precedida de proposta escrita com a declaração dos elementos essenciais do interesse a ser garantido.",
+      "support": "CC/2002, art. 759.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "seguro",
+        "apolice",
+        "nominativa"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-042",
+      "subject": "Direito Civil",
+      "theme": "Posse Propriedade",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 42,
+      "difficulty": "medium",
+      "statement": "A ação de reintegração de posse é o instrumento adequado para o possuidor:",
+      "explanation": "A reintegração é cabível quando o possuidor é esbulhado — perde completamente a posse.",
+      "support": "CPC/2015, art. 560.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "reintegracao de posse",
+        "esbulho"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-043",
+      "subject": "processo-civil",
+      "theme": "Petição Inicial",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 43,
+      "difficulty": "medium",
+      "statement": "A emenda da petição inicial pode ser determinada pelo juiz quando:",
+      "explanation": "Art. 321 CPC: o juiz deve determinar a emenda quando a petição inicial apresentar defeito ou irregularidade sanável.",
+      "support": "CPC/2015, art. 321.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "emenda da inicial",
+        "defeito sanavel"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-044",
+      "subject": "processo-civil",
+      "theme": "Competencia",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 44,
+      "difficulty": "hard",
+      "statement": "A competência funcional do foro de domicílio do réu nas ações pessoais é:",
+      "explanation": "A competência territorial (foro do domicílio do réu) é relativa e pode ser derrogada por eleição de foro ou prorrogação.",
+      "support": "CPC/2015, art. 46.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "competencia territorial",
+        "relativa"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-045",
+      "subject": "processo-civil",
+      "theme": "Litisconsorcios",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 45,
+      "difficulty": "medium",
+      "statement": "A denunciação da lide é modalidade de intervenção de terceiros cabível para:",
+      "explanation": "Art. 125 CPC: na denunciação, a parte chama terceiro que tem obrigação legal ou contratual de indenizá-la, como o garante.",
+      "support": "CPC/2015, art. 125.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "denunciacao da lide"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-046",
+      "subject": "processo-civil",
+      "theme": "Execucao",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 46,
+      "difficulty": "hard",
+      "statement": "O cumprimento de sentença que reconhece a exigibilidade de obrigação de pagar quantia certa inicia-se:",
+      "explanation": "Art. 523 CPC: o réu é intimado para pagar em 15 dias, sob pena de multa de 10% e honorários de 10%.",
+      "support": "CPC/2015, art. 523.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "cumprimento de sentenca",
+        "15 dias",
+        "10%"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-047",
+      "subject": "processo-civil",
+      "theme": "Recursos",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 47,
+      "difficulty": "medium",
+      "statement": "O recurso especial ao STJ deve ser interposto em face de acórdão proferido por:",
+      "explanation": "Art. 105, III, CF: cabe REsp de acórdão de TJ, TRF ou TRT em única ou última instância.",
+      "support": "CF/88, art. 105, III.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "recurso especial",
+        "STJ",
+        "acordao"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-048",
+      "subject": "processo-civil",
+      "theme": "Sentenca Coisa Julgada",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 48,
+      "difficulty": "hard",
+      "statement": "A eficácia preclusiva da coisa julgada determina que:",
+      "explanation": "Art. 508 CPC: são cobertas pela coisa julgada as questões que poderiam ter sido deduzidas mas não o foram.",
+      "support": "CPC/2015, art. 508.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "eficacia preclusiva",
+        "coisa julgada"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-049",
+      "subject": "processo-civil",
+      "theme": "Provas Cpc",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 49,
+      "difficulty": "medium",
+      "statement": "O depoimento pessoal da parte no processo civil:",
+      "explanation": "Art. 385 CPC: pode ser requerido pela parte contrária para obtenção de confissão.",
+      "support": "CPC/2015, art. 385.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "depoimento pessoal",
+        "confissao"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-050",
+      "subject": "processo-civil",
+      "theme": "Acao Rescisoria",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 50,
+      "difficulty": "hard",
+      "statement": "A ação rescisória é cabível quando a sentença for proferida por juiz absolutamente incompetente. O prazo para propô-la é de:",
+      "explanation": "Art. 975 CPC: 2 anos do trânsito em julgado.",
+      "support": "CPC/2015, art. 975.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "acao rescisoria",
+        "2 anos"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-051",
+      "subject": "Direito Penal",
+      "theme": "Extincao Punibilidade",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 51,
+      "difficulty": "medium",
+      "statement": "A prescrição da pretensão punitiva em abstrato é regulada pela pena:",
+      "explanation": "Art. 109 CP: calculada com base na pena máxima em abstrato cominada.",
+      "support": "CP, art. 109.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "prescricao abstrata",
+        "pena maxima"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-052",
+      "subject": "Direito Penal",
+      "theme": "Culpabilidade",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 52,
+      "difficulty": "medium",
+      "statement": "A embriaguez voluntária completa, por si só:",
+      "explanation": "Art. 28, II, CP: a embriaguez voluntária não exclui a imputabilidade (actio libera in causa).",
+      "support": "CP, art. 28, II.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "embriaguez voluntaria",
+        "imputabilidade"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-053",
+      "subject": "Direito Penal",
+      "theme": "Crimes Pessoa",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 53,
+      "difficulty": "hard",
+      "statement": "O crime de calúnia (art. 138, CP) distingue-se da difamação (art. 139) porque na calúnia:",
+      "explanation": "Na calúnia, o agente atribui falsamente à vítima a prática de CRIME. Na difamação, atribui fato ofensivo à reputação (não necessariamente crime).",
+      "support": "CP, art. 138; 139.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "calunia",
+        "difamacao"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-054",
+      "subject": "Direito Penal",
+      "theme": "Penas",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 54,
+      "difficulty": "medium",
+      "statement": "A substituição da pena privativa de liberdade por restritiva de direitos é cabível quando a pena não superar 4 anos e:",
+      "explanation": "Art. 44 CP: crime doloso sem violência ou grave ameaça, réu não reincidente, culpabilidade favorável.",
+      "support": "CP, art. 44.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "pena restritiva de direitos",
+        "substituicao"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-055",
+      "subject": "Direito Penal",
+      "theme": "Iter Criminis",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 55,
+      "difficulty": "hard",
+      "statement": "Na tentativa perfeita (crime falho ou tentativa acabada):",
+      "explanation": "O agente esgota todos os meios executórios à sua disposição, mas o resultado não ocorre por circunstâncias alheias.",
+      "support": "CP, art. 14, II; doutrina.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "tentativa acabada",
+        "crime falho"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-056",
+      "subject": "Direito Penal",
+      "theme": "Crimes Patrimonio",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 56,
+      "difficulty": "medium",
+      "statement": "O furto de coisa comum (art. 156, CP) é crime que se configura quando:",
+      "explanation": "Art. 156 CP: o co-proprietário subtrai coisa que lhe pertence em comum, enquanto administrada por outrem.",
+      "support": "CP, art. 156.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "furto de coisa comum"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-057",
+      "subject": "Direito Penal",
+      "theme": "Concurso Crimes",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 57,
+      "difficulty": "hard",
+      "statement": "A habitualidade criminosa (crime habitual) distingue-se do crime continuado porque:",
+      "explanation": "O crime habitual exige reiteração de atos que formam um único crime; o continuado são crimes autônomos praticados em condições similares.",
+      "support": "CP, art. 71; doutrina.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "crime habitual",
+        "crime continuado"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-058",
+      "subject": "processo-penal",
+      "theme": "Prisoes",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 58,
+      "difficulty": "hard",
+      "statement": "O preso em flagrante deve ser apresentado ao juiz competente em até:",
+      "explanation": "Art. 310 CPP (com redação da Lei 13.964/2019): o juiz deve realizar a audiência de custódia em 24 horas do flagrante.",
+      "support": "CPP, art. 310; Lei 13.964/2019.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "audiencia de custodia",
+        "24 horas",
+        "flagrante"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-059",
+      "subject": "processo-penal",
+      "theme": "Acao Penal",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 59,
+      "difficulty": "medium",
+      "statement": "O MP pode intentar ação penal pública incondicionada mesmo sem inquérito policial, bastando:",
+      "explanation": "Art. 46 CPP: o MP pode oferecer denúncia com base em quaisquer peças de informação.",
+      "support": "CPP, art. 46.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "acao penal",
+        "peças de informacao"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-060",
+      "subject": "processo-penal",
+      "theme": "Provas Cpp",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 60,
+      "difficulty": "hard",
+      "statement": "A teoria dos frutos da árvore envenenada (fruits of the poisonous tree) no processo penal brasileiro:",
+      "explanation": "Art. 5o, LVI, CF e art. 157, §1o, CPP: as provas derivadas das ilícitas são inadmissíveis (salvo quando puderem ser obtidas por fonte independente).",
+      "support": "CF/88, art. 5o, LVI; CPP, art. 157, §1o.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "provas ilicitas",
+        "frutos da arvore envenenada",
+        "fonte independente"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-061",
+      "subject": "processo-penal",
+      "theme": "Habeas Corpus Cpp",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 61,
+      "difficulty": "medium",
+      "statement": "O HC pode ser impetrado:",
+      "explanation": "Art. 654 CPP: por qualquer pessoa, em seu favor ou de outrem.",
+      "support": "CPP, art. 654.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "habeas corpus",
+        "legitimidade"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-062",
+      "subject": "processo-penal",
+      "theme": "Competencia Cpp",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 62,
+      "difficulty": "hard",
+      "statement": "A competência pela prevenção, no processo penal, estabelece-se quando:",
+      "explanation": "Art. 83 CPP: é prevento o juízo que primeiro tiver tomado conhecimento do fato.",
+      "support": "CPP, art. 83.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "prevencao",
+        "competencia"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-063",
+      "subject": "processo-penal",
+      "theme": "Inquerito Policial",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 63,
+      "difficulty": "medium",
+      "statement": "O indiciamento no inquérito policial é ato privativo da:",
+      "explanation": "O indiciamento é ato privativo do Delegado de Polícia — o juiz não pode indiciar, nem o MP pode determinar o indiciamento diretamente.",
+      "support": "Lei 12.830/2013, art. 2o, §6o.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "indiciamento",
+        "delegado"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-064",
+      "subject": "trabalhista",
+      "theme": "Rescisao Contrato",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 64,
+      "difficulty": "medium",
+      "statement": "A justa causa para rescisão do contrato de trabalho pelo empregador, com base na embriaguez habitual do empregado:",
+      "explanation": "Art. 482, f, CLT: embriaguez habitual ou em serviço é justa causa.",
+      "support": "CLT, art. 482, f.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "justa causa",
+        "embriaguez habitual"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-065",
+      "subject": "trabalhista",
+      "theme": "Jornada Trabalho",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 65,
+      "difficulty": "hard",
+      "statement": "O adicional de periculosidade é devido ao empregado que trabalha em:",
+      "explanation": "Art. 193 CLT e NRs: atividades perigosas — inflamáveis, explosivos, energia elétrica, roubos e outras violências físicas, atividades nucleares.",
+      "support": "CLT, art. 193.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "adicional de periculosidade",
+        "inflamaveis"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-066",
+      "subject": "trabalhista",
+      "theme": "Contrato Trabalho",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 66,
+      "difficulty": "medium",
+      "statement": "O trabalho do menor aprendiz (entre 14 e 24 anos) tem como característica:",
+      "explanation": "Art. 428 CLT: o contrato de aprendizagem é por prazo máximo de 2 anos, com formação técnico-profissional metódica.",
+      "support": "CLT, art. 428.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "menor aprendiz",
+        "contrato de aprendizagem"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-067",
+      "subject": "trabalhista",
+      "theme": "Ferias Licencas",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 67,
+      "difficulty": "hard",
+      "statement": "O empregado que solicitar as férias em período superior ao concessivo e o empregador concordar:",
+      "explanation": "Art. 143 CLT: o empregado pode converter 1/3 das férias em abono pecuniário.",
+      "support": "CLT, art. 143.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "ferias",
+        "abono pecuniario"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-068",
+      "subject": "trabalhista",
+      "theme": "Processo Trabalho",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 68,
+      "difficulty": "medium",
+      "statement": "O prazo para recorrer no processo do trabalho conta-se a partir de:",
+      "explanation": "Art. 895, b, CLT e Súmula 197 TST: o prazo recursal é de 8 dias úteis (exceto embargos de declaração: 5 dias).",
+      "support": "CLT, art. 895; Súmula 197 TST.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "prazo recursal",
+        "trabalhista",
+        "8 dias"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-069",
+      "subject": "trabalhista",
+      "theme": "Estabilidade",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 69,
+      "difficulty": "hard",
+      "statement": "A estabilidade provisória da gestante:",
+      "explanation": "Súmula 244 TST: a estabilidade gestante é garantida desde a confirmação da gravidez até 5 meses após o parto, mesmo em contrato a termo.",
+      "support": "ADCT, art. 10, II, b; Súmula 244 TST.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "estabilidade gestante",
+        "contrato a termo"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-070",
+      "subject": "trabalhista",
+      "theme": "Sindicatos",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 70,
+      "difficulty": "medium",
+      "statement": "O acordo coletivo de trabalho difere da convenção coletiva porque o acordo é celebrado entre:",
+      "explanation": "Art. 611-A CLT: o acordo coletivo é firmado entre sindicato dos empregados e uma ou mais empresas; a convenção, entre sindicatos.",
+      "support": "CLT, art. 611; 611-A.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "acordo coletivo",
+        "empresa",
+        "sindicato"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-071",
+      "subject": "empresarial",
+      "theme": "Falencia Recuperacao",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 71,
+      "difficulty": "hard",
+      "statement": "Na recuperação judicial, o plano deve ser submetido à assembleia-geral de credores para aprovação. A assembleia delibera por:",
+      "explanation": "Art. 45 Lei 11.101/2005: maioria simples dos credores presentes e maioria absoluta do valor dos créditos de cada classe.",
+      "support": "Lei 11.101/2005, art. 45.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "recuperacao judicial",
+        "assembleia de credores",
+        "aprovacao do plano"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-072",
+      "subject": "empresarial",
+      "theme": "Sociedades",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 72,
+      "difficulty": "medium",
+      "statement": "O sócio retirante de sociedade limitada responde pelas obrigações contraídas antes da retirada pelo prazo de:",
+      "explanation": "Art. 1003, §único, CC: o sócio retirante responde pelas obrigações sociais por 2 anos após a resolução da participação.",
+      "support": "CC/2002, art. 1003, §único.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "socio retirante",
+        "responsabilidade",
+        "2 anos"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-073",
+      "subject": "empresarial",
+      "theme": "Titulos Credito",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 73,
+      "difficulty": "hard",
+      "statement": "O endosso translativo em título de crédito transfere ao endossatário:",
+      "explanation": "O endosso translativo transfere a propriedade do título e todos os direitos dele decorrentes.",
+      "support": "CC/2002, art. 910.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "endosso translativo",
+        "propriedade"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-074",
+      "subject": "empresarial",
+      "theme": "Estabelecimento",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 74,
+      "difficulty": "medium",
+      "statement": "Os pontos negativos do estabelecimento (dívidas) no trespasse:",
+      "explanation": "Art. 1146 CC: o adquirente responde pelos débitos anteriores regularmente contabilizados, salvo convenção em contrário.",
+      "support": "CC/2002, art. 1146.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "trespasse",
+        "debitos"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-075",
+      "subject": "empresarial",
+      "theme": "Sociedades",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 75,
+      "difficulty": "hard",
+      "statement": "Na sociedade anônima aberta, as ações podem ser livremente negociadas no mercado. A principal diferença para a S.A. fechada é:",
+      "explanation": "A S.A. aberta tem valores mobiliários admitidos à negociação no mercado de capitais (B3); a fechada, não.",
+      "support": "Lei 6.404/1976, art. 4o.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "SA aberta",
+        "mercado de capitais"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-076",
+      "subject": "consumidor",
+      "theme": "Responsabilidade Fornecedor",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 76,
+      "difficulty": "hard",
+      "statement": "A responsabilidade pelo fato do produto no CDC abrange danos causados por produtos:",
+      "explanation": "Art. 12 CDC: danos causados por defeitos de concepção, fabricação, construção, montagem, fórmulas, manipulação, apresentação ou acondicionamento.",
+      "support": "CDC, art. 12.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "fato do produto",
+        "defeito"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-077",
+      "subject": "consumidor",
+      "theme": "Tutela Consumidor",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 77,
+      "difficulty": "medium",
+      "statement": "O Código de Defesa do Consumidor prevê que as ações coletivas de consumidores para a defesa de interesses individuais homogêneos geram sentença condenatória:",
+      "explanation": "Art. 95 CDC: em caso de procedência do pedido, a condenação é genérica, fixando a responsabilidade do réu pelos danos causados.",
+      "support": "CDC, art. 95.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "interesses individuais homogeneos",
+        "sentenca generica"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-078",
+      "subject": "consumidor",
+      "theme": "Protecao Contratual",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 78,
+      "difficulty": "hard",
+      "statement": "O CDC considera nulas as cláusulas que autorizem o fornecedor a modificar unilateralmente o preço dos produtos ou serviços. Essa proteção está prevista no:",
+      "explanation": "Art. 51, X, CDC: são nulas as cláusulas que permitam ao fornecedor, direta ou indiretamente, variação do preço de maneira unilateral.",
+      "support": "CDC, art. 51, X.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "clausulas abusivas",
+        "variacao de preco"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-079",
+      "subject": "consumidor",
+      "theme": "Praticas Abusivas",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 79,
+      "difficulty": "medium",
+      "statement": "A publicidade abusiva, vedada pelo CDC, é aquela que:",
+      "explanation": "Art. 37, §2o CDC: é abusiva a publicidade discriminatória, que incite à violência, explore o medo ou superstição, explore crianças, etc.",
+      "support": "CDC, art. 37, §2o.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "publicidade abusiva",
+        "discriminatoria"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "q-oab39-080",
+      "subject": "consumidor",
+      "theme": "Responsabilidade Fornecedor",
+      "exam": "OAB 39",
+      "year": 2024,
+      "questionNumber": 80,
+      "difficulty": "hard",
+      "statement": "A excludente de responsabilidade do fornecedor pelo fato do produto ocorre quando:",
+      "explanation": "Art. 12, §3o, CDC: o fabricante, produtor ou importador não responde quando provar que não colocou o produto no mercado, que o defeito inexiste ou culpa exclusiva do consumidor ou terceiro.",
+      "support": "CDC, art. 12, §3o.",
+      "lawText": "",
+      "phase": "1a fase",
+      "relatedArticleIds": [],
+      "tags": [
+        "excludente de responsabilidade",
+        "defeito inexistente"
+      ],
+      "alternatives": []
+    }
+  ]
+}

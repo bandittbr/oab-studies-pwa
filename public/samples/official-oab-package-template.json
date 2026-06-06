@@ -1,0 +1,56 @@
+{
+  "packId": "oab-44-1a-fase-official-pack",
+  "packName": "OAB 44 - 1a fase",
+  "version": "1.0.0",
+  "metadata": {
+    "sourceType": "official-oab",
+    "edition": 44,
+    "year": 2025,
+    "phase": "1a fase",
+    "questionCount": 80,
+    "parser": "generate-official-oab-pack.mjs",
+    "sourceUrls": {
+      "bookletPdf": "https://s.oab.org.br/arquivos/2025/08/fda2cc49-fbbd-4893-9b75-0f61c177cd5d.pdf",
+      "answerKeyPdf": "https://s.oab.org.br/arquivos/2025/08/30bc168f-0f26-40fa-95f9-6e171a117784.pdf"
+    },
+    "contentStatus": "draft"
+  },
+  "officialExams": [
+    {
+      "id": "oab-44-1a-fase",
+      "exam": "OAB 44",
+      "label": "OAB 44",
+      "year": 2025,
+      "phase": "1a fase",
+      "durationMinutes": 300,
+      "questions": [
+        { "questionId": "q-oab44-001", "number": 1 },
+        { "questionId": "q-oab44-002", "number": 2 }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q-oab44-001",
+      "statement": "Enunciado completo da questao oficial.",
+      "explanation": "",
+      "support": "",
+      "lawText": "",
+      "subject": "A classificar",
+      "theme": "A classificar",
+      "exam": "OAB 44",
+      "year": 2025,
+      "phase": "1a fase",
+      "questionNumber": 1,
+      "difficulty": "medium",
+      "tags": ["oab", "prova-oficial"],
+      "relatedArticleIds": [],
+      "alternatives": [
+        { "id": "a", "text": "Alternativa A", "correct": false },
+        { "id": "b", "text": "Alternativa B", "correct": true },
+        { "id": "c", "text": "Alternativa C", "correct": false },
+        { "id": "d", "text": "Alternativa D", "correct": false }
+      ]
+    }
+  ]
+}
