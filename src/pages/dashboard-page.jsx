@@ -1,7 +1,49 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { AdaptivePlanCard } from "../components/adaptive-plan-card";
 import { ChartCard } from "../components/chart-card";
 import { useStudy } from "../state/study-context";
+
+const PIX_KEY = "022.374.951-65";
+
+function PixQrButton() {
+  const [copied, setCopied] = useState(false);
+  function handleCopy() {
+    navigator.clipboard.writeText(PIX_KEY).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    });
+  }
+  return (
+    <div className="shrink-0 flex flex-col items-center gap-1.5">
+      <button
+        type="button"
+        onClick={handleCopy}
+        title="Clique para copiar a chave PIX"
+        className="relative group cursor-pointer"
+      >
+        <img
+          src="/pix-qr.png"
+          alt="QR Code PIX doação"
+          className="w-36 h-36 bg-white object-contain transition-opacity group-hover:opacity-80"
+        />
+        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <span className="bg-black/60 text-white text-xs font-semibold px-2 py-1 rounded-md">
+            Copiar chave
+          </span>
+        </div>
+      </button>
+      <span className="text-[0.62rem] text-[var(--muted)] text-center leading-4">
+        {copied ? (
+          <span className="font-semibold text-[var(--success)]">Chave copiada! ✓</span>
+        ) : (
+          <>Chave PIX (CPF):<br />
+          <span className="font-semibold text-[var(--text)] select-all">{PIX_KEY}</span></>
+        )}
+      </span>
+    </div>
+  );
+}
 
 const SUGGESTED_SUBJECTS = [
   { id: "etica",           label: "Ética",          icon: "⚖️" },
@@ -39,17 +81,7 @@ export function DashboardPage() {
 
             {/* Doação */}
             <div className="mt-4 soft-panel rounded-[var(--radius-md)] p-4 flex items-start gap-4">
-              <div className="shrink-0 flex flex-col items-center gap-1.5">
-                <img
-                  src="/pix-qr.png"
-                  alt="QR Code PIX doação"
-                  className="w-24 h-24 bg-white object-contain"
-                />
-                <span className="text-[0.62rem] text-[var(--muted)] text-center leading-4">
-                  Chave PIX (CPF):<br />
-                  <span className="font-semibold text-[var(--text)] select-all">022.374.951-65</span>
-                </span>
-              </div>
+              <PixQrButton />
               <p className="text-sm leading-6 text-[var(--muted)]">
                 Caso queira incentivar o trabalho do Gabriel e contribuir para novas
                 atualizações, faça uma doação através do{" "}
