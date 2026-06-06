@@ -97,6 +97,7 @@ export function PracticePage() {
   const [selectedAlternativeId, setSelectedAlternativeId] = useState("");
   const [confirmedAlternativeId, setConfirmedAlternativeId] = useState("");
   const [draftComment, setDraftComment] = useState("");
+  const [showAiExplanation, setShowAiExplanation] = useState(false);
 
   const currentQuestion = questions[currentIndex];
   const questionAnnotation = currentQuestion
@@ -125,6 +126,7 @@ export function PracticePage() {
     const result = getQuestionResult(currentQuestion.id);
     setSelectedAlternativeId(result?.selectedAlternativeId ?? "");
     setConfirmedAlternativeId(result?.selectedAlternativeId ?? "");
+    setShowAiExplanation(Boolean(result?.selectedAlternativeId));
   }, [currentQuestion?.id, getQuestionResult]);
 
   if (!currentQuestion) {
@@ -170,6 +172,7 @@ export function PracticePage() {
     if (!getQuestionAiPack(currentQuestion.id)) {
       generateQuestionAiPack(currentQuestion.id, selectedAlternativeId);
     }
+    setShowAiExplanation(true);
   }
 
   function goToIndex(next) {
@@ -179,6 +182,7 @@ export function PracticePage() {
   function handleRetry() {
     setConfirmedAlternativeId("");
     setSelectedAlternativeId("");
+    setShowAiExplanation(false);
   }
 
   const result = getQuestionResult(currentQuestion.id);
@@ -300,7 +304,7 @@ export function PracticePage() {
 
         <QuestionCommentaryPanel
           annotation={questionAnnotation}
-          aiPack={questionAiPack}
+          aiPack={showAiExplanation ? questionAiPack : null}
           draftComment={draftComment}
           onDraftCommentChange={setDraftComment}
           onAddManualComment={() => {
