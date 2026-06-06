@@ -25,11 +25,8 @@ const navItems = [
   {
     to: "/leis", label: "Lei seca", short: "Leis", badge: null,
     icon: <svg viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5"><path fillRule="evenodd" d="M10 2a1 1 0 01.894.553l7 14A1 1 0 0117 18H3a1 1 0 01-.894-1.447l7-14A1 1 0 0110 2zM10 7a1 1 0 011 1v3a1 1 0 11-2 0V8a1 1 0 011-1zm0 7a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd"/></svg>
-  },
-  {
-    to: "/studio", label: "Studio", short: "Studio", badge: null,
-    icon: <svg viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5"><path fillRule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clipRule="evenodd"/></svg>
   }
+  // Studio: acesso via /studio (requer senha de admin)
 ];
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -255,7 +252,7 @@ export function AppShell({ children }) {
         {/* Bottom nav mobile — zona do polegar */}
         {!isImmersive && (
           <nav className="glass-panel sticky bottom-0 z-30 lg:hidden border-x-0 border-b-0 rounded-none safe-pb">
-            <div className="grid grid-cols-6 gap-px px-1 pt-1.5 pb-1">
+            <div className="grid grid-cols-5 gap-px px-1 pt-1.5 pb-1">
               {navItems.map((item) => <BottomNavItem key={item.to} item={item} due={due} />)}
             </div>
           </nav>

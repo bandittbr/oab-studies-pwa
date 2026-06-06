@@ -24,6 +24,40 @@ async function readFileAsJson(file) {
   return JSON.parse(text);
 }
 
+
+// ── Proteção de acesso ao Studio ──────────────────────────────
+const STUDIO_PIN = "danilo2026";
+
+function StudioGate({ children }) {
+  const stored = typeof window !== "undefined" ? sessionStorage.getItem("studio-auth") : null;
+  const [unlocked, setUnlocked] = useState(stored === "1");
+  const [pin, setPin] = useState("");
+  const [error, setError] = useState(false);
+  if (unlocked) return children;
+  function handleSubmit(e) {
+    e.preventDefault();
+    if (pin === STUDIO_PIN) { sessionStorage.setItem("studio-auth", "1"); setUnlocked(true); }
+    else { setError(true); setPin(""); }
+  }
+  return (
+    <div className="flex min-h-[60vh] items-center justify-center">
+      <div className="glass-panel rounded-[2rem] p-8 w-full max-w-sm text-center">
+        <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-[var(--text)]/8">
+          <svg viewBox="0 0 20 20" fill="currentColor" className="h-7 w-7 text-[var(--muted)]"><path fillRule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clipRule="evenodd"/></svg>
+        </div>
+        <h2 className="text-lg font-semibold text-[var(--text)]">Acesso restrito</h2>
+        <p className="mt-1 text-sm text-[var(--muted)]">Digite a senha para acessar o Studio</p>
+        <form onSubmit={handleSubmit} className="mt-5 flex flex-col gap-3">
+          <input type="password" value={pin} onChange={(e) => { setPin(e.target.value); setError(false); }} placeholder="Senha" autoFocus
+            className={"w-full rounded-[1.4rem] border px-4 py-3 text-sm text-center text-[var(--text)] bg-white/5 outline-none " + (error ? "border-rose-400/60" : "border-[var(--panel-border)]")} />
+          {error && <p className="text-xs text-rose-400">Senha incorreta</p>}
+          <button type="submit" className="rounded-[1.4rem] bg-[var(--text)] px-4 py-3 text-sm font-semibold text-[var(--bg)]">Entrar</button>
+        </form>
+      </div>
+    </div>
+  );
+}
+
 export function PlatformPage() {
   const navigate = useNavigate();
   const {
@@ -63,7 +97,8 @@ export function PlatformPage() {
   const performanceAiPack = getPerformanceAiPack();
 
   return (
-    <div className="grid gap-5">
+    <StudioGate>
+      <div className="grid gap-5">
       <section className="glass-panel rounded-[2rem] p-6">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
@@ -417,6 +452,7 @@ export function PlatformPage() {
         </article>
       </section>
     </div>
+    </StudioGate>
   );
 }
 
