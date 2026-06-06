@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { loginWithEmail, loginWithGoogle, registerWithEmail } from "../services/auth-service";
+import { useAuth } from "../state/auth-context";
 
 function GoogleIcon() {
   return (
@@ -28,7 +29,8 @@ function parseError(err) {
 }
 
 export function LoginPage() {
-  const [mode, setMode] = useState("login"); // "login" | "register"
+  const { enterAsGuest } = useAuth();
+  const [mode, setMode] = useState("login");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -147,9 +149,7 @@ export function LoginPage() {
         <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
           {mode === "register" && (
             <div>
-              <label style={{ display: "block", fontSize: "0.75rem", fontWeight: 600, color: "var(--muted, #8a8fa8)", marginBottom: "0.5rem", textTransform: "uppercase", letterSpacing: "0.1em" }}>
-                Nome
-              </label>
+              <label style={labelStyle}>Nome</label>
               <input
                 type="text"
                 value={name}
@@ -163,9 +163,7 @@ export function LoginPage() {
           )}
 
           <div>
-            <label style={{ display: "block", fontSize: "0.75rem", fontWeight: 600, color: "var(--muted, #8a8fa8)", marginBottom: "0.5rem", textTransform: "uppercase", letterSpacing: "0.1em" }}>
-              E-mail
-            </label>
+            <label style={labelStyle}>E-mail</label>
             <input
               type="email"
               value={email}
@@ -178,9 +176,7 @@ export function LoginPage() {
           </div>
 
           <div>
-            <label style={{ display: "block", fontSize: "0.75rem", fontWeight: 600, color: "var(--muted, #8a8fa8)", marginBottom: "0.5rem", textTransform: "uppercase", letterSpacing: "0.1em" }}>
-              Senha
-            </label>
+            <label style={labelStyle}>Senha</label>
             <div style={{ position: "relative" }}>
               <input
                 type={showPassword ? "text" : "password"}
@@ -252,20 +248,46 @@ export function LoginPage() {
             fontSize: "0.875rem", fontWeight: 600,
             cursor: loading ? "not-allowed" : "pointer",
             display: "flex", alignItems: "center", justifyContent: "center", gap: "0.625rem",
+            marginBottom: "0.75rem",
             transition: "background 0.15s"
           }}
         >
           <GoogleIcon />
           Continuar com Google
         </button>
+
+        {/* Entrar sem login */}
+        <button
+          type="button"
+          onClick={enterAsGuest}
+          disabled={loading}
+          style={{
+            width: "100%", padding: "0.625rem",
+            background: "transparent",
+            border: "none",
+            color: "var(--muted, #8a8fa8)",
+            fontSize: "0.8rem",
+            cursor: loading ? "not-allowed" : "pointer",
+            textDecoration: "underline",
+            textUnderlineOffset: "3px"
+          }}
+        >
+          Entrar sem login (progresso não é salvo na nuvem)
+        </button>
       </div>
 
       <div style={{ marginTop: "2rem", fontSize: "0.75rem", color: "var(--muted, #8a8fa8)", textAlign: "center", maxWidth: 320 }}>
-        Seu progresso fica salvo na nuvem e sincronizado em todos os seus dispositivos.
+        Com login, seu progresso fica salvo na nuvem e sincronizado em todos os dispositivos.
       </div>
     </div>
   );
 }
+
+const labelStyle = {
+  display: "block", fontSize: "0.75rem", fontWeight: 600,
+  color: "var(--muted, #8a8fa8)", marginBottom: "0.5rem",
+  textTransform: "uppercase", letterSpacing: "0.1em"
+};
 
 const inputStyle = {
   width: "100%",

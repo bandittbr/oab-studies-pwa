@@ -88,10 +88,10 @@ function LoadingScreen() {
 }
 
 export default function App() {
-  const { user } = useAuth();
+  const { user, isGuest } = useAuth();
 
   if (user === undefined) return <LoadingScreen />;
-  if (user === null) return <LoginPage />;
+  if (user === null && !isGuest) return <LoginPage />;
 
   return (
     <ErrorBoundary>

@@ -7,13 +7,24 @@ const AuthContext = createContext(null);
 export function AuthProvider({ children }) {
   // undefined = carregando, null = deslogado, objeto = usuário autenticado
   const [user, setUser] = useState(undefined);
+  const [isGuest, setIsGuest] = useState(false);
 
   useEffect(() => {
-    const unsub = onAuthStateChanged(auth, (u) => setUser(u ?? null));
+    const unsub = onAuthStateChanged(auth, (u) => {
+      setUser(u ?? null);
+      if (u) setIsGuest(false); // login real cancela modo visitante
+    });
     return unsub;
   }, []);
 
-  return <AuthContext.Provider value={{ user }}>{children}</AuthContext.Provider>;
+  function enterAsGuest() { setIsGuest(true); }
+  function exitGuest() { setIsGuest(false); }
+
+  return (
+    <AuthContext.Provider value={{ user, isGuest, enterAsGuest, exitGuest }}>
+      {children}
+    </AuthContext.Provider>
+  );
 }
 
 export function useAuth() {

@@ -235,7 +235,35 @@ function SidebarStat({ label, value, accent = false }) {
    USUÁRIO — SIDEBAR
    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 function UserBlock() {
-  const { user } = useAuth();
+  const { user, isGuest, exitGuest } = useAuth();
+
+  if (isGuest) {
+    return (
+      <div className="border-t border-[var(--panel-border)] px-3 py-3 flex items-center gap-2.5">
+        <div style={{
+          width: 32, height: 32, borderRadius: "50%", flexShrink: 0,
+          background: "rgba(255,255,255,0.08)",
+          display: "flex", alignItems: "center", justifyContent: "center",
+          fontSize: "1rem"
+        }}>
+          👤
+        </div>
+        <div className="flex-1 min-w-0">
+          <div className="text-xs font-semibold text-[var(--text)] truncate">Visitante</div>
+          <div className="text-[0.6rem] text-[var(--muted)] truncate">Progresso local apenas</div>
+        </div>
+        <button
+          type="button"
+          onClick={exitGuest}
+          title="Fazer login"
+          className="shrink-0 rounded-[var(--r-sm)] px-2 py-1 text-[0.6rem] font-semibold text-[var(--muted)] hover:text-[var(--text)] hover:bg-white/5 transition border border-[var(--panel-border)]"
+        >
+          Login
+        </button>
+      </div>
+    );
+  }
+
   if (!user) return null;
   const name = user.displayName || user.email?.split("@")[0] || "Usuário";
   const initial = name.charAt(0).toUpperCase();
@@ -245,7 +273,7 @@ function UserBlock() {
         width: 32, height: 32, borderRadius: "50%", flexShrink: 0,
         background: "linear-gradient(135deg, #6366f1, #8b5cf6)",
         display: "flex", alignItems: "center", justifyContent: "center",
-        fontSize: "0.875rem", fontWeight: 700, color: "#fff"
+        fontSize: "0.875rem", fontWeight: 700, color: "#fff", overflow: "hidden"
       }}>
         {user.photoURL
           ? <img src={user.photoURL} alt={name} style={{ width: 32, height: 32, borderRadius: "50%", objectFit: "cover" }} />
