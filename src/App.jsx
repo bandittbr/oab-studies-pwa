@@ -40,7 +40,7 @@ class ErrorBoundary extends Component {
               fontSize: "0.875rem", fontWeight: 600, cursor: "pointer"
             }}
           >
-            Voltar ao início
+            Voltar ao inicio
           </button>
         </div>
       );
@@ -50,13 +50,50 @@ class ErrorBoundary extends Component {
 }
 
 const DashboardPage = lazy(() =>
-  import("./pages/dashboard-page").then((module) => ({ default: module.DashboardPage }))
+  import("./pages/dashboard-page").then((m) => ({ default: m.DashboardPage }))
 );
 const PracticePage = lazy(() =>
-  import("./pages/practice-page").then((module) => ({ default: module.PracticePage }))
+  import("./pages/practice-page").then((m) => ({ default: m.PracticePage }))
 );
 const ReviewPage = lazy(() =>
-  import("./pages/review-page").then((module) => ({ default: module.ReviewPage }))
+  import("./pages/review-page").then((m) => ({ default: m.ReviewPage }))
 );
 const OfficialExamsPage = lazy(() =>
-  import("./pages/official-exams-
+  import("./pages/official-exams-page").then((m) => ({ default: m.OfficialExamsPage }))
+);
+const OfficialExamSessionPage = lazy(() =>
+  import("./pages/official-exam-session-page").then((m) => ({ default: m.OfficialExamSessionPage }))
+);
+const QuestionBankPage = lazy(() =>
+  import("./pages/question-bank-page").then((m) => ({ default: m.QuestionBankPage }))
+);
+const LawLibraryPage = lazy(() =>
+  import("./pages/law-library-page").then((m) => ({ default: m.LawLibraryPage }))
+);
+const PlatformPage = lazy(() =>
+  import("./pages/platform-page").then((m) => ({ default: m.PlatformPage }))
+);
+
+export default function App() {
+  return (
+    <ErrorBoundary>
+      <AppShell>
+        <Suspense fallback={<PageSkeleton />}>
+          <Routes>
+            <Route path="/" element={<DashboardPage />} />
+            <Route path="/questoes" element={<QuestionBankPage />} />
+            <Route path="/materias" element={<Navigate to="/questoes" replace />} />
+            <Route path="/provas" element={<OfficialExamsPage />} />
+            <Route path="/provas/:examId" element={<OfficialExamSessionPage />} />
+            <Route path="/resolver" element={<PracticePage />} />
+            <Route path="/resolver/:subjectId" element={<PracticePage />} />
+            <Route path="/revisao" element={<ReviewPage />} />
+            <Route path="/leis" element={<LawLibraryPage />} />
+            <Route path="/studio" element={<PlatformPage />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </Routes>
+        </Suspense>
+      </AppShell>
+    </ErrorBoundary>
+  );
+}
