@@ -1,0 +1,10 @@
+[
+  {
+    "questionId": "q-oab43-010",
+    "status": "error",
+    "error": "Instagram API: Error validating access token: Session has expired on Wednesday, 24-Jun-26 23:00:00 PDT. The current time is Thursday, 25-Jun-26 13:05:39 PDT.",
+    "attempt": 2,
+    "ts": "25/06/2026, 17:05:39",
+    "isoTs": "2026-06-25T20:05:39.967Z"
+  }
+]
