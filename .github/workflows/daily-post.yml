@@ -1,13 +1,12 @@
-name: OAB Social Bot — Daily 5 Posts
+name: OAB Social Bot — 4 Posts/Dia
 
 on:
   schedule:
-    # Segunda a sexta: 09h, 12h, 15h, 18h, 21h BRT (UTC-3)
-    - cron: '0 12 * * 1-5'   # 09:00 BRT
-    - cron: '0 15 * * 1-5'   # 12:00 BRT
-    - cron: '0 18 * * 1-5'   # 15:00 BRT
-    - cron: '0 21 * * 1-5'   # 18:00 BRT
-    - cron: '0 0  * * 2-6'   # 21:00 BRT (vira meia-noite UTC)
+    # Horários em America/Sao_Paulo (BRT = UTC-3)
+    - cron: '30 10 * * *'   # 07:30 BRT — todos os dias
+    - cron: '30 15 * * *'   # 12:30 BRT — todos os dias
+    - cron: '30 21 * * *'   # 18:30 BRT — todos os dias
+    - cron: '0  0  * * *'   # 21:00 BRT — todos os dias (00:00 UTC dia seguinte)
   workflow_dispatch:
     inputs:
       dry_run:
@@ -25,7 +24,7 @@ jobs:
   post:
     runs-on: ubuntu-latest
     permissions:
-      contents: write   # necessário para commitar posted.json
+      contents: write   # necessário para commitar posted.json e logs/history.json
 
     defaults:
       run:
@@ -45,10 +44,19 @@ jobs:
       - name: Instalar dependências
         run: npm ci
 
+      - name: Instalar dependências do Puppeteer (Chromium)
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq \
+            libnss3 libatk1.0-0 libatk-bridge2.0-0 libcups2 \
+            libdrm2 libxkbcommon0 libxcomposite1 libxdamage1 \
+            libxfixes3 libxrandr2 libgbm1 libasound2
+
       - name: Sincronizar banco de questões
         run: node sync-questions.mjs
 
       - name: Executar pipeline
+        id: pipeline
         run: |
           COUNT="${{ github.event.inputs.count || '1' }}"
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
@@ -67,11 +75,27 @@ jobs:
           FIREBASE_CLIENT_EMAIL:    ${{ secrets.FIREBASE_CLIENT_EMAIL }}
           FIREBASE_PRIVATE_KEY:     ${{ secrets.FIREBASE_PRIVATE_KEY }}
 
-      - name: Salvar posted.json no repositório
-        if: ${{ github.event.inputs.dry_run != 'true' }}
+      - name: Salvar estado no repositório
+        if: always() && github.event.inputs.dry_run != 'true'
         run: |
           git config user.name  "oab-social-bot"
           git config user.email "bot@estudo-oab.vercel.app"
-          git add data/posted.json || true
-          git diff --staged --quiet || git commit -m "chore: atualiza questões postadas [skip ci]"
-          git push
+          git add data/posted.json logs/history.json 2>/dev/null || true
+          git diff --staged --quiet || git commit -m "chore: bot — atualiza estado [skip ci]"
+          git push || true
+
+      - name: Upload da imagem gerada
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: post-image-${{ github.run_id }}
+          path: social-bot/output/*.png
+          retention-days: 14
+
+      - name: Upload dos logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: logs-${{ github.run_id }}
+          path: social-bot/logs/*.log
+          retention-days: 30

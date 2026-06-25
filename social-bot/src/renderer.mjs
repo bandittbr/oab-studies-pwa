@@ -33,25 +33,29 @@ export async function renderQuestion(question, outPath) {
     const page = await browser.newPage();
     await page.setViewport({ width: 1080, height: 1080, deviceScaleFactor: 2 });
 
-    // Carrega o template como HTML puro (sem file://)
     await page.setContent(html, { waitUntil: 'networkidle0' });
 
-    // Injeta os dados chamando window.renderPost() exposta pelo template
     await page.evaluate((data) => {
       window.renderPost(data);
     }, {
-      exam:           question.examId?.replace('oab-', 'OAB ') ?? '',
-      year:           question.year,
-      subject:        question.subjectLabel ?? question.subjectId,
-      questionNumber: question.questionNumber,
-      statement:      question.statement,
+      exam:         question.examId?.replace('oab-', 'OAB ') ?? '',
+      year:         question.year,
+      subject:      question.subjectLabel ?? question.subjectId,
+      statement:    question.statement,
+      alternatives: (question.alternatives ?? []).map(a => ({
+        id:   a.id,
+        text: a.text,
+      })),
     });
 
-    // Aguarda renderização e captura
-    await new Promise(r => setTimeout(r, 300));
-    await page.screenshot({ path: fileName, type: 'png', clip: { x: 0, y: 0, width: 1080, height: 1080 } });
+    await new Promise(r => setTimeout(r, 400));
+    await page.screenshot({
+      path: fileName,
+      type: 'png',
+      clip: { x: 0, y: 0, width: 1080, height: 1080 },
+    });
 
-    console.log(`✓ Imagem gerada: ${fileName}`);
+    console.log(`\u2713 Imagem gerada: ${fileName}`);
     return fileName;
   } finally {
     await browser.close();
@@ -64,6 +68,6 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const questions = loadQuestions();
   const posted    = loadPosted();
   const q         = selectNext(questions, posted);
-  console.log(`Renderizando: ${q.id} — ${q.subjectLabel}`);
+  console.log('Renderizando:', q.id, '--', q.subjectLabel);
   await renderQuestion(q);
 }
