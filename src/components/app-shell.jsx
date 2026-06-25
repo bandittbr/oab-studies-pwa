@@ -467,7 +467,7 @@ export function AppShell({ children }) {
             </div>
           ) : (
             <div className="page-enter">
-              <Outlet />
+              {children}
             </div>
           )}
         </main>
