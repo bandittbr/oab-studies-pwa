@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
+import { Link, NavLink, Outlet, useLocation, useNavigate } from "react-router-dom";
 import { useKeyboardShortcuts } from "../hooks/use-keyboard-shortcuts";
 import { useStudy } from "../state/study-context";
 import { useAuth } from "../state/auth-context";
