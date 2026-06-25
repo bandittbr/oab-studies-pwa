@@ -75,7 +75,7 @@ function AdaptiveMetric({ label, value, color = "text-[var(--text)]" }) {
   return (
     <div className="soft-panel rounded-[var(--r-md)] p-4">
       <div className="label-caps mb-2">{label}</div>
-      <div className={`text-xl font-bold ${color}`}>{value}</div>
+      <div className={`text-2xl font-bold ${color}`}>{value}</div>
     </div>
   );
 }

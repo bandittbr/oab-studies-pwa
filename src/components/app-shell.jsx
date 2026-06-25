@@ -466,18 +466,11 @@ export function AppShell({ children }) {
               Carregando base offline e pacotes importados…
             </div>
           ) : (
-            <div className="page-enter">{children}</div>
+            <div className="page-enter">
+              <Outlet />
+            </div>
           )}
         </main>
-
-        {/* Bottom nav mobile */}
-        {!isImmersive && (
-          <nav className="glass-panel sticky bottom-0 z-30 lg:hidden border-x-0 border-b-0 rounded-none safe-pb">
-            <div className="grid grid-cols-5 gap-px px-2 pt-2 pb-1">
-              {navItems.map((item) => <BottomNavItem key={item.to} item={item} due={due} />)}
-            </div>
-          </nav>
-        )}
       </div>
     </div>
   );

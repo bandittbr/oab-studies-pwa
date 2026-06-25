@@ -325,12 +325,10 @@ input:focus, textarea:focus, select:focus {
 ::-webkit-scrollbar-track  { background: transparent; }
 ::-webkit-scrollbar-thumb  { background: rgba(139, 127, 248, 0.18); border-radius: 99px; }
 
-:root[data-theme="light"] {
-  scrollbar-color: rgba(91, 80, 214, 0.18) transparent;
-}
+:root[data-theme="light"] ::-webkit-scrollbar-thumb { background: rgba(91, 80, 214, 0.18); }
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   ANIMAÇÕES
+   ANIMACOES
    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 @keyframes page-in {
   from { opacity: 0; transform: translateY(10px); }
@@ -338,117 +336,25 @@ input:focus, textarea:focus, select:focus {
 }
 .page-enter { animation: page-in 280ms cubic-bezier(0.2, 0, 0, 1) both; }
 
-@keyframes fade-in {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-.fade-in { animation: fade-in 200ms ease both; }
-
 @keyframes slide-up {
-  from { opacity: 0; transform: translateY(14px); }
+  from { opacity: 0; transform: translateY(8px); }
   to   { opacity: 1; transform: translateY(0); }
 }
-.slide-up { animation: slide-up 260ms cubic-bezier(0.2, 0, 0, 1) both; }
+.slide-up { animation: slide-up 220ms cubic-bezier(0.2, 0, 0, 1) both; }
 
 @keyframes pop {
-  0%   { transform: scale(0.95); opacity: 0; }
-  60%  { transform: scale(1.025); }
-  100% { transform: scale(1);    opacity: 1; }
+  0%   { transform: scale(1); }
+  40%  { transform: scale(1.04); }
+  100% { transform: scale(1); }
 }
-.pop { animation: pop 220ms cubic-bezier(0.2, 0, 0, 1) both; }
-
-@keyframes shimmer {
-  from { background-position: -200% 0; }
-  to   { background-position:  200% 0; }
-}
-.skeleton {
-  background: linear-gradient(
-    90deg,
-    rgba(255,255,255,0.04) 25%,
-    rgba(255,255,255,0.08) 50%,
-    rgba(255,255,255,0.04) 75%
-  );
-  background-size: 200% 100%;
-  animation: shimmer 1.6s ease-in-out infinite;
-}
-
-@keyframes pulse-brand {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(139, 127, 248, 0); }
-  50%       { box-shadow: 0 0 0 4px rgba(139, 127, 248, 0.2); }
-}
+.pop { animation: pop 300ms cubic-bezier(0.2, 0, 0, 1); }
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   APP SHELL — AMBIENT
+   QUESTAO - TIPOGRAFIA
    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
-.app-shell::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 0;
-  background:
-    radial-gradient(ellipse 60% 30% at 8% 5%,   rgba(100, 88, 220, 0.06), transparent),
-    radial-gradient(ellipse 50% 25% at 92% 4%, rgba(245, 158, 11, 0.025), transparent);
-}
-
-/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   UTILITÁRIOS
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
-.sr-only {
-  position: absolute; width: 1px; height: 1px; padding: 0;
-  margin: -1px; overflow: hidden; clip: rect(0,0,0,0);
-  white-space: nowrap; border-width: 0;
-}
-
-.nav-badge {
-  display: inline-flex;
-  align-items: center; justify-content: center;
-  min-width: 1.1rem; height: 1.1rem;
-  padding: 0 0.2rem;
-  border-radius: 99px;
-  font-size: 0.6rem; font-weight: 700; line-height: 1;
-  background: var(--brand); color: #fff;
-}
-
-/* Zona segura — notch iPhones */
-.safe-pb { padding-bottom: env(safe-area-inset-bottom, 0px); }
-
-/* Gradiente de texto */
-.text-gradient {
-  background: linear-gradient(135deg, var(--brand), var(--accent));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-/* Divisor */
-.divider {
-  height: 1px;
-  background: var(--panel-border);
-}
-
-/* Stat number — números grandes de métricas */
-.stat-number {
-  font-size: 1.875rem;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: -0.02em;
-  color: var(--text);
-}
-
-/* Progress bar base */
-.progress-track {
-  height: 6px;
-  overflow: hidden;
-  border-radius: 99px;
-  background: rgba(255, 255, 255, 0.07);
-}
-:root[data-theme="light"] .progress-track {
-  background: rgba(0, 0, 0, 0.07);
-}
-.progress-fill {
-  height: 100%;
-  border-radius: 99px;
-  background: linear-gradient(90deg, var(--brand), var(--accent));
-  transition: width 700ms cubic-bezier(0.2, 0, 0, 1);
+.question-statement {
+  font-size: clamp(0.95rem, 2vw, 1.05rem);
+  line-height: 1.85;
+  max-width: 72ch;
+  white-space: pre-wrap;
 }

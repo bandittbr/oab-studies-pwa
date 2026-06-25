@@ -2,6 +2,7 @@ import { defineQuestion } from "../factories";
 import { questionSeedOab46 } from "./questions-seed-oab46";
 import { questionSeedOab45 } from "./questions-seed-oab45";
 import { questionSeedOab44 } from "./questions-seed-oab44";
+import { questionSeedOab43 } from "./questions-seed-oab43";
 
 export const questionSeed = [
   // ==================== OAB 46 - QUESTÕES REAIS (80/80) ====================
@@ -12,6 +13,9 @@ export const questionSeed = [
 
   // ==================== OAB 44 - QUESTÕES REAIS (80/80) ====================
   ...questionSeedOab44,
+
+  // ==================== OAB 43 - QUESTÕES REAIS (80/80) ====================
+  ...questionSeedOab43,
 
 
   // ==================== CONSTITUCIONAL (20) ====================
@@ -9130,10 +9134,10 @@ export const questionSeed = [
     relatedArticleIds: [],
     tags: ["vicio oculto", "servico", "30 dias"],
     alternatives: [
-      { id: "a", text: "7 dias." },
-      { id: "b", text: "30 dias.", correct: true },
-      { id: "c", text: "90 dias." },
-      { id: "d", text: "1 ano." }
-    ]
-  })
+        { id: "a", text: "30 dias" },
+        { id: "b", text: "60 dias", correct: true },
+        { id: "c", text: "90 dias" },
+        { id: "d", text: "180 dias" },
+      ]
+    }),
 ];

@@ -404,12 +404,10 @@ function QuickLink({ to, icon, title, description }) {
       to={to}
       className="soft-panel rounded-[var(--r-md)] p-4 flex gap-3 hover:border-[var(--border-hover)] hover:bg-[var(--bg-card-alt)] card-hover transition group"
     >
-      <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-[var(--r-sm)] bg-[var(--brand)]/10 text-[var(--brand)] group-hover:bg-[var(--brand)]/18 transition">
-        {icon}
-      </span>
-      <div>
-        <div className="text-sm font-semibold text-[var(--text)]">{title}</div>
-        <div className="mt-0.5 text-xs leading-5 text-[var(--muted)]">{description}</div>
+      <span className="shrink-0 text-xl">{icon}</span>
+      <div className="min-w-0">
+        <div className="text-sm font-semibold text-[var(--text)] group-hover:text-[var(--brand)] transition">{title}</div>
+        <div className="mt-0.5 text-xs text-[var(--muted)] leading-snug">{description}</div>
       </div>
     </Link>
   );
