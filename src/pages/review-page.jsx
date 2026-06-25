@@ -12,7 +12,7 @@ const ReviewCard = memo(function ReviewCard({ question }) {
       {/* Matéria + data */}
       <div className="flex items-center justify-between gap-3">
         <span className="rounded-full border border-[var(--panel-border)] px-2.5 py-0.5 text-[0.62rem] font-medium uppercase tracking-[0.14em] text-[var(--muted)]">
-          {question.subject.label}
+          {question.subject?.label ?? ""}
         </span>
         <span className="text-[0.65rem] text-[var(--muted)]">
           {formatDateLabel(question.progress?.nextReviewAt)}

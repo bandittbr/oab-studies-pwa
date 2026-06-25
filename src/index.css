@@ -6,33 +6,33 @@
 :root {
   color-scheme: dark;
 
-  /* ── Superfícies ── */
-  --bg:          #08101e;
-  --bg-elevated: rgba(12, 22, 40, 0.92);
-  --bg-soft:     rgba(18, 32, 56, 0.55);
-  --soft-bg:     rgba(18, 32, 56, 0.55);
+  /* ── Superfícies — Carbono + Índigo ── */
+  --bg:          #161620;
+  --bg-elevated: rgba(30, 30, 46, 0.97);
+  --bg-soft:     rgba(40, 40, 60, 0.65);
+  --soft-bg:     rgba(40, 40, 60, 0.65);
 
   /* ── Bordas ── */
-  --panel-border:  rgba(160, 185, 255, 0.09);
-  --border-hover:  rgba(160, 185, 255, 0.18);
-  --border-focus:  rgba(125, 211, 252, 0.50);
+  --panel-border:  rgba(180, 170, 255, 0.10);
+  --border-hover:  rgba(180, 170, 255, 0.20);
+  --border-focus:  rgba(124, 110, 245, 0.60);
 
   /* ── Texto ── */
-  --text:         #e8f2ff;
-  --text-2:       #b8cce8;   /* secundário */
-  --muted:        #7a96be;   /* terciário  */
+  --text:         #f2f2ff;
+  --text-2:       #c0beed;   /* secundário */
+  --muted:        #9090be;   /* terciário  */
 
   /* ── Marca / status ── */
-  --brand:   #67c8f8;
-  --accent:  #f59e0b;
-  --success: #2dd4a0;
+  --brand:   #9d8fff;
+  --accent:  #c4bbff;
+  --success: #34d399;
   --danger:  #f87171;
   --warn:    #fbbf24;
 
   /* ── Sombras ── */
-  --shadow-sm:    0 1px 4px  rgba(2,  8, 18, 0.30);
-  --shadow-md:    0 4px 16px rgba(2,  8, 18, 0.35);
-  --shadow-lg:    0 12px 40px rgba(2, 8, 18, 0.40);
+  --shadow-sm:    0 1px 4px  rgba(0, 0, 20, 0.35);
+  --shadow-md:    0 4px 16px rgba(0, 0, 20, 0.40);
+  --shadow-lg:    0 12px 40px rgba(0, 0, 20, 0.45);
 
   /* ── Raios ── */
   --r-xs: 0.5rem;    /*  8px */
@@ -74,38 +74,38 @@
 
   /* ── Fundo ── */
   background:
-    radial-gradient(ellipse 80% 50% at 15% 0%,   rgba(103, 200, 248, 0.10) 0%, transparent 60%),
-    radial-gradient(ellipse 60% 40% at 90% 5%,   rgba(245, 158, 11, 0.08)  0%, transparent 55%),
-    linear-gradient(175deg, #08101e 0%, #0c1828 60%, #101e30 100%);
+    radial-gradient(ellipse 70% 45% at 10% 0%,  rgba(124, 110, 245, 0.15) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 35% at 95% 8%,  rgba(167, 159, 255, 0.08) 0%, transparent 55%),
+    linear-gradient(175deg, #161620 0%, #191928 55%, #1c1c30 100%);
   color: var(--text);
 }
 
 :root[data-theme="light"] {
   color-scheme: light;
 
-  --bg:          #f0f4fb;
-  --bg-elevated: rgba(255, 255, 255, 0.95);
-  --bg-soft:     rgba(235, 242, 255, 0.85);
-  --soft-bg:     rgba(235, 242, 255, 0.85);
-  --panel-border:  rgba(25, 50, 110, 0.08);
-  --border-hover:  rgba(25, 50, 110, 0.18);
-  --border-focus:  rgba(14, 116, 144, 0.45);
-  --text:         #0d1e36;
-  --text-2:       #354e6e;
-  --muted:        #5c7499;
-  --brand:  #0e7490;
-  --accent: #b45309;
+  --bg:          #f4f4fc;
+  --bg-elevated: rgba(255, 255, 255, 0.97);
+  --bg-soft:     rgba(235, 235, 248, 0.85);
+  --soft-bg:     rgba(235, 235, 248, 0.85);
+  --panel-border:  rgba(0, 0, 0, 0.07);
+  --border-hover:  rgba(91, 80, 214, 0.20);
+  --border-focus:  rgba(91, 80, 214, 0.45);
+  --text:         #13131f;
+  --text-2:       #36364e;
+  --muted:        #7070a0;
+  --brand:  #5b50d6;
+  --accent: #4338b8;
   --success:#047857;
   --danger: #be123c;
   --warn:   #92400e;
-  --shadow-sm:    0 1px 4px  rgba(10, 25, 60, 0.08);
-  --shadow-md:    0 4px 16px rgba(10, 25, 60, 0.10);
-  --shadow-lg:    0 12px 40px rgba(10, 25, 60, 0.12);
+  --shadow-sm:    0 1px 4px  rgba(20, 10, 60, 0.07);
+  --shadow-md:    0 4px 16px rgba(20, 10, 60, 0.09);
+  --shadow-lg:    0 12px 40px rgba(20, 10, 60, 0.11);
 
   background:
-    radial-gradient(ellipse 80% 50% at 10% 0%,   rgba(56, 189, 248, 0.09), transparent),
-    radial-gradient(ellipse 60% 40% at 95% 5%,   rgba(251, 146, 60, 0.10), transparent),
-    linear-gradient(175deg, #eaf2fb 0%, #f4f8fd 60%, #edf2ff 100%);
+    radial-gradient(ellipse 70% 45% at 10% 0%,  rgba(124, 110, 245, 0.08), transparent),
+    radial-gradient(ellipse 50% 35% at 95% 5%,  rgba(167, 159, 255, 0.06), transparent),
+    linear-gradient(175deg, #f4f4fc 0%, #f6f6fd 55%, #f0f0fa 100%);
 }
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -127,7 +127,7 @@ body {
 button, input, select, textarea { font: inherit; }
 
 ::selection {
-  background: rgba(103, 200, 248, 0.22);
+  background: rgba(124, 110, 245, 0.25);
   color: var(--text);
 }
 

@@ -157,9 +157,9 @@ function ExamCard({ officialExam, session, repository, onStart, onRestart }) {
 
 function MiniStat({ label, value }) {
   return (
-    <div className="soft-panel rounded-2xl p-4">
-      <div className="text-xs uppercase tracking-[0.18em] text-[var(--muted)]">{label}</div>
-      <div className="mt-2 text-lg font-semibold text-[var(--text)]">{value}</div>
+    <div className="soft-panel rounded-2xl p-3 min-w-0 overflow-hidden">
+      <div className="text-[10px] uppercase tracking-[0.1em] text-[var(--muted)] truncate">{label}</div>
+      <div className="mt-1.5 text-lg font-semibold text-[var(--text)]">{value}</div>
     </div>
   );
 }

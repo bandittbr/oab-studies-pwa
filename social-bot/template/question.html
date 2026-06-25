@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    width: 1080px;
+    height: 1080px;
+    background: #161620;
+    font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 72px;
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── Cabeçalho ── */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 44px;
+  }
+
+  .logo {
+    font-size: 22px;
+    font-weight: 700;
+    color: #9d8fff;
+    letter-spacing: 0.04em;
+  }
+
+  .exam-tag {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    background: rgba(157, 143, 255, 0.13);
+    color: #9d8fff;
+    border-radius: 100px;
+    padding: 7px 18px;
+  }
+
+  /* ── Identificação da questão ── */
+  .question-id {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .accent-bar {
+    width: 4px;
+    height: 52px;
+    border-radius: 3px;
+    background: #9d8fff;
+    flex-shrink: 0;
+  }
+
+  .question-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .subject-label {
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #9090be;
+    font-weight: 500;
+  }
+
+  .question-number {
+    font-size: 32px;
+    font-weight: 700;
+    color: #9d8fff;
+    line-height: 1;
+  }
+
+  /* ── Divisor ── */
+  .divider {
+    width: 100%;
+    height: 1px;
+    background: rgba(180, 170, 255, 0.12);
+    margin-bottom: 36px;
+  }
+
+  /* ── Enunciado ── */
+  .statement-wrap {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .statement {
+    font-size: 38px;
+    line-height: 1.65;
+    color: #f2f2ff;
+    font-weight: 400;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+
+  /* Reduz fonte se o texto for muito longo */
+  .statement.medium { font-size: 34px; }
+  .statement.long   { font-size: 30px; }
+  .statement.xlong  { font-size: 26px; line-height: 1.60; }
+
+  /* ── Rodapé ── */
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 36px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(180, 170, 255, 0.10);
+  }
+
+  .cta {
+    font-size: 15px;
+    color: #9090be;
+    letter-spacing: 0.03em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .cta-icon {
+    font-size: 18px;
+  }
+
+  .hashtags {
+    font-size: 13px;
+    background: rgba(157, 143, 255, 0.07);
+    color: #9090be;
+    border-radius: 100px;
+    padding: 6px 16px;
+    letter-spacing: 0.02em;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="logo">Estudo OAB</div>
+  <div class="exam-tag" id="examTag"></div>
+</div>
+
+<div class="question-id">
+  <div class="accent-bar"></div>
+  <div class="question-meta">
+    <div class="subject-label" id="subjectLabel"></div>
+    <div class="question-number" id="questionNumber"></div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<div class="statement-wrap">
+  <div class="statement" id="statement"></div>
+</div>
+
+<div class="footer">
+  <div class="cta">
+    <span class="cta-icon">💬</span>
+    Responda nos comentários
+  </div>
+  <div class="hashtags">#OAB #Direito #Advocacia</div>
+</div>
+
+<script>
+  window.renderPost = function(data) {
+    document.getElementById('examTag').textContent =
+      `${data.exam} · FGV ${data.year}`;
+
+    document.getElementById('subjectLabel').textContent = data.subject;
+    document.getElementById('questionNumber').textContent = '';
+
+    const el = document.getElementById('statement');
+    el.textContent = data.statement;
+
+    // Ajuste automático de tamanho de fonte
+    const len = data.statement.length;
+    if (len > 600)      el.classList.add('xlong');
+    else if (len > 420) el.classList.add('long');
+    else if (len > 280) el.classList.add('medium');
+  };
+</script>
+</body>
+</html>
