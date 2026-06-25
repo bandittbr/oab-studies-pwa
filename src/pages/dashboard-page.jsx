@@ -25,7 +25,7 @@ function PixQrButton() {
         <img
           src="/pix-qr.png"
           alt="QR Code PIX doação"
-          className="w-36 h-36 bg-white object-contain transition-opacity group-hover:opacity-80"
+          className="w-[86px] h-[86px] bg-white object-contain transition-opacity group-hover:opacity-80"
         />
         <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
           <span className="bg-black/60 text-white text-xs font-semibold px-2 py-1 rounded-md">
@@ -83,8 +83,7 @@ export function DashboardPage() {
             <div className="mt-4 soft-panel rounded-[var(--radius-md)] p-4 flex items-start gap-4">
               <PixQrButton />
               <p className="text-sm leading-6 text-[var(--muted)]">
-                Incentive o meu trabalho, faça uma doação através do{" "}
-                <span className="font-semibold text-[var(--text)]">Pix</span>. 💙
+                Gostou do projeto? Apoie com um Pix ❤️
               </p>
             </div>
 
