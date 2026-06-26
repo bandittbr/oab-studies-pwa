@@ -2,21 +2,20 @@ name: OAB Social Bot — 4 Posts/Dia
 
 on:
   schedule:
-    # Horários em America/Sao_Paulo (BRT = UTC-3)
-    - cron: '30 10 * * *'   # 07:30 BRT — todos os dias
-    - cron: '30 15 * * *'   # 12:30 BRT — todos os dias
-    - cron: '30 21 * * *'   # 18:30 BRT — todos os dias
-    - cron: '0  0  * * *'   # 21:00 BRT — todos os dias (00:00 UTC dia seguinte)
+    - cron: '30 10 * * *'
+    - cron: '30 15 * * *'
+    - cron: '30 21 * * *'
+    - cron: '0  0  * * *'
   workflow_dispatch:
     inputs:
       dry_run:
-        description: 'Dry run (não publica)?'
+        description: 'Dry run (nao publica)?'
         required: false
         default: 'false'
         type: choice
         options: ['false', 'true']
       count:
-        description: 'Quantas questões publicar'
+        description: 'Quantas questoes publicar'
         required: false
         default: '1'
 
@@ -24,8 +23,7 @@ jobs:
   post:
     runs-on: ubuntu-latest
     permissions:
-      contents: write   # necessário para commitar posted.json e logs/history.json
-      secrets: write    # necessário para renovar o token Instagram automaticamente
+      contents: write
 
     defaults:
       run:
@@ -42,41 +40,30 @@ jobs:
           cache: 'npm'
           cache-dependency-path: social-bot/package-lock.json
 
-      - name: Instalar dependências
+      - name: Instalar dependencias
         run: npm ci
 
-      - name: Instalar dependências do Puppeteer (Chromium)
+      - name: Instalar dependencias do Puppeteer (Chromium)
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y -qq \
-            libnss3 libatk1.0-0 libatk-bridge2.0-0 libcups2 \
-            libdrm2 libxkbcommon0 libxcomposite1 libxdamage1 \
-            libxfixes3 libxrandr2 libgbm1 \
-            libasound2t64 || sudo apt-get install -y -qq libasound2 || true
+          sudo apt-get install -y -qq libnss3 libatk1.0-0 libatk-bridge2.0-0 libcups2 libdrm2 libxkbcommon0 libxcomposite1 libxdamage1 libxfixes3 libxrandr2 libgbm1 libasound2t64 || sudo apt-get install -y -qq libasound2 || true
 
       - name: Renovar token Instagram (auto-refresh 60 dias)
         working-directory: ${{ github.workspace }}
         run: |
           RESPONSE=$(curl -s "https://graph.facebook.com/v19.0/oauth/access_token?grant_type=fb_exchange_token&client_id=${{ secrets.META_APP_ID }}&client_secret=${{ secrets.META_APP_SECRET }}&fb_exchange_token=${{ secrets.INSTAGRAM_ACCESS_TOKEN }}")
-          NEW_TOKEN=$(echo "$RESPONSE" | node -e "
-            const d = require('fs').readFileSync('/dev/stdin','utf8');
-            try {
-              const j = JSON.parse(d);
-              if (j.access_token) { process.stdout.write(j.access_token); }
-              else { process.stderr.write('Refresh falhou: ' + d + '\\n'); }
-            } catch(e) { process.stderr.write(e.message + '\\n'); }
-          ")
+          NEW_TOKEN=$(echo "$RESPONSE" | node -e "const d=require('fs').readFileSync('/dev/stdin','utf8');try{const j=JSON.parse(d);if(j.access_token){process.stdout.write(j.access_token);}else{process.stderr.write('Refresh falhou: '+d);}}catch(e){process.stderr.write(e.message);}")
           if [ -n "$NEW_TOKEN" ]; then
-            echo "Token Instagram renovado com sucesso"
-            gh secret set INSTAGRAM_ACCESS_TOKEN --body "$NEW_TOKEN" -R "$GITHUB_REPOSITORY"
+            echo "Token renovado valido por mais 60 dias"
             echo "INSTAGRAM_ACCESS_TOKEN=$NEW_TOKEN" >> $GITHUB_ENV
+            gh secret set INSTAGRAM_ACCESS_TOKEN --body "$NEW_TOKEN" -R "$GITHUB_REPOSITORY" 2>/dev/null && echo "Secret atualizado" || echo "Aviso: nao foi possivel atualizar o secret"
           else
-            echo "Falha ao renovar token - usando token atual"
+            echo "Falha ao renovar - usando token atual"
           fi
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
 
-      - name: Sincronizar banco de questões
+      - name: Sincronizar banco de questoes
         run: node sync-questions.mjs
 
       - name: Executar pipeline
@@ -99,7 +86,7 @@ jobs:
           FIREBASE_CLIENT_EMAIL:    ${{ secrets.FIREBASE_CLIENT_EMAIL }}
           FIREBASE_PRIVATE_KEY:     ${{ secrets.FIREBASE_PRIVATE_KEY }}
 
-      - name: Salvar estado no repositório
+      - name: Salvar estado no repositorio
         if: always() && github.event.inputs.dry_run != 'true'
         run: |
           git config user.name  "oab-social-bot"
