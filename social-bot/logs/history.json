@@ -1,5 +1,13 @@
 [
   {
+    "questionId": "q-oab45-030",
+    "status": "error",
+    "error": "Instagram API: The caption was too long.",
+    "attempt": 2,
+    "ts": "27/06/2026, 23:03:55",
+    "isoTs": "2026-06-28T02:03:55.889Z"
+  },
+  {
     "questionId": "q-oab44-038",
     "status": "success",
     "instagramPostId": "17865112653633100",
