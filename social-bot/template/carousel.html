@@ -756,7 +756,7 @@ window.renderSlide = function(data) {
     });
 
     var answerLabel = 'Alternativa ' + (data.correctId || '').toUpperCase();
-    if (correctAlt) answerLabel += ' —  ? +` correctAlt.text;
+    if (correctAlt) answerLabel += '  —  ' + correctAlt.text;
 
     var shortAnswer = 'Alternativa ' + (data.correctId || '').toUpperCase();
     setText('gab-answer', shortAnswer);
