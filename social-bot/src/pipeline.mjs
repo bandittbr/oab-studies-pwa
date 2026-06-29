@@ -12,25 +12,25 @@
 import 'dotenv/config';
 
 import { loadQuestions, loadPosted, savePosted, selectMany } from './selector.mjs';
-import { renderQuestion }                                    from './renderer.mjs';
-import { generateCaption, generateGabaritoComment }         from './ai.mjs';
-import { markPosted }                                        from './tracker.mjs';
-import { publishToInstagram }                                from './publisher.mjs';
-import { uploadImage }                                       from './uploader.mjs';
-import { logInfo, logWarn, logError, saveRunToHistory }      from './logger.mjs';
+import { renderCarousel }                                     from './renderer.mjs';
+import { generateCaption, generateGabaritoComment }          from './ai.mjs';
+import { markPosted }                                         from './tracker.mjs';
+import { publishCarouselToInstagram }                         from './publisher.mjs';
+import { uploadImages }                                       from './uploader.mjs';
+import { logInfo, logWarn, logError, saveRunToHistory }       from './logger.mjs';
 
 const isDry    = process.argv.includes('--dry-run') || process.argv.includes('--preview');
 const isNow    = process.argv.includes('--now');
 const countArg = process.argv.find(a => a.startsWith('--count='));
 const COUNT    = isNow ? 1 : (countArg ? parseInt(countArg.split('=')[1]) : 1);
 
-const MAX_RETRIES    = 2;       // tentativas por questão
-const RETRY_DELAY_MS = 30_000;  // 30s entre tentativas
+const MAX_RETRIES    = 2;
+const RETRY_DELAY_MS = 30_000;
 
 async function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
 
 /**
- * Tenta publicar uma questão, com retry automático.
+ * Tenta publicar uma questão como carrossel, com retry automático.
  * @returns {'success'|'error'|'skipped'}
  */
 async function runOne(question, posted, attempt = 1) {
@@ -41,11 +41,12 @@ async function runOne(question, posted, attempt = 1) {
   });
 
   try {
-    // 1. Renderizar imagem
-    const imagePath = await renderQuestion(question);
-    logInfo('Imagem renderizada', { imagePath });
+    // 1. Renderizar 6 slides do carrossel
+    logInfo('Renderizando carrossel (6 slides)…');
+    const imagePaths = await renderCarousel(question);
+    logInfo('Slides renderizados', { count: imagePaths.length });
 
-    // 2. Gerar legenda e comentário
+    // 2. Gerar legenda e comentário de gabarito
     const [caption, comment] = await Promise.all([
       generateCaption(question),
       generateGabaritoComment(question),
@@ -53,6 +54,8 @@ async function runOne(question, posted, attempt = 1) {
     logInfo('Legenda e gabarito gerados', { captionLength: caption.length });
 
     if (isDry) {
+      console.log('\n── SLIDES GERADOS ───────────────────────────');
+      imagePaths.forEach((p, i) => console.log(`  Slide ${i + 1}: ${p}`));
       console.log('\n── LEGENDA ──────────────────────────────────');
       console.log(caption);
       console.log('\n── COMENTÁRIO (GABARITO) ────────────────────');
@@ -62,24 +65,22 @@ async function runOne(question, posted, attempt = 1) {
       return 'skipped';
     }
 
-    // 3. Upload imagem
-    logInfo('Enviando imagem ao CDN…');
-    const imageUrl = await uploadImage(imagePath);
-    logInfo('Upload concluído', { imageUrl });
+    // 3. Upload dos 6 slides ao Cloudinary
+    logInfo('Enviando slides ao CDN…');
+    const imageUrls = await uploadImages(imagePaths);
+    logInfo('Uploads concluídos', { count: imageUrls.length });
 
-    // 4. Publicar no Instagram
-    logInfo('Publicando no Instagram…');
-    const postId = await publishToInstagram(imageUrl, caption, comment);
+    // 4. Publicar carrossel no Instagram
+    logInfo('Publicando carrossel no Instagram…');
+    const postId = await publishCarouselToInstagram(imageUrls, caption, comment);
 
     if (!postId) {
-      // Instagram não configurado (credenciais ausentes)
       logWarn('Publicação ignorada — Instagram não configurado', { questionId: question.id });
       saveRunToHistory({ questionId: question.id, status: 'skipped', reason: 'instagram-not-configured' });
-      // NÃO marca como postada — questão volta ao pool
       return 'skipped';
     }
 
-    // 5. ✅ Só registra como postada APÓS publicação confirmada
+    // 5. Registra como postada APÓS confirmação
     posted.add(question.id);
     savePosted(posted);
     await markPosted(question.id, {
@@ -88,7 +89,7 @@ async function runOne(question, posted, attempt = 1) {
       questionNumber:  question.questionNumber,
     });
 
-    logInfo('Questão publicada com sucesso', { questionId: question.id, instagramPostId: postId });
+    logInfo('Carrossel publicado com sucesso', { questionId: question.id, instagramPostId: postId });
     saveRunToHistory({ questionId: question.id, status: 'success', instagramPostId: postId, attempt });
     return 'success';
 
@@ -105,7 +106,6 @@ async function runOne(question, posted, attempt = 1) {
       return runOne(question, posted, attempt + 1);
     }
 
-    // Esgotou as tentativas — registra falha sem marcar como postada
     saveRunToHistory({ questionId: question.id, status: 'error', error: err.message, attempt });
     return 'error';
   }
@@ -143,7 +143,7 @@ async function run() {
 
   if (results.error > 0) {
     logError(`${results.error} postagem(ns) falharam após ${MAX_RETRIES} tentativas.`);
-    process.exit(1);  // Sinaliza falha ao GitHub Actions
+    process.exit(1);
   }
 }
 
