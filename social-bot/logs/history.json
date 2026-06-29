@@ -1,5 +1,13 @@
 [
   {
+    "questionId": "q-oab43-036",
+    "status": "error",
+    "error": "window.renderSlide is not a function",
+    "attempt": 2,
+    "ts": "29/06/2026, 10:18:25",
+    "isoTs": "2026-06-29T13:18:25.294Z"
+  },
+  {
     "questionId": "q-oab46-071",
     "status": "success",
     "instagramPostId": "17971464291096640",
