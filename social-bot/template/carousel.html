@@ -1,1 +1,775 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    width: 1080px;
+    height: 1080px;
+    background: #080E1C;
+    font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+    color: #FFFFFF;
+  }
+
+  /* ──────────────────────────────────────
+     BASE SLIDE
+  ────────────────────────────────────── */
+  .slide {
+    display: none;
+    flex-direction: column;
+    width: 1080px;
+    height: 1080px;
+    padding: 64px 72px 56px;
+    position: relative;
+    background: #080E1C;
+  }
+  .slide.active { display: flex; }
+
+  /* ──────────────────────────────────────
+     SHARED: LOGO HEADER
+  ────────────────────────────────────── */
+  .logo-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .logo-icon {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, #1A6FFF, #3B9FFF);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    flex-shrink: 0;
+  }
+
+  .logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+  }
+
+  .logo-label {
+    font-size: 13px;
+    font-weight: 500;
+    color: #6B7FA8;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .logo-name {
+    font-size: 22px;
+    font-weight: 800;
+    color: #FFFFFF;
+    letter-spacing: 0.01em;
+  }
+
+  .exam-badge {
+    background: #0F1729;
+    border: 1px solid #1E2D4A;
+    color: #8BA0CC;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 100px;
+    padding: 8px 24px;
+    letter-spacing: 0.04em;
+  }
+
+  /* ──────────────────────────────────────
+     SHARED: SLIDE TAG
+  ────────────────────────────────────── */
+  .tag-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 44px;
+    margin-bottom: 36px;
+    flex-shrink: 0;
+  }
+
+  .tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 24px;
+    border-radius: 100px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .tag-blue   { background: #1A4BCC; color: #FFFFFF; }
+  .tag-indigo { background: #3730A3; color: #FFFFFF; }
+  .tag-amber  { background: #92400E; color: #FCD34D; }
+  .tag-green  { background: #064E35; color: #34D399; }
+
+  .tag-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: currentColor;
+    opacity: 0.8;
+  }
+
+  .slide-counter {
+    font-size: 15px;
+    font-weight: 600;
+    color: #4A5A7A;
+    letter-spacing: 0.05em;
+  }
+
+  /* ──────────────────────────────────────
+     SHARED: SWIPE HINT (bottom)
+  ────────────────────────────────────── */
+  .swipe-hint {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    padding-top: 20px;
+    flex-shrink: 0;
+  }
+
+  .swipe-hint span {
+    font-size: 15px;
+    font-weight: 600;
+    color: #3A4A6A;
+    letter-spacing: 0.04em;
+  }
+
+  .swipe-arrow {
+    width: 32px;
+    height: 32px;
+    background: #111929;
+    border: 1px solid #1E2D4A;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* ──────────────────────────────────────
+     SLIDE 1: CAPA
+  ────────────────────────────────────── */
+  #slide-cover {
+    background: #080E1C;
+  }
+
+  .cover-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0;
+  }
+
+  .cover-icon {
+    font-size: 72px;
+    margin-bottom: 36px;
+    line-height: 1;
+  }
+
+  .cover-chip {
+    background: #1A4BCC;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    border-radius: 100px;
+    padding: 9px 28px;
+    margin-bottom: 28px;
+    display: inline-block;
+  }
+
+  .cover-title {
+    font-size: 72px;
+    font-weight: 900;
+    color: #FFFFFF;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin-bottom: 16px;
+  }
+
+  .cover-title span { color: #4C8EFF; }
+
+  .cover-subtitle {
+    font-size: 22px;
+    font-weight: 500;
+    color: #4A5A7A;
+    letter-spacing: 0.02em;
+  }
+
+  .cover-divider {
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #1A6FFF, #3B9FFF);
+    border-radius: 2px;
+    margin: 32px auto;
+  }
+
+  .cover-cta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #3A4A6A;
+  }
+
+  /* ──────────────────────────────────────
+     SLIDES 2 & 3: ENUNCIADO
+  ────────────────────────────────────── */
+  .enunciado-text {
+    font-size: 28px;
+    font-weight: 400;
+    color: #D1DCF0;
+    line-height: 1.65;
+    flex: 1;
+  }
+
+  .enunciado-text.md { font-size: 25px; }
+  .enunciado-text.sm { font-size: 22px; line-height: 1.6; }
+
+  /* ──────────────────────────────────────
+     SLIDE 4: PERGUNTA
+  ────────────────────────────────────── */
+  .pergunta-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    text-align: center;
+  }
+
+  .pergunta-icon {
+    width: 96px;
+    height: 96px;
+    background: #0F1A36;
+    border: 2px solid #1E3460;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 44px;
+    font-weight: 800;
+    color: #4C8EFF;
+    flex-shrink: 0;
+  }
+
+  .pergunta-text {
+    font-size: 32px;
+    font-weight: 600;
+    color: #FFFFFF;
+    line-height: 1.45;
+    max-width: 860px;
+  }
+
+  .pergunta-text.md { font-size: 28px; }
+  .pergunta-text.sm { font-size: 24px; }
+
+  /* ──────────────────────────────────────
+     SLIDE 5: ALTERNATIVAS
+  ───��────────────────────────────────── */
+  .alternatives-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+  }
+
+  .alt-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #0C1528;
+    border: 1px solid #172035;
+    border-radius: 20px;
+    padding: 22px 28px;
+    min-height: 76px;
+  }
+
+  .alt-letter {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #1A4BCC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFFFFF;
+    flex-shrink: 0;
+  }
+
+  .alt-text {
+    font-size: 22px;
+    font-weight: 500;
+    color: #C8D6EE;
+    line-height: 1.35;
+  }
+
+  .alt-text.sm { font-size: 19px; }
+  .alt-text.xs { font-size: 17px; }
+
+  .alt-cta {
+    margin-top: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #2E3E60;
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  /* ──────────────────────────────────────
+     SLIDE 6: GABARITO
+  ────────────────────────────────────── */
+  .gabarito-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .gabarito-answer-row {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .gabarito-check {
+    width: 72px;
+    height: 72px;
+    background: #064E35;
+    border: 2px solid #10B981;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .gabarito-answer-label {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .gabarito-correct-tag {
+    font-size: 13px;
+    font-weight: 700;
+    color: #34D399;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .gabarito-answer-text {
+    font-size: 42px;
+    font-weight: 900;
+    color: #34D399;
+    letter-spacing: -0.01em;
+    line-height: 1.1;
+  }
+
+  .gabarito-divider {
+    width: 100%;
+    height: 1px;
+    background: #172035;
+    flex-shrink: 0;
+  }
+
+  .gabarito-explanation {
+    font-size: 22px;
+    font-weight: 400;
+    color: #8FA4CC;
+    line-height: 1.6;
+    flex: 1;
+  }
+
+  .gabarito-explanation.md { font-size: 19px; }
+  .gabarito-explanation.sm { font-size: 17px; line-height: 1.55; }
+
+  .gabarito-footer-brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 12px;
+    flex-shrink: 0;
+  }
+
+  .brand-url {
+    font-size: 14px;
+    font-weight: 600;
+    color: #2E3E60;
+    letter-spacing: 0.04em;
+  }
+
+  .brand-follow {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1A6FFF;
+    letter-spacing: 0.04em;
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 1: CAPA
+════════════════════════════════════════ -->
+<div class="slide" id="slide-cover">
+  <div class="logo-bar">
+    <div class="logo">
+      <div class="logo-icon">📖</div>
+      <div class="logo-text">
+        <span class="logo-label">Estudo</span>
+        <span class="logo-name">OAB</span>
+      </div>
+    </div>
+    <div class="exam-badge" id="cover-exam-badge"></div>
+  </div>
+
+  <div class="cover-body">
+    <div class="cover-icon">⚖️</div>
+    <div class="cover-chip" id="cover-subject"></div>
+    <div class="cover-title">
+      QUESTÃO<br><span id="cover-exam-title"></span>
+    </div>
+    <div class="cover-divider"></div>
+    <div class="cover-cta">
+      <span>Deslize para ver a questão</span>
+      <svg width="20" height="16" viewBox="0 0 20 16" fill="none">
+        <path d="M12 1L19 8L12 15M1 8H19" stroke="#3A4A6A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 2: ENUNCIADO PT.1
+════════════════════════════════════════ -->
+<div class="slide" id="slide-enunciado-1">
+  <div class="logo-bar">
+    <div class="logo">
+      <div class="logo-icon">📖</div>
+      <div class="logo-text">
+        <span class="logo-label">Estudo</span>
+        <span class="logo-name">OAB</span>
+      </div>
+    </div>
+    <div class="exam-badge" id="enun1-exam-badge"></div>
+  </div>
+
+  <div class="tag-row">
+    <div class="tag tag-blue">
+      <span class="tag-dot"></span>
+      ENUNCIADO
+    </div>
+    <div class="slide-counter">1 de 2</div>
+  </div>
+
+  <div class="enunciado-text" id="enun1-text"></div>
+
+  <div class="swipe-hint">
+    <span>CONTINUA</span>
+    <div class="swipe-arrow">
+      <svg width="14" height="12" viewBox="0 0 14 12" fill="none">
+        <path d="M8 1L13 6L8 11M1 6H13" stroke="#3A4A6A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 3: ENUNCIADO PT.2
+════════════════════════════════════════ -->
+<div class="slide" id="slide-enunciado-2">
+  <div class="logo-bar">
+    <div class="logo">
+      <div class="logo-icon">📖</div>
+      <div class="logo-text">
+        <span class="logo-label">Estudo</span>
+        <span class="logo-name">OAB</span>
+      </div>
+    </div>
+    <div class="exam-badge" id="enun2-exam-badge"></div>
+  </div>
+
+  <div class="tag-row">
+    <div class="tag tag-blue">
+      <span class="tag-dot"></span>
+      ENUNCIADO
+    </div>
+    <div class="slide-counter">2 de 2</div>
+  </div>
+
+  <div class="enunciado-text" id="enun2-text"></div>
+
+  <div class="swipe-hint">
+    <span>DESLIZE</span>
+    <div class="swipe-arrow">
+      <svg width="14" height="12" viewBox="0 0 14 12" fill="none">
+        <path d="M8 1L13 6L8 11M1 6H13" stroke="#3A4A6A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 4: PERGUNTA
+════════════════════════════════════════ -->
+<div class="slide" id="slide-pergunta">
+  <div class="logo-bar">
+    <div class="logo">
+      <div class="logo-icon">📖</div>
+      <div class="logo-text">
+        <span class="logo-label">Estudo</span>
+        <span class="logo-name">OAB</span>
+      </div>
+    </div>
+    <div class="exam-badge" id="perg-exam-badge"></div>
+  </div>
+
+  <div class="tag-row">
+    <div class="tag tag-indigo">
+      <span class="tag-dot"></span>
+      PERGUNTA
+    </div>
+  </div>
+
+  <div class="pergunta-body">
+    <div class="pergunta-icon">?</div>
+    <div class="pergunta-text" id="perg-text"></div>
+  </div>
+
+  <div class="swipe-hint">
+    <span>VER ALTERNATIVAS</span>
+    <div class="swipe-arrow">
+      <svg width="14" height="12" viewBox="0 0 14 12" fill="none">
+        <path d="M8 1L13 6L8 11M1 6H13" stroke="#3A4A6A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 5: ALTERNATIVAS
+════════════════════════════════════════ -->
+<div class="slide" id="slide-alternativas">
+  <div class="logo-bar">
+    <div class="logo">
+      <div class="logo-icon">📖</div>
+      <div class="logo-text">
+        <span class="logo-label">Estudo</span>
+        <span class="logo-name">OAB</span>
+      </div>
+    </div>
+    <div class="exam-badge" id="alt-exam-badge"></div>
+  </div>
+
+  <div class="tag-row">
+    <div class="tag tag-amber">
+      <span class="tag-dot"></span>
+      ALTERNATIVAS
+    </div>
+  </div>
+
+  <div class="alternatives-list" id="alt-list"></div>
+
+  <div class="alt-cta">💬 Qual é a sua resposta? Comente abaixo!</div>
+
+  <div class="swipe-hint">
+    <span>VER GABARITO</span>
+    <div class="swipe-arrow">
+      <svg width="14" height="12" viewBox="0 0 14 12" fill="none">
+        <path d="M8 1L13 6L8 11M1 6H13" stroke="#3A4A6A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     SLIDE 6: GABARITO
+════════════════════════════════════════ -->
+<div class="slide" id="slide-gabarito">
+  <div class="logo-bar">
+    <div class="logo">
+      <div class="logo-icon">📖</div>
+      <div class="logo-text">
+        <span class="logo-label">Estudo</span>
+        <span class="logo-name">OAB</span>
+      </div>
+    </div>
+    <div class="exam-badge" id="gab-exam-badge"></div>
+  </div>
+
+  <div class="tag-row">
+    <div class="tag tag-green">
+      <span class="tag-dot"></span>
+      GABARITO
+    </div>
+  </div>
+
+  <div class="gabarito-body">
+    <div class="gabarito-answer-row">
+      <div class="gabarito-check">
+        <svg width="36" height="28" viewBox="0 0 36 28" fill="none">
+          <path d="M3 14L13 24L33 3" stroke="#10B981" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="gabarito-answer-label">
+        <div class="gabarito-correct-tag">RESPOSTA CORRETA</div>
+        <div class="gabarito-answer-text" id="gab-answer"></div>
+      </div>
+    </div>
+
+    <div class="gabarito-divider"></div>
+
+    <div class="gabarito-explanation" id="gab-explanation"></div>
+
+    <div class="gabarito-footer-brand">
+      <div class="brand-url">estudo-oab.vercel.app</div>
+      <div class="brand-follow">@estudo.oab ↗</div>
+    </div>
+  </div>
+</div>
+
+<script>
+window.renderSlide = function(data) {
+  // Oculta todos os slides
+  document.querySelectorAll('.slide').forEach(function(s) {
+    s.classList.remove('active');
+  });
+
+  var examLabel = data.exam || '';
+  var subject   = (data.subject || '').toUpperCase();
+
+  function setText(id, val) {
+    var el = document.getElementById(id);
+    if (el) el.textContent = val || '';
+  }
+  function setHtml(id, val) {
+    var el = document.getElementById(id);
+    if (el) el.innerHTML = val || '';
+  }
+
+  if (data.type === 'cover') {
+    document.getElementById('slide-cover').classList.add('active');
+    setText('cover-exam-badge', examLabel);
+    setText('cover-subject',    subject);
+    // Extrai número do exame: "OAB 45" → "OAB" + "45"
+    var parts = examLabel.match(/^(OAB)\s+(.+)$/i);
+    if (parts) {
+      setHtml('cover-exam-title', parts[2]);
+    } else {
+      setText('cover-exam-title', examLabel);
+    }
+
+  } else if (data.type === 'enunciado-1') {
+    document.getElementById('slide-enunciado-1').classList.add('active');
+    setText('enun1-exam-badge', examLabel);
+    var el = document.getElementById('enun1-text');
+    el.textContent = data.text || '';
+    var len = (data.text || '').length;
+    el.classList.remove('md', 'sm');
+    if (len > 500) el.classList.add('sm');
+    else if (len > 320) el.classList.add('md');
+
+  } else if (data.type === 'enunciado-2') {
+    document.getElementById('slide-enunciado-2').classList.add('active');
+    setText('enun2-exam-badge', examLabel);
+    var el2 = document.getElementById('enun2-text');
+    var combined = (data.text || '') + (data.question ? '\n\n' + data.question : '');
+    el2.textContent = combined;
+    var len2 = combined.length;
+    el2.classList.remove('md', 'sm');
+    if (len2 > 500) el2.classList.add('sm');
+    else if (len2 > 320) el2.classList.add('md');
+
+  } else if (data.type === 'pergunta') {
+    document.getElementById('slide-pergunta').classList.add('active');
+    setText('perg-exam-badge', examLabel);
+    var pEl = document.getElementById('perg-text');
+    pEl.textContent = data.question || data.text || '';
+    var pLen = (data.question || data.text || '').length;
+    pEl.classList.remove('md', 'sm');
+    if (pLen > 200) pEl.classList.add('sm');
+    else if (pLen > 120) pEl.classList.add('md');
+
+  } else if (data.type === 'alternativas') {
+    document.getElementById('slide-alternativas').classList.add('active');
+    setText('alt-exam-badge', examLabel);
+    var container = document.getElementById('alt-list');
+    container.innerHTML = '';
+    var alts = data.alternatives || [];
+    alts.forEach(function(alt) {
+      var row = document.createElement('div');
+      row.className = 'alt-row';
+
+      var letter = document.createElement('div');
+      letter.className = 'alt-letter';
+      letter.textContent = alt.id.toUpperCase();
+
+      var text = document.createElement('div');
+      text.className = 'alt-text';
+      text.textContent = alt.text;
+      var tLen = alt.text.length;
+      if (tLen > 100) text.classList.add('xs');
+      else if (tLen > 65) text.classList.add('sm');
+
+      row.appendChild(letter);
+      row.appendChild(text);
+      container.appendChild(row);
+    });
+
+  } else if (data.type === 'gabarito') {
+    document.getElementById('slide-gabarito').classList.add('active');
+    setText('gab-exam-badge', examLabel);
+
+    var altsGab = data.alternatives || [];
+    var correctAlt = altsGab.find(function(a) {
+      return a.id.toLowerCase() === (data.correctId || '').toLowerCase();
+    });
+
+    var answerLabel = 'Alternativa ' + (data.correctId || '').toUpperCase();
+    if (correctAlt) answerLabel += ' —  ? +` correctAlt.text;
+
+    var shortAnswer = 'Alternativa ' + (data.correctId || '').toUpperCase();
+    setText('gab-answer', shortAnswer);
+
+    var expEl = document.getElementById('gab-explanation');
+    var expText = data.explanation || (correctAlt ? correctAlt.text : '');
+    expEl.textContent = expText;
+    var expLen = expText.length;
+    expEl.classList.remove('md', 'sm');
+    if (expLen > 400) expEl.classList.add('sm');
+    else if (expLen > 250) expEl.classList.add('md');
+  }
+};
+</script>
+</body>
+</html>
