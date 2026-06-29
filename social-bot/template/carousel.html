@@ -779,3 +779,14 @@ window.renderSlide = function(data) {
 
     var shortAnswer = 'Alternativa ' + (data.correctId || '').toUpperCase();
     setText('gab-answer', shortAnswer);
+    setText('gab-explanation', data.explanation || '');
+    var expEl = document.getElementById('gab-explanation');
+    var expLen = (data.explanation || '').length;
+    expEl.classList.remove('md', 'sm');
+    if (expLen > 600) expEl.classList.add('sm');
+    else if (expLen > 400) expEl.classList.add('md');
+  }
+};
+</script>
+</body>
+</html>
