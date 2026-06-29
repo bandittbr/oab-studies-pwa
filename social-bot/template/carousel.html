@@ -84,7 +84,7 @@
   .exam-badge {
     background: #0F1729;
     border: 1px solid #1E2D4A;
-    color: #8BA0CC;
+    color: #A0B8E8;
     font-size: 15px;
     font-weight: 600;
     border-radius: 100px;
@@ -132,7 +132,7 @@
   .slide-counter {
     font-size: 15px;
     font-weight: 600;
-    color: #4A5A7A;
+    color: #6070A0;
     letter-spacing: 0.05em;
   }
 
@@ -152,7 +152,7 @@
   .swipe-hint span {
     font-size: 15px;
     font-weight: 600;
-    color: #3A4A6A;
+    color: #5A7AA8;
     letter-spacing: 0.04em;
   }
 
@@ -241,16 +241,23 @@
   /* ──────────────────────────────────────
      SLIDES 2 & 3: ENUNCIADO
   ────────────────────────────────────── */
-  .enunciado-text {
-    font-size: 28px;
-    font-weight: 400;
-    color: #D1DCF0;
-    line-height: 1.65;
+  .enunciado-wrapper {
     flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
   }
 
-  .enunciado-text.md { font-size: 25px; }
-  .enunciado-text.sm { font-size: 22px; line-height: 1.6; }
+  .enunciado-text {
+    font-size: 31px;
+    font-weight: 400;
+    color: #EEF4FF;
+    line-height: 1.65;
+    width: 100%;
+  }
+
+  .enunciado-text.md { font-size: 27px; }
+  .enunciado-text.sm { font-size: 24px; line-height: 1.6; }
 
   /* ──────────────────────────────────────
      SLIDE 4: PERGUNTA
@@ -298,7 +305,6 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
-    flex: 1;
   }
 
   .alt-row {
@@ -326,21 +332,29 @@
     flex-shrink: 0;
   }
 
+  .alternatives-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+  }
+
   .alt-text {
-    font-size: 22px;
+    font-size: 23px;
     font-weight: 500;
-    color: #C8D6EE;
+    color: #DCE8FA;
     line-height: 1.35;
   }
 
-  .alt-text.sm { font-size: 19px; }
-  .alt-text.xs { font-size: 17px; }
+  .alt-text.sm { font-size: 20px; }
+  .alt-text.xs { font-size: 18px; }
 
   .alt-cta {
-    margin-top: 6px;
-    font-size: 15px;
+    margin-top: 8px;
+    font-size: 16px;
     font-weight: 600;
-    color: #2E3E60;
+    color: #5A7AA8;
     text-align: center;
     flex-shrink: 0;
   }
@@ -405,7 +419,7 @@
   .gabarito-explanation {
     font-size: 22px;
     font-weight: 400;
-    color: #8FA4CC;
+    color: #A8C0E8;
     line-height: 1.6;
     flex: 1;
   }
@@ -424,14 +438,14 @@
   .brand-url {
     font-size: 14px;
     font-weight: 600;
-    color: #2E3E60;
+    color: #5A7AA8;
     letter-spacing: 0.04em;
   }
 
   .brand-follow {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 700;
-    color: #1A6FFF;
+    color: #4C8EFF;
     letter-spacing: 0.04em;
   }
 </style>
@@ -457,7 +471,7 @@
     <div class="cover-icon">⚖️</div>
     <div class="cover-chip" id="cover-subject"></div>
     <div class="cover-title">
-      QUESTÃO<br><span id="cover-exam-title"></span>
+      QUESTÃO OAB<br><span id="cover-exam-title"></span>
     </div>
     <div class="cover-divider"></div>
     <div class="cover-cta">
@@ -492,7 +506,9 @@
     <div class="slide-counter">1 de 2</div>
   </div>
 
-  <div class="enunciado-text" id="enun1-text"></div>
+  <div class="enunciado-wrapper">
+    <div class="enunciado-text" id="enun1-text"></div>
+  </div>
 
   <div class="swipe-hint">
     <span>CONTINUA</span>
@@ -527,7 +543,9 @@
     <div class="slide-counter">2 de 2</div>
   </div>
 
-  <div class="enunciado-text" id="enun2-text"></div>
+  <div class="enunciado-wrapper">
+    <div class="enunciado-text" id="enun2-text"></div>
+  </div>
 
   <div class="swipe-hint">
     <span>DESLIZE</span>
@@ -598,9 +616,10 @@
     </div>
   </div>
 
-  <div class="alternatives-list" id="alt-list"></div>
-
-  <div class="alt-cta">💬 Qual é a sua resposta? Comente abaixo!</div>
+  <div class="alternatives-wrapper">
+    <div class="alternatives-list" id="alt-list"></div>
+    <div class="alt-cta">💬 Qual é a sua resposta? Comente abaixo!</div>
+  </div>
 
   <div class="swipe-hint">
     <span>VER GABARITO</span>
@@ -653,7 +672,7 @@
 
     <div class="gabarito-footer-brand">
       <div class="brand-url">estudo-oab.vercel.app</div>
-      <div class="brand-follow">@estudo.oab ↗</div>
+      <div class="brand-follow">@estudo.oab.app ↗</div>
     </div>
   </div>
 </div>
@@ -760,16 +779,3 @@ window.renderSlide = function(data) {
 
     var shortAnswer = 'Alternativa ' + (data.correctId || '').toUpperCase();
     setText('gab-answer', shortAnswer);
-
-    var expEl = document.getElementById('gab-explanation');
-    var expText = data.explanation || (correctAlt ? correctAlt.text : '');
-    expEl.textContent = expText;
-    var expLen = expText.length;
-    expEl.classList.remove('md', 'sm');
-    if (expLen > 400) expEl.classList.add('sm');
-    else if (expLen > 250) expEl.classList.add('md');
-  }
-};
-</script>
-</body>
-</html>
