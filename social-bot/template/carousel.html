@@ -17,9 +17,9 @@
     color: #FFFFFF;
   }
 
-  /* ââââââââââââââââââââââââââââââââââââââ
+  /* ──────────────────────────────────────
      BASE SLIDE
-  ââââââââââââââââââââââââââââââââââââââ */
+  ────────────────────────────────────── */
   .slide {
     display: none;
     flex-direction: column;
@@ -31,9 +31,9 @@
   }
   .slide.active { display: flex; }
 
-  /* ââââââââââââââââââââââââââââââââââââââ
+  /* ──────────────────────────────────────
      SHARED: LOGO HEADER
-  ââââââââââââââââââââââââââââââââââââââ */
+  ────────────────────────────────────── */
   .logo-bar {
     display: flex;
     align-items: center;
@@ -92,9 +92,9 @@
     letter-spacing: 0.04em;
   }
 
-  /* ââââââââââââââââââââââââââââââââââââââ
+  /* ──────────────────────────────────────
      SHARED: SLIDE TAG
-  ââââââââââââââââââââââââââââââââââââââ */
+  ────────────────────────────────────── */
   .tag-row {
     display: flex;
     align-items: center;
@@ -136,9 +136,9 @@
     letter-spacing: 0.05em;
   }
 
-  /* ââââââââââââââââââââââââââââââââââââââ
+  /* ──────────────────────────────────────
      SHARED: SWIPE HINT (bottom)
-  ââââââââââââââââââââââââââââââââââââââ */
+  ────────────────────────────────────── */
   .swipe-hint {
     margin-top: auto;
     display: flex;
@@ -167,9 +167,9 @@
     justify-content: center;
   }
 
-  /* ââââââââââââââââââââââââââââââââââââââ
+  /* ──────────────────────────────────────
      SLIDE 1: CAPA
-  ââââââââââââââââââââââââââââââââââââââ */
+  ────────────────────────────────────── */
   #slide-cover {
     background: #080E1C;
   }
@@ -238,9 +238,9 @@
     color: #3A4A6A;
   }
 
-  /* ââââââââââââââââââââââââââââââââââââââ
+  /* ──────────────────────────────────────
      SLIDES 2 & 3: ENUNCIADO
-  ââââââââââââââââââââââââââââââââââââââ */
+  ────────────────────────────────────── */
   .enunciado-wrapper {
     flex: 1;
     display: flex;
@@ -259,9 +259,9 @@
   .enunciado-text.md { font-size: 27px; }
   .enunciado-text.sm { font-size: 24px; line-height: 1.6; }
 
-  /* ââââââââââââââââââââââââââââââââââââââ
+  /* ──────────────────────────────────────
      SLIDE 4: PERGUNTA
-  ââââââââââââââââââââââââââââââââââââââ */
+  ────────────────────────────────────── */
   .pergunta-body {
     flex: 1;
     display: flex;
@@ -298,9 +298,9 @@
   .pergunta-text.md { font-size: 28px; }
   .pergunta-text.sm { font-size: 24px; }
 
-  /* ââââââââââââââââââââââââââââââââââââââ
+  /* ──────────────────────────────────────
      SLIDE 5: ALTERNATIVAS
-  âââï¿½ï¿½ââââââââââââââââââââââââââââââââââ */
+  ────────────────────────────────────── */
   .alternatives-list {
     display: flex;
     flex-direction: column;
@@ -359,9 +359,9 @@
     flex-shrink: 0;
   }
 
-  /* ââââââââââââââââââââââââââââââââââââââ
+  /* ──────────────────────────────────────
      SLIDE 6: GABARITO
-  ââââââââââââââââââââââââââââââââââââââ */
+  ────────────────────────────────────── */
   .gabarito-body {
     flex: 1;
     display: flex;
@@ -452,13 +452,13 @@
 </head>
 <body>
 
-<!-- âââââââââââââââââââââââââââââââââââââââ
+<!-- ═══════════════════════════════════════
      SLIDE 1: CAPA
-ââââââââââââââââââââââââââââââââââââââââ -->
+════════════════════════════════════════ -->
 <div class="slide" id="slide-cover">
   <div class="logo-bar">
     <div class="logo">
-      <div class="logo-icon">ð</div>
+      <div class="logo-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 6a2 2 0 012-2h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6z" stroke="white" stroke-width="1.5"/><line x1="8" y1="9" x2="16" y2="9" stroke="white" stroke-width="1.5" stroke-linecap="round"/><line x1="8" y1="12" x2="16" y2="12" stroke="white" stroke-width="1.5" stroke-linecap="round"/><line x1="8" y1="15" x2="13" y2="15" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg></div>
       <div class="logo-text">
         <span class="logo-label">Estudo</span>
         <span class="logo-name">OAB</span>
@@ -468,14 +468,22 @@
   </div>
 
   <div class="cover-body">
-    <div class="cover-icon">âï¸</div>
+    <div class="cover-icon">
+      <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="36" y1="10" x2="36" y2="62" stroke="#4C8EFF" stroke-width="3" stroke-linecap="round"/>
+        <line x1="14" y1="22" x2="58" y2="22" stroke="#4C8EFF" stroke-width="3" stroke-linecap="round"/>
+        <path d="M14 22 L24 42 Q14 42 4 32 Q4 22 14 22Z" fill="#1A3A7A" stroke="#4C8EFF" stroke-width="2"/>
+        <path d="M58 22 L68 32 Q68 42 58 42 Q48 42 48 32Z" fill="#1A3A7A" stroke="#4C8EFF" stroke-width="2"/>
+        <line x1="26" y1="62" x2="46" y2="62" stroke="#4C8EFF" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+    </div>
     <div class="cover-chip" id="cover-subject"></div>
     <div class="cover-title">
-      QUESTÃO<br><span id="cover-exam-title"></span>
+      QUEST&#195;O<br><span id="cover-exam-title"></span>
     </div>
     <div class="cover-divider"></div>
     <div class="cover-cta">
-      <span>Deslize para ver a questÃ£o</span>
+      <span>Deslize para ver a quest&#227;o</span>
       <svg width="20" height="16" viewBox="0 0 20 16" fill="none">
         <path d="M12 1L19 8L12 15M1 8H19" stroke="#3A4A6A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
@@ -483,13 +491,13 @@
   </div>
 </div>
 
-<!-- âââââââââââââââââââââââââââââââââââââââ
+<!-- ═══════════════════════════════════════
      SLIDE 2: ENUNCIADO PT.1
-ââââââââââââââââââââââââââââââââââââââââ -->
+════════════════════════════════════════ -->
 <div class="slide" id="slide-enunciado-1">
   <div class="logo-bar">
     <div class="logo">
-      <div class="logo-icon">ð</div>
+      <div class="logo-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 6a2 2 0 012-2h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6z" stroke="white" stroke-width="1.5"/><line x1="8" y1="9" x2="16" y2="9" stroke="white" stroke-width="1.5" stroke-linecap="round"/><line x1="8" y1="12" x2="16" y2="12" stroke="white" stroke-width="1.5" stroke-linecap="round"/><line x1="8" y1="15" x2="13" y2="15" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg></div>
       <div class="logo-text">
         <span class="logo-label">Estudo</span>
         <span class="logo-name">OAB</span>
@@ -520,13 +528,13 @@
   </div>
 </div>
 
-<!-- âââââââââââââââââââââââââââââââââââââââ
+<!-- ═══════════════════════════════════════
      SLIDE 3: ENUNCIADO PT.2
-ââââââââââââââââââââââââââââââââââââââââ -->
+════════════════════════════════════════ -->
 <div class="slide" id="slide-enunciado-2">
   <div class="logo-bar">
     <div class="logo">
-      <div class="logo-icon">ð</div>
+      <div class="logo-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 6a2 2 0 012-2h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6z" stroke="white" stroke-width="1.5"/><line x1="8" y1="9" x2="16" y2="9" stroke="white" stroke-width="1.5" stroke-linecap="round"/><line x1="8" y1="12" x2="16" y2="12" stroke="white" stroke-width="1.5" stroke-linecap="round"/><line x1="8" y1="15" x2="13" y2="15" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg></div>
       <div class="logo-text">
         <span class="logo-label">Estudo</span>
         <span class="logo-name">OAB</span>
@@ -557,13 +565,13 @@
   </div>
 </div>
 
-<!-- âââââââââââââââââââââââââââââââââââââââ
+<!-- ═══════════════════════════════════════
      SLIDE 4: PERGUNTA
-ââââââââââââââââââââââââââââââââââââââââ -->
+════════════════════════════════════════ -->
 <div class="slide" id="slide-pergunta">
   <div class="logo-bar">
     <div class="logo">
-      <div class="logo-icon">ð</div>
+      <div class="logo-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 6a2 2 0 012-2h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6z" stroke="white" stroke-width="1.5"/><line x1="8" y1="9" x2="16" y2="9" stroke="white" stroke-width="1.5" stroke-linecap="round"/><line x1="8" y1="12" x2="16" y2="12" stroke="white" stroke-width="1.5" stroke-linecap="round"/><line x1="8" y1="15" x2="13" y2="15" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg></div>
       <div class="logo-text">
         <span class="logo-label">Estudo</span>
         <span class="logo-name">OAB</span>
@@ -594,13 +602,13 @@
   </div>
 </div>
 
-<!-- âââââââââââââââââââââââââââââââââââââââ
+<!-- ═══════════════════════════════════════
      SLIDE 5: ALTERNATIVAS
-ââââââââââââââââââââââââââââââââââââââââ -->
+════════════════════════════════════════ -->
 <div class="slide" id="slide-alternativas">
   <div class="logo-bar">
     <div class="logo">
-      <div class="logo-icon">ð</div>
+      <div class="logo-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 6a2 2 0 012-2h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6z" stroke="white" stroke-width="1.5"/><line x1="8" y1="9" x2="16" y2="9" stroke="white" stroke-width="1.5" stroke-linecap="round"/><line x1="8" y1="12" x2="16" y2="12" stroke="white" stroke-width="1.5" stroke-linecap="round"/><line x1="8" y1="15" x2="13" y2="15" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg></div>
       <div class="logo-text">
         <span class="logo-label">Estudo</span>
         <span class="logo-name">OAB</span>
@@ -618,7 +626,7 @@
 
   <div class="alternatives-wrapper">
     <div class="alternatives-list" id="alt-list"></div>
-    <div class="alt-cta">ð¬ Qual Ã© a sua resposta? Comente abaixo!</div>
+    <div class="alt-cta">Qual e a sua resposta? Comente abaixo!</div>
   </div>
 
   <div class="swipe-hint">
@@ -631,13 +639,13 @@
   </div>
 </div>
 
-<!-- âââââââââââââââââââââââââââââââââââââââ
+<!-- ═══════════════════════════════════════
      SLIDE 6: GABARITO
-ââââââââââââââââââââââââââââââââââââââââ -->
+════════════════════════════════════════ -->
 <div class="slide" id="slide-gabarito">
   <div class="logo-bar">
     <div class="logo">
-      <div class="logo-icon">ð</div>
+      <div class="logo-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 6a2 2 0 012-2h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6z" stroke="white" stroke-width="1.5"/><line x1="8" y1="9" x2="16" y2="9" stroke="white" stroke-width="1.5" stroke-linecap="round"/><line x1="8" y1="12" x2="16" y2="12" stroke="white" stroke-width="1.5" stroke-linecap="round"/><line x1="8" y1="15" x2="13" y2="15" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg></div>
       <div class="logo-text">
         <span class="logo-label">Estudo</span>
         <span class="logo-name">OAB</span>
@@ -672,14 +680,13 @@
 
     <div class="gabarito-footer-brand">
       <div class="brand-url">estudo-oab.vercel.app</div>
-      <div class="brand-follow">@estudo.oab.app â</div>
+      <div class="brand-follow">@estudo.oab.app</div>
     </div>
   </div>
 </div>
 
 <script>
 window.renderSlide = function(data) {
-  // Oculta todos os slides
   document.querySelectorAll('.slide').forEach(function(s) {
     s.classList.remove('active');
   });
@@ -700,7 +707,6 @@ window.renderSlide = function(data) {
     document.getElementById('slide-cover').classList.add('active');
     setText('cover-exam-badge', examLabel);
     setText('cover-subject',    subject);
-    // Extrai nÃºmero do exame: "OAB 45" â "OAB" + "45"
     setText('cover-exam-title', examLabel);
 
   } else if (data.type === 'enunciado-1') {
@@ -768,9 +774,6 @@ window.renderSlide = function(data) {
     var correctAlt = altsGab.find(function(a) {
       return a.id.toLowerCase() === (data.correctId || '').toLowerCase();
     });
-
-    var answerLabel = 'Alternativa ' + (data.correctId || '').toUpperCase();
-    if (correctAlt) answerLabel += ' â ` ' + correctAlt.text;
 
     var shortAnswer = 'Alternativa ' + (data.correctId || '').toUpperCase();
     setText('gab-answer', shortAnswer);
