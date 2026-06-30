@@ -115,45 +115,45 @@ export async function renderCarousel(question) {
   const { part1, part2, question: questionLine } = splitStatement(question.statement ?? '');
 
   const alts = (question.alternatives ?? []).map(a => ({ id: a.id, text: a.text }));
-  // Suporta correctId tireto ou `correct: true` nas alternativas
+  // Suporta correctId treto ou `correct: true` nas alternativas
   const correctAlt = (question.alternatives ?? []).find(a => a.correct === true);
   const correctId  = question.correctId ?? question.correct ?? correctAlt?.id ?? '';
 
-  const slides = [
-    {
-      type:    'cover',
-      exam:    examLabel,
-      subject,
-    },
-    {
-      type: 'enunciado-1',
-      exam: examLabel,
-      text: part1,
-    },
-    {
-      type:     'enunciado-2',
-      exam:     examLabel,
-      text:     part2,
-      question: questionLine,
-    },
-    {
-      type:     'pergunta',
-      exam:     examLabel,
-      question: questionLine || part2,
-    },
-    {
-      type:         'alternativas',
-      exam:         examLabel,
-      alternatives: alts,
-    },
-    {
-      type:         'gabarito',
-      exam:         examLabel,
-      correctId,
-      alternatives: alts,
-      explanation:  question.explanation ?? '',
-    },
-  ];
+  // Slides djânamicos: 4, 5 ou 6 conforme tamanho do enunciado
+  // - part2 curto (< 80 chars)  → 4 slides: cover + enun1-final + alts + gab
+  // - part2 médio (<= 550 chars) → 5 slides: cover + enun1 + enun2(+pergunta) + alts + gab
+  // - part2 longo (> 550 chars)  → 6 slides: cover + enun1 + enun2 + pergunta + alts + gab
+  const explanation = question.explanation ?? '';
+  const coverSlide  = { type: 'cover', exam: examLabel, subject };
+  const altSlide    = { type: 'alternativas', exam: examLabel, alternatives: alts };
+  const gabSlide    = { type: 'gabarito', exam: examLabel, correctId, alternatives: alts, explanation };
+
+  let slides;
+  if (!part2 || part2.length < 80) {
+    slides = [
+      coverSlide,
+      { type: 'enunciado-1-final', exam: examLabel, text: part1, question: questionLine },
+      altSlide,
+      gabSlide,
+    ];
+  } else if (part2.length <= 550) {
+    slides = [
+      coverSlide,
+      { type: 'enunciado-1', exam: examLabel, text: part1 },
+      { type: 'enunciado-2', exam: examLabel, text: part2, question: questionLine },
+      altSlide,
+      gabSlide,
+    ];
+  } else {
+    slides = [
+      coverSlide,
+      { type: 'enunciado-1', exam: examLabel, text: part1 },
+      { type: 'enunciado-2', exam: examLabel, text: part2, question: questionLine },
+      { type: 'pergunta', exam: examLabel, question: questionLine || part2 },
+      altSlide,
+      gabSlide,
+    ];
+  }
 
   const browser = await launchBrowser();
   const filePaths = [];
@@ -178,7 +178,7 @@ export async function renderCarousel(question) {
         clip: { x: 0, y: 0, width: 1080, height: 1080 },
       });
 
-      console.log(`✓ Slide ${i + 1}/6 gerado: ${filePath}`);
+      console.log(`✓ Slide ${i + 1}/${slides.length} gerado: ${filePath}`);
       filePaths.push(filePath);
     }
 
