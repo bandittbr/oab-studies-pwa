@@ -410,6 +410,16 @@
     line-height: 1.1;
   }
 
+  .gabarito-correct-alt {
+    font-size: 21px;
+    font-weight: 500;
+    color: #34D399;
+    line-height: 1.4;
+    margin-top: 4px;
+    opacity: 0.85;
+  }
+  .gabarito-correct-alt.sm { font-size: 18px; }
+
   .gabarito-divider {
     width: 100%;
     height: 1px;
@@ -672,6 +682,7 @@
       <div class="gabarito-answer-label">
         <div class="gabarito-correct-tag">RESPOSTA CORRETA</div>
         <div class="gabarito-answer-text" id="gab-answer"></div>
+        <div class="gabarito-correct-alt" id="gab-correct-alt"></div>
       </div>
     </div>
 
@@ -777,8 +788,13 @@ window.renderSlide = function(data) {
       return a.id.toLowerCase() === (data.correctId || '').toLowerCase();
     });
 
-    var shortAnswer = 'Alternativa ' + (data.correctId || '').toUpperCase();
-    setText('gab-answer', shortAnswer);
+    var letter = (data.correctId || '').toUpperCase();
+    setText('gab-answer', 'Alternativa ' + letter);
+    if (correctAlt) {
+      setText('gab-correct-alt', correctAlt.text);
+      var cAltEl = document.getElementById('gab-correct-alt');
+      cAltEl.classList.toggle('sm', correctAlt.text.length > 80);
+    }
     setText('gab-explanation', data.explanation || '');
     var expEl = document.getElementById('gab-explanation');
     var expLen = (data.explanation || '').length;
