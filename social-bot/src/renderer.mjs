@@ -46,12 +46,31 @@ function splitStatement(fullStatement) {
     question = qMatch[2].trim();
   }
 
-  // Divide o corpo ao redor do ponto médio, preferindo quebra de frase
+  // Divide o corpo ao redor do ponto médio, preferindo quebra de frase.
+  // Nunca corta no meio de uma palavra — busca espaço mais próximo do mid.
   const mid      = Math.floor(body.length * 0.52);
   const dotAfter = body.indexOf('. ', mid);
-  const splitAt  = dotAfter > -1 && dotAfter < body.length * 0.85
-    ? dotAfter + 1
-    : mid;
+
+  let splitAt;
+  if (dotAfter > -1 && dotAfter < body.length * 0.85) {
+    splitAt = dotAfter + 1;                  // quebra após ponto
+  } else {
+    // Sem ponto próximo: encontra o espaço mais perto do mid
+    const spaceAfter  = body.indexOf(' ', mid);
+    const spaceBefore = body.lastIndexOf(' ', mid);
+    if (spaceAfter === -1 && spaceBefore === -1) {
+      splitAt = mid;                         // sem espaço (raro)
+    } else if (spaceAfter === -1) {
+      splitAt = spaceBefore + 1;
+    } else if (spaceBefore === -1) {
+      splitAt = spaceAfter + 1;
+    } else {
+      // Escolhe o espaço mais próximo do mid
+      splitAt = (mid - spaceBefore) <= (spaceAfter - mid)
+        ? spaceBefore + 1
+        : spaceAfter + 1;
+    }
+  }
 
   return {
     part1:    body.substring(0, splitAt).trim(),
