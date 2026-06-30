@@ -410,15 +410,19 @@
     line-height: 1.1;
   }
 
-  .gabarito-correct-alt {
-    font-size: 21px;
-    font-weight: 500;
-    color: #34D399;
-    line-height: 1.4;
-    margin-top: 4px;
-    opacity: 0.85;
+  .gabarito-alt-body {
+    font-size: 32px;
+    font-weight: 400;
+    color: #EEF4FF;
+    line-height: 1.65;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  .gabarito-correct-alt.sm { font-size: 18px; }
+  .gabarito-alt-body.sm { font-size: 26px; }
+  .gabarito-alt-body.xs { font-size: 22px; }
 
   .gabarito-divider {
     width: 100%;
@@ -682,12 +686,12 @@
       <div class="gabarito-answer-label">
         <div class="gabarito-correct-tag">RESPOSTA CORRETA</div>
         <div class="gabarito-answer-text" id="gab-answer"></div>
-        <div class="gabarito-correct-alt" id="gab-correct-alt"></div>
       </div>
     </div>
 
     <div class="gabarito-divider"></div>
 
+    <div class="gabarito-alt-body" id="gab-correct-alt"></div>
     <div class="gabarito-explanation" id="gab-explanation"></div>
 
     <div class="gabarito-footer-brand">
@@ -793,7 +797,9 @@ window.renderSlide = function(data) {
     if (correctAlt) {
       setText('gab-correct-alt', correctAlt.text);
       var cAltEl = document.getElementById('gab-correct-alt');
-      cAltEl.classList.toggle('sm', correctAlt.text.length > 80);
+      cAltEl.classList.remove('sm', 'xs');
+      if (correctAlt.text.length > 150) cAltEl.classList.add('xs');
+      else if (correctAlt.text.length > 80) cAltEl.classList.add('sm');
     }
     setText('gab-explanation', data.explanation || '');
     var expEl = document.getElementById('gab-explanation');
